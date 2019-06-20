@@ -1,0 +1,444 @@
+Log uploaded on Friday, April 12, 2019, 1:43:39 AM
+Loaded mods:
+Core: (no assemblies)
+HugsLib[ov:6.1.1]: 0Harmony(1.2.0.1), HugsLib(av:1.0.0.0,fv:6.1.1)
+EdB Prepare Carefully: 0Harmony(1.1.0.0), EdBPrepareCarefully(1.0.11.0)
+Master of Cooking: (no assemblies)
+Master of Crafting: (no assemblies)
+Defensive Positions: $HugsLibChecker(0.5.0.0), DefensivePositions(1.7.0.0)
+More Trade Ships: (no assemblies)
+Avoid Friendly Fire: $HugsLibChecker(0.5.0.0), AvoidFriendlyFire(1.0.6.0)
+Megafauna: 0Harmony(1.2.0.1), ModCheck(1.8.0.0)
+P-Music: (no assemblies)
+Dubs Bad Hygiene: 0Harmony(1.2.0.1), BadHygiene(2.5.7038.23870)
+Misc. Robots: AIRobot(1.0.4.0)
+Wall Light: $HugsLibChecker(0.5.0.0), WallLight(1.0.0.0)
+RunAndGun[ov:1.1.2]: RunAndGun(1.18.3.0)
+More Vanilla Turrets 1.0: (no assemblies)
+Better Pawn Control[ov:1.9.9]: $HugsLibChecker(0.5.0.0), BetterPawnControl(1.9.2.0)
+While You're Up [1.0]: WhileYoureUp(1.0.0.0)
+More Furniture [1.0]: (no assemblies)
+Where is my weapon?: 0Harmony(1.1.0.0), WhereIsMyWeapon(1.0.0.0)
+VGP Vegetable Garden: ModFinder(1.0.0.0)
+Animals Logic: 0Harmony(1.2.0.1), AnimalsLogic(1.0.6912.6017)
+Hospitality: $HugsLibChecker(0.5.0.0), Hospitality(1.0.14.0)
+Rimsenal - Rimhair: (no assemblies)
+GouRIMet: (no assemblies)
+QualityBuilder: 0Harmony(1.2.0.1), QualityBuilder(1.0.7.0)
+Stuffed Floors: 0Harmony(1.2.0.1), _harmonycheck(1.0.0.0), StuffedFloors(av:1.0.0.0,fv:1.2.60)
+Realistic Rooms: (no assemblies)
+Animal Tab: 0Harmony(1.2.0.1), AnimalTab(av:3.0.0.0,fv:3.4.123)
+Moody: Moody(2.4.2.0)
+Glass+Lights: (no assemblies)
+Let's Trade! [1.0]: (no assemblies)
+Doors Expanded: 0Harmony(1.0.9.1), DoorsExpanded(1.18.0.0)
+Fallout Traits: (no assemblies)
+RimCuisine 1.0: 0Harmony(1.0.9.1), RimCuisineDrugPolicies(0.1.0.1)
+VGL UNSC Weapon Pack: (no assemblies)
+Pharmacist: 0Harmony(1.2.0.1), Pharmacist(av:2.0.0.0,fv:2.4.135)
+Expanded Prosthetics and Organ Engineering: (no assemblies)
+Tilled Soil: (no assemblies)
+Medical Tab: 0Harmony(1.2.0.1), DynamicPawnTable(1.0.0.0), MedicalInfo(av:2.0.0.0,fv:2.4.69)
+Nature's Pretty Sweet: 0Harmony(1.0.9.1), TKKN_NPS(1.0.0.0)
+Work Tab: 0Harmony(1.2.0.1), FluffyUI(1.0.0.40421), WorkTab(av:3.0.0.0,fv:3.9.285)
+Wandering Caravans [v2.4.0]: WanderingCaravans(1.0.6873.28797)
+Colony Manager: 0Harmony(1.2.0.1), Fluffy_ColonyManager(av:4.0.0.0,fv:4.6.435)
+Real Ruins: 0Harmony(1.2.0.1), RealRuins(1.4.2.23439)
+Deconstruct Return Fix: 0Harmony(1.0.9.1), Deconstruct Return Fix(1.0.0.0)
+Additional Joy Objects Classic: AdditionalJoyObjects(1.0.0.0)
+Faction Discovery: Faction Discovery(1.0.3.0)
+Relations Tab: Fluffy_Relations(av:2.0.0.0,fv:2.3.68)
+Statue of Colonist: 0Harmony(1.2.0.1), StatueOfColonist(1.0.0.0)
+[RF] Fishing [1.0]: Rainbeau's Fishing(1.0.6909.28204)
+Door Mat R1.0: RimWorld-DoorMat(1.0.0.0)
+Color Coded Mood Bar: 0Harmony(1.2.0.1), ColoredMoodBar(1.0.0.0)
+[1.0] RPG Style Inventory: Sandy_Detailed_RPG_Inventory(1.0.6932.39793)
+Reasonable Components V1: (no assemblies)
+GloomyFurniture: Gloomylynx(1.0.4.0)
+Hunt for Me: 0Harmony(1.2.0.1), aRandomKiwi_HuntForMe(3.3.0.0)
+[SS]Lovely Hair Style: (no assemblies)
+In-wall coolers and vents [1.0]: InwallCoolersAndVents(1.0.6826.40526)
+[FSF] Rain Washes Away Filth: (no assemblies)
+Interaction Bubbles: 0Harmony(1.2.0.1), Bubbles(1.5.0.0)
+Various Space Ship Chunk: 0Harmony(1.2.0.1), ShipChunkTranspiler(0.1.1.0)
+FishIndustry: FishIndustry(1.0.0.0)
+[NL] Custom Portraits: CustomPortraits(1.0.0.0)
+More Faction Interaction: 0Harmony(1.2.0.1), MoreFactionInteraction(av:0.1.0.8,fv:1.0.10.0)
+Stack XXL[ov:1.0.0]: $HugsLibChecker(0.5.0.0), StackXXL(1.0.0.0)
+Predator Hunt Alert: 0Harmony(1.2.0.1), PredatorHuntAlert(1.0.0.0)
+Alpha Animals: 0Harmony(1.2.0.1), AlphaAnimalRangeUnlocker(1.0.6985.20208), AlphaBehavioursAndEvents(1.0.0.0), AnimalVariations(1.0.6818.33624), ModCheck(1.8.0.0), NewAlphaAnimalSubproducts(1.0.0.0)
+
+Active Harmony patches:
+<FindPatientBedFor>c__AnonStorey3.<>m__0: TRANS: AnimalsLogic.YouSleepHere+RestUtility_FindPatientBedFor_Patch.Transpiler
+<TryGiveJob>c__AnonStorey0.<>m__0: TRANS: AnimalsLogic.YouSleepHere+JobGiver_RescueNearby_TryGiveJob_Patch.Transpiler
+AddictionUtility.CanBingeOnNow: PRE: Hospitality.Harmony.AddictionUtility_Patch+CanBingeOnNow.Prefix
+Alert.DrawAt: PRE: PredatorHuntAlert.Patch_Alert_DrawAt.Prefix post: PredatorHuntAlert.Patch_Alert_DrawAt.Postfix
+AttackTargetFinder.BestAttackTarget: PRE: AvoidFriendlyFire.AttackTargetFinder_BestAttackTarget_Patch.Prefix
+BiomeDef.CommonalityOfDisease: PRE: TKKN_NPS.PatchCommonalityOfDisease.Prefix
+BiomeWorker_AridShrubland.GetScore: post: TKKN_NPS.PatchGetScoreArid.Postfix
+BiomeWorker_TemperateForest.GetScore: post: TKKN_NPS.PatchGetScoreTempForest.Postfix
+Blueprint.Draw: post: StatueOfColonist.Blueprint_Draw_Patch.Postfix
+Building_Bed.AssignedAnything: PRE: AnimalsLogic.YouSleepHere+Building_Bed_AssignedAnything_Patch.Prefix
+Building_Bed.GetGizmos: post: AnimalsLogic.YouSleepHere+Building_Bed_GetGizmos_Patch.Postfix, Hospitality.Harmony.Building_Bed_Patch+GetGizmos.Postfix
+Building_Bed.GetInspectString: TRANS: AnimalsLogic.YouSleepHere+Building_Bed_GetInspectString_Patch.Transpiler
+Building_Bed.TryAssignPawn: PRE: AnimalsLogic.YouSleepHere+Building_Bed_TryAssignPawn_Patch.Prefix
+Building_Bed.get_AssigningCandidates: post: AnimalsLogic.YouSleepHere+Building_Bed_get_AssigningCandidates_Patch.Postfix
+Building_Bed.set_ForPrisoners: post: Hospitality.Harmony.Building_Bed_Patch+ForPrisoners.Postfix
+Building_Bed.set_Medical: TRANS: AnimalsLogic.YouSleepHere+Building_Bed_set_Medical_Patch.Transpiler
+Building_Door.CanPhysicallyPass: PRE: DoorsExpanded.HarmonyPatches.CanPhysicallyPass
+Building_Door.DoorOpen: PRE: DoorsExpanded.HarmonyPatches.InvisDoorOpen
+Building_Door.DoorTryClose: PRE: DoorsExpanded.HarmonyPatches.InvisDoorTryClose
+Building_Door.Notify_PawnApproaching: post: DoorsExpanded.HarmonyPatches.InvisDoorNotifyApproaching
+Building_Door.PawnCanOpen: PRE: Hospitality.Harmony.Building_Door_Patch+PawnCanOpen.Prefix
+Building_Door.StartManualCloseBy: PRE: DoorsExpanded.HarmonyPatches.InvisDoorManualClose
+Building_Door.StartManualOpenBy: post: DoorsExpanded.HarmonyPatches.InvisDoorManualOpen
+Building_Door.get_FreePassage: PRE: DoorsExpanded.HarmonyPatches.get_FreePassage
+CameraJumper.TryJumpAndSelect: PRE: PredatorHuntAlert.Patch_CameraJumper_TryJumpAndSelect.Prefix
+CellFinder.RandomCell: post: TKKN_NPS.PatchRandomCell.Postfix
+CellFinder.TryRandomClosewalkCellNear: PRE: TKKN_NPS.PatchTryRandomClosewalkCellNear.Prefix
+ColonistBarColonistDrawer.DrawColonist: PRE: MoodBarPatch.MoodPatch.Prefix
+CompForbiddable.PostDraw: PRE: DoorsExpanded.HarmonyPatches.DontDrawInvisDoorForbiddenIcons
+CompQuality.PostPostGeneratedForTrader: PRE: MoreFactionInteraction.HarmonyPatches.CompQuality_TradeQualityIncreaseDestructivePreFix
+CompTemperatureRuinable.DoTicks: PRE: AnimalsLogic.RuinedEggs+CompTemperatureRuinable_DoTicks_Patch.Prefix post: AnimalsLogic.RuinedEggs+CompTemperatureRuinable_DoTicks_Patch.Postfix
+DebugWindowsOpener.DevToolStarterOnGUI: TRANS: HugsLib.Patches.DevToolStarterOnGUI_Patch.ExtendButtonsWindow
+DebugWindowsOpener.DrawButtons: TRANS: HugsLib.Patches.DebugWindowsOpener_Patch.DrawAdditionalButtons
+DefGenerator.GenerateImpliedDefs_PreResolve: PRE: StuffedFloors.HarmonyPatch_GenerateImpliedDefs_PreResolve.Prefix post: AnimalTab.Patch_GenerateImpliedDefs_PreResolve.Postfix, Fluffy.DefGenerator_GenerateImpliedDefs_PreResolve.Postfix, WorkTab.DefGenerator_GenerateImpliedDefs_PreResolve.Postfix
+Designator_Install.DrawGhost: PRE: StatueOfColonist.Designator_Install_DrawGhost_Patch.Prefix
+Dialog_DebugActionsMenu.DoListingItems_MapTools: post: DubsBadHygiene.HarmonyPatches+Patch_DoListingItems_MapTools.Postfix
+Dialog_Options.DoWindowContents: TRANS: HugsLib.Patches.Dialog_Options_Patch.ReplaceModOptionsButton
+DropCellFinder.CanPhysicallyDropInto: PRE: TKKN_NPS.PatchCanPhysicallyDropInto.Prefix
+DropCellFinder.RandomDropSpot: PRE: TKKN_NPS.PatchRandomDropSpot.Prefix
+EdificeGrid.Register: PRE: DoorsExpanded.HarmonyPatches.RegisterDoorExpanded
+EditWindow_DebugInspector.CurrentDebugString: post: DubsBadHygiene.MapComponent_Hygiene+Harmony_AmountCanAccept.Postfix
+EditWindow_Log.DoMessagesListing: PRE: HugsLib.Patches.EditWindow_Log_Patch.ExtraLogWindowButtons
+Entity.Tick: post: TKKN_NPS.PatchTickThing.Postfix
+ExpectationsUtility.CurrentExpectationFor: post: Hospitality.Harmony.ExpectationsUtility_Patch+CurrentExpectationForPawn.Postfix
+Faction.Notify_RelationKindChanged: post: MoreFactionInteraction.HarmonyPatches.Notify_RelationKindChanged
+FactionDialogMaker.FactionDialogFor: post: Hospitality.Harmony.FactionDialogMaker_Patch+FactionDialogFor.Postfix
+FactionUtility.IsPoliticallyProper: post: Hospitality.Harmony.FactionUtility_Patch+IsPoliticallyProper.Postfix
+FertilityGrid.CalculateFertilityAt: post: DubsBadHygiene.HarmonyPatches+Patch_CalculateFertilityAt.Postfix
+Fire.DoFireDamage: PRE: Gloomylynx.LockerPatch.DoFireDamagePrefix
+ForbidUtility.CaresAboutForbidden: PRE: Hospitality.Harmony.ForbidUtility_Patch+CaresAboutForbidden.Replacement
+ForbidUtility.InAllowedArea: post: Hospitality.Harmony.ForbidUtility_Patch+InAllowedArea.Postfix
+ForbidUtility.IsForbidden: post: TKKN_NPS.PatchIsForbidden.Postfix
+ForbidUtility.IsForbiddenToPass: post: DoorsExpanded.HarmonyPatches.IsForbiddenToPass_PostFix
+ForbidUtility.SetForbidden: PRE: Hospitality.Harmony.ForbidUtility_Patch+SetForbidden.Prefix
+Game.DeinitAndRemoveMap: post: HugsLib.Patches.Game_DeinitAndRemoveMap_Patch.MapRemovalHook
+Game.FillComponents: PRE: HugsLib.Patches.Game_FillComponents_Patch.GameInitializationHook
+Game.FinalizeInit: post: HugsLib.Patches.Game_FinalizeInit_Patch.WorldLoadedHook
+Game.InitNewGame: post: EdB.PrepareCarefully.HarmonyPatches.InitNewGamePostfix
+GameDataSaveLoader.SaveGame: post: RealRuins.RealRuins+SaveGame_Patch.Postfix, RealRuins.RealRuins+SaveGame_Patch.Postfix
+GatheringsUtility.ShouldGuestKeepAttendingGathering: PRE: Hospitality.Harmony.GatheringsUtility_Patch+ShouldGuestKeepAttendingGathering.Prefix
+GenConstruct.CanBuildOnTerrain: PRE: DubsBadHygiene.HarmonyPatches+Patch_CanBuildOnTerrain.Prefix
+GenConstruct.CanPlaceBlueprintOver: PRE: Gloomylynx.TantrumPatch.CanPlaceBlueprintOverPrefix
+GenGameEnd.EndGameDialogMessage: post: RealRuins.RealRuins+GameOver_Patch.Postfix, RealRuins.RealRuins+GameOver_Patch.Postfix
+GenGrid.CanBeSeenOver: post: DoorsExpanded.HarmonyPatches.CanBeSeenOver
+GenHostility.AnyHostileActiveThreatToPlayer: PRE: RealRuins.RealRuins+PlayerThreat_Patch.Prefix, RealRuins.RealRuins+PlayerThreat_Patch.Prefix
+GenHostility.HostileTo: PRE: AnimalsLogic.GenHostility_IsPredatorHostileTo_Patch.Prefix post: AnimalsLogic.GenHostility_IsPredatorHostileTo_Patch.Postfix
+GenLeaving.DoLeavingsFor: PRE: Deconstruct_Return_Fix.DeconstructReturnFix+CalcFix.DoLeavingsForPrefix
+GenPath.ShouldNotEnterCell: post: DoorsExpanded.HarmonyPatches.ShouldNotEnterCellInvisDoors
+GenSpawn.SpawnBuildingAsPossible: PRE: DoorsExpanded.HarmonyPatches.HeronSpawnBuildingAsPossible
+GenSpawn.SpawningWipes: PRE: Gloomylynx.TantrumPatch.SpawningWipesPrefix post: DoorsExpanded.HarmonyPatches.InvisDoorsDontWipe
+GenSpawn.WipeExistingThings: PRE: DoorsExpanded.HarmonyPatches.WipeExistingThings
+GenTemperature.ComfortableTemperatureRange: post: TKKN_NPS.PatchComfortableTemperatureRange.Postfix
+GhostDrawer.DrawGhostThing: PRE: DoorsExpanded.HarmonyPatches.HeronDoorGhostHandler
+Graphic_Shadow.DrawWorker: PRE: TKKN_NPS.PatchGraphic+PatchDrawWorker.Prefix
+Graphics.DrawMeshImpl: PRE: StatueOfColonist.Graphics_DrawMeshImpl_Patch.Prefix
+HealthAIUtility.FindBestMedicine: PRE: Pharmacist.HealthAIUtility_FindBestMedicine.Prefix
+ITab_Pawn_Gear.InterfaceDrop: PRE: Hospitality.Harmony.ITab_Pawn_Gear_Patch+InterfaceDrop.Prefix
+ITab_Pawn_Guest.get_IsVisible: post: Hospitality.Harmony.ITab_Pawn_Guest_Patch+IsVisible.Postfix
+IncidentWorker_ShipChunkDrop.SpawnChunk: TRANS: ShipChunkDrop_Transpiler.HarmonyPatches.IncidentWorker_ShipChunkDrop_SpawnChunk_Transpiler
+JobDriver.DriverTick: PRE: Hospitality.Harmony.JobDriver_Patch+DriverTick.Prefix
+JobDriver.SetupToils: post: RunAndGun.Harmony.JobDriver_SetupToils.Postfix
+JobDriver_ConstructFinishFrame.MakeNewToils: post: QualityBuilder._JobDriver_ConstructFinishFrame.Postfix
+JobDriver_Deconstruct.MakeNewToils: post: QualityBuilder._JobDriver_Deconstruct.Postfix
+JobDriver_Ingest.ReserveFoodIfWillIngestWholeStack: post: Hospitality.Harmony.JobDriver_Ingest_Patch+ReserveFoodIfWillIngestWholeStack.Postfix
+JobDriver_LayEgg.MakeNewToils: PRE: AnimalsLogic.JobDriver_LayEgg_MakeNewToils_Patch.Prefix
+JobDriver_PredatorHunt.CheckWarnPlayer: PRE: PredatorHuntAlert.JobDriver_PredatorHunt_CheckWarnPlayer_Patch.Replace
+JobGiver_AIDefendPawn.TryGiveJob: PRE: AlphaAnimalRangeAttack.ARA_FightAI_Patch.Prefix
+JobGiver_EatRandom.TryGiveJob: PRE: AnimalsLogic.DoNotEatRandomly+JobGiver_EatRandom_TryGiveJob_Patch.Prefix
+JobGiver_GetFood.TryGiveJob: post: PredatorHuntAlert.JobGiver_GetFood_TryGiveJob_Patch.AlertTargetedByPredator
+JobGiver_LayEgg.TryGiveJob: PRE: AnimalsLogic.JobGiver_LayEgg_TryGiveJob_Patch.Prefix
+JobGiver_Manhunter.TryGiveJob: PRE: AlphaAnimalRangeAttack.ARA__ManHunter_Patch.Prefix TRANS: DoorsExpanded.HarmonyPatches.JobGiver_Manhunter_TryGiveJob_Transpiler
+JobGiver_SeekAllowedArea.TryGiveJob: PRE: AnimalsLogic.YouSleepHere+JobGiver_SeekAllowedArea_TryGiveJob_Patch.Prefix
+JobGiver_SeekSafeTemperature.TryGiveJob: post: TKKN_NPS.PatchTryGiveJob.Postfix
+JobGiver_Work.PawnCanUseWorkGiver: PRE: Hospitality.Harmony.JobGiver_Work_Patch+PawnCanUseWorkGiver.Prefix
+JobGiver_Work.TryIssueJobPackage: PRE: Hospitality.Harmony.JobGiver_Work_Patch+TryIssueJobPackage.Prefix
+JoyGiver_Ingest.CanIngestForJoy: post: Hospitality.Harmony.JoyGiver_Ingest_Patch+CanIngestForJoy.Postfix
+LanguageDatabase.SelectLanguage: PRE: HugsLib.Patches.LanguageDatabase_Patch.ForceRestartAfterLangChange
+LoadedModManager.ApplyPatches: PRE: ModCheck.VanillaPatching.Prefix post: ModCheck.VanillaPatching.Postfix TRANS: ModCheck.VanillaPatching.Transpiler
+MainMenuDrawer.MainMenuOnGUI: post: ModCheck.DoneLoading.Postfix
+Map.ConstructComponents: post: HugsLib.Patches.Map_ConstructComponents_Patch.MapComponentsInitHook
+Map.FinalizeInit: post: HugsLib.Patches.Map_FinalizeInit_Patch.MapLoadedHook
+MapComponentUtility.MapGenerated: post: HugsLib.Patches.MapComponentUtility_MapGenerated_Patch.MapGeneratedHook
+MapInterface.MapInterfaceOnGUI_BeforeMainTabs: post: Bubbles.Patch.RimWorld_MapInterface_MapInterfaceOnGUI_BeforeMainTabs.Postfix
+MemoryUtility.ClearAllMapsAndWorld: PRE: Bubbles.Patch.Verse_Profile_MemoryUtility_ClearAllMapsAndWorld.Prefix
+MentalStateHandler.TryStartMentalState: post: RunAndGun.Harmony.MentalStateHandler_TryStartMentalState.Postfix
+MinifiedThing.DrawAt: PRE: Hospitality.Harmony.MinifiedThing_Patch+DrawAt.Prefix
+ModContentPack.ToString: PRE: Hospitality.Harmony.ModContentPack_Patch+_ToString.Replacement
+ModsConfig.RestartFromChangedMods: PRE: HugsLib.Patches.ModsConfig_RestartFromChangedMods_Patch.QuickRestartInDevMode
+MouseoverReadout.MouseoverReadoutOnGUI: PRE: DubsBadHygiene.HarmonyPatches+Patch_MouseoverReadoutOnGUI.Prefix post: DubsBadHygiene.HarmonyPatches+Patch_MouseoverReadoutOnGUI.Postfix, TKKN_NPS.PatchMouseoverReadout.Postfix
+Page_ConfigureStartingPawns.DoWindowContents: post: EdB.PrepareCarefully.HarmonyPatches.DoWindowContentsPostfix
+Page_ConfigureStartingPawns.PreOpen: post: EdB.PrepareCarefully.HarmonyPatches.PreOpenPostfix
+PathFinder.GetBuildingCost: PRE: FluffyManager.PathFinder_GetBuildingCost.Prefix post: DoorsExpanded.HarmonyPatches.GetBuildingCost_PostFix
+Pawn.ButcherProducts: post: AnimalsLogic.TastesLikeChicken+Pawn_ButcherProducts_Patch.Postfix
+Pawn.CheckForDisturbedSleep: PRE: Gloomylynx.TantrumPatch.CheckForDisturbedSleepPrefix
+Pawn.GetGizmos: post: RunAndGun.Harmony.Pawn_DraftController_GetGizmos_Patch.Postfix
+Pawn.GiveSoldThingToPlayer: PRE: Hospitality.Harmony.Pawn_Patch+GiveSoldThingToPlayer.Prefix
+Pawn.GiveSoldThingToTrader: PRE: Hospitality.Harmony.Pawn_Patch+GiveSoldThingToTrader.Prefix
+Pawn.Kill: post: AvoidFriendlyFire.Pawn_Kill_Patch.Postfix
+Pawn.SetFaction: PRE: Hospitality.Harmony.Pawn_Patch+SetFaction.Prefix
+Pawn.SpawnSetup: post: TKKN_NPS.PatchSpawnSetupPawn.Postfix
+Pawn.Tick: post: TKKN_NPS.PatchTickPawn.Postfix
+Pawn.TicksPerMove: post: RunAndGun.Harmony.Pawn_TicksPerMove.Postfix
+Pawn.TryGetAttackVerb: PRE: AlphaAnimalRangeAttack.ARA__VerbCheck_Patch.Prefix
+Pawn.VerifyReservations: PRE: Hospitality.Harmony.Pawn_Patch+VerifyReservations.Prefix
+PawnNameColorUtility.PawnNameColorOf: PRE: Hospitality.Harmony.PawnNameColorUtility_Patch+PawnNameColorOf.Prefix post: AvoidFriendlyFire.PawnNameColorUtility_PawnNameColorOf_Patch.Postfix
+PawnPathUtility.FirstBlockingBuilding: post: DoorsExpanded.HarmonyPatches.FirstBlockingBuilding_PostFix
+PawnPathUtility.TryFindLastCellBeforeBlockingDoor: PRE: DoorsExpanded.HarmonyPatches.ManhunterJobGiverFix
+PawnRenderer.RenderPawnInternal: PRE: DubsBadHygiene.HarmonyPatches+Patch_PawnRenderer.Prefix, TKKN_NPS.PatchRenderPawnInternal.Prefix
+PawnTable.PawnTableOnGUI: PRE: WorkTab.PawnTable_PawnTableOnGUI.Prefix
+PawnTable.RecacheIfDirty: PRE: WorkTab.PawnTable_RecacheIfDirty.Prefix post: WorkTab.PawnTable_RecacheIfDirty.Postfix
+PawnUIOverlay.DrawPawnGUIOverlay: PRE: AvoidFriendlyFire.PawnUIOverlay_DrawPawnGUIOverlay_Patch.Prefix
+PawnUtility.ShouldSendNotificationAbout: post: Hospitality.Harmony.PawnUtility_Patch+ShouldSendNotificationAbout.Postfix
+PawnUtility.WillSoonHaveBasicNeed: post: DubsBadHygiene.HarmonyPatches+Patch_WillSoonHaveBasicNeed.Postfix
+Pawn_ApparelTracker.TryDrop: PRE: Hospitality.Harmony.Pawn_ApparelTracker_Patch+TryDrop.Replacement
+Pawn_DraftController.GetGizmos: post: DefensivePositions.DraftController_GetGizmos_Patch.InsertDefensivePositionGizmo, AvoidFriendlyFire.Pawn_DraftController_GetGizmos_Patch.Postfix
+Pawn_DraftController.set_Drafted: post: AvoidFriendlyFire.Pawn_DraftController_set_Drafted_Patch.Postfix
+Pawn_EquipmentTracker.DropAllEquipment: PRE: WhereIsMyWeapon.Patch_Pawn_EquipmentTracker_DropAllEquipment.Prefix
+Pawn_FilthTracker.TryPickupFilth: post: DubsBadHygiene.HarmonyPatches+Patch_TryPickupFilth.Postfix
+Pawn_GuestTracker.SetGuestStatus: PRE: Hospitality.Harmony.Pawn_GuestTracker_Patch+SetGuestStatus.Prefix
+Pawn_HealthTracker.MakeDowned: PRE: WhereIsMyWeapon.Patch_Pawn_HealthTracker_MakeDowned.Prefix post: WhereIsMyWeapon.Patch_Pawn_HealthTracker_MakeDowned.Postfix
+Pawn_HealthTracker.MakeUndowned: post: WhereIsMyWeapon.Patch_Pawn_HealthTracker_MakeUndowned.Postfix
+Pawn_InteractionsTracker.TryInteractRandomly: PRE: Hospitality.Harmony.Pawn_InteractionsTracker_Patch+TryInteractRandomly.Replacement
+Pawn_InventoryTracker.DropAllNearPawn: PRE: WhereIsMyWeapon.Patch_Pawn_InventoryTracker_DropAllNearPawn.Prefix
+Pawn_JobTracker.DetermineNextJob: post: WhileYoureUp.HaulAdder.MyDetermineNextJob
+Pawn_JobTracker.StartJob: post: AnimalsLogic.Come+Pawn_JobTracker_StartJob_Patch.Postfix
+Pawn_MindState.GetGizmos: post: aRandomKiwi.HFM.Harmony.Pawn_MindState_Patch+GetGizmos.Listener
+Pawn_MindState.Notify_DamageTaken: PRE: aRandomKiwi.HFM.Harmony.Pawn_MindState_Patch+Notify_DamageTaken.Replacement
+Pawn_NeedsTracker.ShouldHaveNeed: PRE: Hospitality.Harmony.Pawn_NeedsTracker_Patch+ShouldHaveNeed.Prefix post: DubsBadHygiene.HarmonyPatches+Patch_ShouldHaveNeed.Postfix
+Pawn_PathFollower.CostToMoveIntoCell: post: DoorsExpanded.HarmonyPatches.CostToMoveIntoCell_PostFix_ChangeDoorPathCost
+Pawn_PathFollower.SetupMoveIntoNextCell: post: DubsBadHygiene.HarmonyPatches+Patch_SetupMoveIntoNextCell.Postfix
+Pawn_PathFollower.StartPath: PRE: TKKN_NPS.PatchStartPath.Prefix
+Pawn_TrainingTracker.TrainingTrackerTickRare: TRANS: AnimalsLogic.ForgetMeNot+Pawn_TrainingTracker_TrainingTrackerTickRare_Patch.Transpiler
+Pawn_WorkSettings.CacheWorkGiversInOrder: PRE: WorkTab.Pawn_WorkSettings_CacheWorkGiversInOrder.Prefix
+Pawn_WorkSettings.DisableAll: PRE: WorkTab.Pawn_WorkSettings_DisableAll.Prefix
+Pawn_WorkSettings.ExposeData: post: Hospitality.Harmony.Pawn_WorkSettings_Patch+ExposeData.Postfix
+Pawn_WorkSettings.GetPriority: PRE: WorkTab.Pawn_WorkSettings_GetPriority.Prefix
+Pawn_WorkSettings.SetPriority: PRE: WorkTab.Pawn_WorkSettings_SetPriority.Prefix
+Plant.get_Graphic: post: TKKN_NPS.PatchGraphicPlant.Postfix
+PlantProperties.PostLoadSpecial: post: TKKN_NPS.PostLoadSpecialPatch.Postfix
+PlantUtility.CanEverPlantAt: post: TKKN_NPS.HarmonyPatches.Patch_CanEverPlantAt_PlantUtility.Postfix
+PlayDataLoader.DoPlayLoad: post: HugsLib.Patches.PlayDataLoader_Patch.InitModsHook
+PlayLog.Add: post: Bubbles.Patch.Verse_PlayLog_Add.Postfix
+PlaySettings.DoPlaySettingsGlobalControls: post: Bubbles.Patch.RimWorld_PlaySettings_DoPlaySettingsGlobalControls.Postfix
+PortraitsCache.Get: PRE: CustomPortraits.HarmonyPatches.MyGet
+RCellFinder.CanWanderToCell: PRE: DubsBadHygiene.HarmonyPatches+Patch_CanWanderToCell.Prefix
+RCellFinder.TryFindRandomPawnEntryCell: post: TKKN_NPS.PatchTryFindRandomPawnEntryCell.Postfix
+Reachability.CanReach: post: TKKN_NPS.PatchCanReach.Postfix, Hospitality.Harmony.Reachability_Patch+CanReach.Postfix
+ReservationManager.LogCouldNotReserveError: PRE: Hospitality.Harmony.ReservationManager_Patch+LogCouldNotReserveError.Prefix
+RestUtility.CanUseBedEver: post: Hospitality.Harmony.RestUtility_Patch+CanUseBedEver.Postfix
+RoomStatWorker_Cleanliness.GetScore: post: DubsBadHygiene.HarmonyPatches+Patch_GetScore.Postfix
+Root.Update: post: HugsLib.Patches.Root_Patch.UpdateHook
+Root_Play.SetupForQuickTestPlay: TRANS: HugsLib.Patches.RootPlay_TestPlay_Patch.InjectCustomQuickstartSettings
+Scenario.PostGameStart: post: RimCuisineDrugPolicies.HarmonyPatches.GenerateStartingDrugPolicies_PostFix
+SocialCardUtility.DrawPawnRow: PRE: Hospitality.Harmony.SocialCardUtility_Patch+DrawPawnRow.Prefix
+SocialCardUtility.GetPawnSituationLabel: PRE: Hospitality.Harmony.SocialCardUtility_Patch+GetPawnSituationLabel.Replacement
+StockGenerator_BuyArt.HandlesThingDef: post: StatueOfColonist.StockGenerator_BuyArt_HandlesThingDef_Patch.Postfix
+StoryState.Notify_IncidentFired: post: MoreFactionInteraction.HarmonyPatches.IncidentFired_TradeCounter_Postfix
+TaleReference.ExposeData: post: RealRuins.RealRuins+TaleReference_ExposeData_Patch.Postfix, RealRuins.RealRuins+TaleReference_ExposeData_Patch.Postfix
+TaleReference.GenerateText: PRE: RealRuins.RealRuins+TaleReference_GenerateText_Patch.Prefix, RealRuins.RealRuins+TaleReference_GenerateText_Patch.Prefix
+TantrumMentalStateUtility.CanSmash: post: Gloomylynx.TantrumPatch.CanSmashPostfix
+Targeter.TargeterUpdate: post: AvoidFriendlyFire.Targeter_TargeterUpdate_Patch.Postfix
+Thing.ButcherProducts: post: NewAlphaAnimalSubproducts.Thing_ButcherProducts_Patch.ChangeMeatAmountByAge
+Thing.get_AmbientTemperature: post: TKKN_NPS.PatchAmbientTemperature.Postfix
+ThingSelectionUtility.SelectNextColonist: PRE: AnimalTab.Patch_ThingSelectionUtility+Pre_SelectNextColonist.Prefix
+ThingSelectionUtility.SelectPreviousColonist: PRE: AnimalTab.Patch_ThingSelectionUtility+Pre_SelectPreviousColonist.Prefix
+ThingSetMaker.Generate: post: MoreFactionInteraction.HarmonyPatches.TraderStocker_OverStockerPostFix
+ThoughtWorker_PrisonBarracksImpressiveness.CurrentStateInternal: PRE: Hospitality.Harmony.ThoughtWorker_Patch+PrisonBarracksImpressiveness.CurrentStateInternal
+ThoughtWorker_PrisonCellImpressiveness.CurrentStateInternal: PRE: Hospitality.Harmony.ThoughtWorker_Patch+PrisonCellImpressiveness.CurrentStateInternal
+ThoughtWorker_PsychicEmanatorSoothe.CurrentStateInternal: TRANS: MoreFactionInteraction.HarmonyPatches.PsychicEmanatorSoothe_Transpiler
+ThoughtWorker_PsychologicallyNude.CurrentStateInternal: post: DubsBadHygiene.HarmonyPatches+Patch_ThoughtWorker_PsychologicallyNude.Postfix
+Toils_Construct.MakeSolidThingFromBlueprintIfNecessary: PRE: QualityBuilder._Toils_Construct.Prefix
+Toils_LayDown.ApplyBedThoughts: PRE: Hospitality.Harmony.Toils_LayDown_Patch+ApplyBedThoughts.Replacement
+TooltipUtility.ShotCalculationTipString: PRE: AvoidFriendlyFire.TooltipUtility_ShotCalculationTipString_Patch.Prefix
+Tradeable.InitPriceDataIfNeeded: TRANS: MoreFactionInteraction.HarmonyPatches.ErrorSuppressionSssh
+Tradeable_Pawn.get_Label: post: AnimalsLogic.Patch_Tradeable_Pawn_Label.Postfix
+TraderKindDef.PriceTypeFor: post: MoreFactionInteraction.HarmonyPatches.PriceTypeSetter_PostFix
+TrainableUtility.DegradationPeriodTicks: TRANS: AnimalsLogic.ForgetMeNot+TrainableUtility_DegradationPeriodTicks_Patch.Transpiler
+TrainableUtility.GetWildnessExplanation: TRANS: AnimalsLogic.ForgetMeNot+TrainableUtility_GetWildnessExplanation_Patch.Transpiler
+TrainableUtility.TamenessCanDecay: TRANS: AnimalsLogic.ForgetMeNot+TrainableUtility_TamenessCanDecay_Patch.Transpiler
+TransferableOneWay.get_Label: post: AnimalsLogic.Patch_TransferableOneWay_Label.Postfix
+TransitionAction_EnsureHaveExitDestination.DoAction: PRE: Hospitality.Harmony.TransitionAction_EnsureHaveExitDestination_Patch+DoAction.Prefix
+TransitionAction_SetDefendLocalGroup.DoAction: PRE: Hospitality.Harmony.TransitionAction_SetDefendLocalGroup_Patch+DoAction.Prefix
+UIRoot.UIRootOnGUI: post: HugsLib.Patches.UIRoot_Patch.OnGUIHook
+UIRoot_Entry.Init: post: RealRuins.RealRuins+UIRoot_Entry_Init_Patch.Postfix, RealRuins.RealRuins+UIRoot_Entry_Init_Patch.Postfix
+Verb.CanHitTargetFrom: post: AvoidFriendlyFire.Verb_CanHitTargetFrom_Patch.Postfix
+Verb.TryCastNextBurstShot: TRANS: RunAndGun.Harmony.Verb_TryCastNextBurstShot.Transpiler
+Verb.TryStartCastOn: PRE: RunAndGun.Harmony.Verb_TryStartCastOn.Prefix
+VerbProperties.AdjustedAccuracy: post: RunAndGun.Harmony.VerbProperties_AdjustedAccuracy.Postfix
+WealthWatcher.CalculateWealthFloors: PRE: StuffedFloors.HarmonyPatch_WealthWatcher_CalculateWealthFloors.Prefix
+WorkGiver_ConstructFinishFrames.JobOnThing: post: QualityBuilder._WorkGiver_ConstructFinishFrames.Postfix
+WorkGiver_DoBill.GetMedicalCareCategory: PRE: Pharmacist.Properties.WorkGiver_DoBill_GetMedicalCareCategory.Prefix
+WorkGiver_TakeToBedToOperate.HasJobOnThing: PRE: AnimalsLogic.YouSleepHere+WorkGiver_TakeToBedToOperate_HasJobOnThing_Patch.Prefix
+WorldReachabilityUtility.CanReach: post: MoreFactionInteraction.HarmonyPatches.WorldReachUtility_PostFix
+Harmony versions present: 1.2.0.1: UnlimitedHugs.HugsLib, com.rimworld.modcheck, net.quicksilverfox.rimworld.mod.animalslogic, HugsLib.Hospitality, Fluffy.StuffedFloors, Fluffy.AnimalTab, fluffy.medicaltab, fluffy.worktab, fluffy.rimworld.pharmacist, fluffy.colonymanager, Dubwise.DubsBadHygiene, com.tammybee.whereismyweapon, de.hatti.rimworld.mod.qualitybuilder, com.Gloomylynx.rimworld.mod, com.github.rimworld.mod.AlphaAnimalRangeAttack, com.woolstrand.realruins, HugsLib.RealRuins, com.tammybee.rimstatue, com.github.restive2k12.rimworld.mod.moodbar, rimworld.randomKiwi.hfm, Bubbles, mehni.rimworld.shipchunks.main, rimworld.Nals.CustomPortraits, mehni.rimworld.MFI.main, com.tammybee.predatorhuntalert, com.alphaanimals, HugsLib.DefensivePositions, HugsLib.AvoidFriendlyFire, HugsLib.RunAndGun, HugsLib.WhileYoureUp; 1.1.0.0: EdB.PrepareCarefully; 1.0.9.1: rimworld.jecrell.doorsexpanded, com.github.tkkntkkn.Natures-Pretty-Sweet, mehni.rimworld.rimCuisine.main, com.dninemfive.deconstructreturnfix
+
+Platform information: (hidden, hold Shift while publishing to include)
+
+Log file contents:
+Initialize engine version: 5.6.5f1 (2cac56bf7bb6)
+GfxDevice: [Renderer information redacted]
+Begin MonoManager ReloadAssembly
+Loading [Rimworld_dir]\RimWorldWin64_Data\Managed\UnityEngine.dll into Unity Child Domain
+Loading [Rimworld_dir]\RimWorldWin64_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Loading [Rimworld_dir]\RimWorldWin64_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Loading [Rimworld_dir]\RimWorldWin64_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Loading [Rimworld_dir]\RimWorldWin64_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Loading [Rimworld_dir]\RimWorldWin64_Data\Managed\NAudio.dll into Unity Child Domain
+Loading [Rimworld_dir]\RimWorldWin64_Data\Managed\NVorbis.dll into Unity Child Domain
+Loading [Rimworld_dir]\RimWorldWin64_Data\Managed\TextMeshPro-1.0.55.56.0b11.dll into Unity Child Domain
+WARNING: Shader Unsupported: 'Hidden/VR/BlitCopyFromTexArray' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Hidden/VR/BlitCopyFromTexArray' - Setting to default shader.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+RimWorld 1.0.2231 rev1144
+
+<targetVersion> in mod About.xml is deprecated! Use <supportedVersions> tag instead. (example: <supportedVersions><li>1.0</li></supportedVersions>)
+
+Unable to parse version string on mod  from Anonymous "Unknown"
+
+<targetVersion> in mod About.xml is deprecated! Use <supportedVersions> tag instead. (example: <supportedVersions><li>1.0</li></supportedVersions>)
+
+Unable to parse version string on mod  from Anonymous "Unknown"
+
+[HugsLib] version 6.1.1
+
+BadHygiene 2.5.733
+
+Moody settings loaded
+
+XML error: Duplicate XML node name sowResearchPrerequisites in this XML block: <plant><growDays>5</growDays><dieIfLeafless>true</dieIfLeafless><harvestTag>Standard</harvestTag><harvestedThingDef>RawBerries</harvestedThingDef><harvestYield>6</harvestYield><sowMinSkill>5</sowMinSkill><sowTags><li>Ground</li><li>Hydroponic</li></sowTags><topWindExposure>0.1</topWindExposure><immatureGraphicPath>Things/Immature/StrawberryPlant</immatureGraphicPath><visualSizeRange><min>0.3</min><max>1.05</max></visualSizeRange><wildOrder>2</wildOrder><purpose>Food</purpose><sowResearchPrerequisites><li>agricultureII</li></sowResearchPrerequisites><sowResearchPrerequisites><li>IntermediateAgriculture</li></sowResearchPrerequisites></plant>
+
+Root node: <ThingDef ParentName="PlantBase"><defName>Plant_Strawberry</defName><label>strawberry plant</label><description>A low bush-like plant that yields fragile but delicious strawberries. While it isn't quite as productive calorie-for-calorie as other crops, strawberries are delicious even when raw.</description><statBases><MaxHitPoints>85</MaxHitPoints><Nutrition>0.2</Nutrition></statBases><graphicData><texPath>Things/Plants/StrawberryPlant</texPath><graphicClass>Graphic_Random</graphicClass></graphicData><selectable>true</selectable><pathCost>10</pathCost><ingestible /><plant><growDays>5</growDays><dieIfLeafless>true</dieIfLeafless><harvestTag>Standard</harvestTag><harvestedThingDef>RawBerries</harvestedThingDef><harvestYield>6</harvestYield><sowMinSkill>5</sowMinSkill><sowTags><li>Ground</li><li>Hydroponic</li></sowTags><topWindExposure>0.1</topWindExposure><immatureGraphicPath>Things/Immature/StrawberryPlant</immatureGraphicPath><visualSizeRange><min>0.3</min><max>1.05</max></visualSizeRange><wildOrder>2</wildOrder><purpose>Food</purpose><sowResearchPrerequisites><li>agricultureII</li></sowResearchPrerequisites><sowResearchPrerequisites><li>IntermediateAgriculture</li></sowResearchPrerequisites></plant></ThingDef>
+
+Could not find a type named JecsTools.PlaceWorker_Outline
+
+Could not find a type named JecsTools.PlaceWorker_Outline
+
+Could not find a type named JecsTools.PlaceWorker_Outline
+
+Could not find a type named JecsTools.PlaceWorker_Outline
+
+Could not find a type named JecsTools.PlaceWorker_Outline
+
+Could not find a type named JecsTools.PlaceWorker_Outline
+
+Could not find a type named JecsTools.PlaceWorker_Outline
+
+Could not find a type named JecsTools.PlaceWorker_Outline
+
+Could not find a type named JecsTools.PlaceWorker_OnTopOfWalls
+
+Could not find a type named JecsTools.PlaceWorker_OnTopOfWalls
+
+Could not find a type named JecsTools.PlaceWorker_Outline
+
+Could not find a type named JecsTools.PlaceWorker_Outline
+
+Parsed 2.5 as int.
+
+BodyDef Snail has BodyPartRecord of Snailhead whose children have more coverage than 1.
+
+TKKN_SmoothedLavaRock and TKKN_LavaRock both smooth to TKKN_SmoothedLavaRock
+
+Key binding conflict: MainTab_Factions and NextPawnMode are both bound to F9.
+
+Could not load UnityEngine.Texture2D at Things/Plants/CoffeePlant/CoffeePlant in any active mod or in base resources.
+
+MatFrom with null sourceTex.
+
+Could not load UnityEngine.Texture2D at Things/Immature/CoffeePlant/CoffeePlant in any active mod or in base resources.
+
+MatFrom with null sourceTex.
+
+Could not load UnityEngine.Texture2D at Ui/Designators/ZoneCreate_Fishing in any active mod or in base resources.
+
+Translation data for language English has 7 errors. Generate translation report for more info.
+
+Removed Log Error from Manhunter Job
+
+RealRuins started patching at 4/12/2019 1:43:03 AM
+
+RealRuins finished patching at 4/12/2019 1:43:03 AM (15.9117 msec)
+
+Loading some snapshots...
+
+Deconstruct Return Fix harmony patch successfully loaded
+
+C:/Users/brian/AppData/LocalLow/Ludeon Studios/RimWorld by Ludeon Studios\Config\StatueOfColonist.xml is not found.
+
+[ColorCodedMoodBar] initialized
+
+[Bubbles v1.5] Initialized
+
+Removed Log Error from Manhunter Job
+
+OnLevelWasLoaded was found on ModInitializerComponent
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+(Filename:  Line: 376)
+
+Exception during loading object: System.Exception: timed out
+  at RealRuins.APIService+<>c__DisplayClass5_0.<AwaitUnityDataWebResponse>b__0 () [0x00000] in <filename unknown>:0 
+
+Failed loading list of random maps
+
+[HugsLib] initializing DefensivePositions, AvoidFriendlyFire, MURWallLight, RunAndGun, BetterPawnControl, WhileYoureUp, Hospitality, RealRuins, FactionDiscovery, StackXXL
+
+Injecting guest beds into the following facilities: EndTable, Dresser, VitalsMonitor, Anon2Dresser, Anon2EndTable, Anon2RoyalEndTable, Anon2EndTableLight, Anon2RoyalEndTableLight, RGK_Dresser, RGK_EndTable, RGK_EndTableWithLamp, RGK_EndTableWithLampE, WardrobeA, WardrobeB, GL_Teddy
+
+Created guest beds for the following beds: SleepingSpot, DoubleSleepingSpot, Bed, DoubleBed, RoyalBed, HospitalBed, Bedroll, BedrollDouble, RGK_bedSingle, RGK_bedSingleB, RGK_bedDouble, RGK_bedDoubleB, GL_ClassyDoubleBed
+
+[StackXXL] Loaded
+
+Loading some snapshots...
+
+Loaded list of 50 elements...
+
+Loading 50 files...
+
+Loading snapshot A02707CA-14BA-4504-97D1-932347CD764A
+
+Loading snapshot 557C2EFE-E7F4-45F1-A310-DFBD6CF18F1C
+
+Loading snapshot 2A54C27C-B10E-44CE-8865-8BFD6247AEF3
+
+Loading snapshot DCBBE5C9-03AA-4E33-9DAB-D4177CEF0402
+
+Loading snapshot 5A808D31-C4DD-4D7A-8D5A-FF5E84A4B443
+
+Loading snapshot BF57920D-FCB9-4D31-B268-E03DECB3D568
+
+Loading snapshot A9B76CC2-E7F3-446A-B95D-D0B233F60342
+
+Loading snapshot 8809525C-89DD-40E9-A0C2-D0BB10FE1D06
+
+Loading snapshot AB7A270A-5940-4EA8-B464-AFDAFB77A52F
+
+Loading snapshot 5B50840A-E10B-4880-AAF8-A85C076D0304
+
+Loading snapshot 86E2B645-8CA6-4DF7-BD2F-0AE2F23C1A8E
+
+Loading snapshot EE8A307D-A4D3-4F6F-B716-879910DB00B4
+
+Loading snapshot F5C2F90B-32B8-47B4-A250-2B452B47211E
+
+Loading snapshot CC6B3465-3B47-4725-8F68-A5DBE66AE682
+
+Loading snapshot FE47502B-A84A-47F1-B7B6-8488E594B235
+
+Loading snapshot 8D35D8BC-D319-4D0E-AB42-AB039DA4A826
+
+Loading snapshot D27E3C1B-B647-424A-8420-01F8A990D23E
+
+Loading snapshot B2C02D81-5D28-4A85-A9CF-AC22519930B4

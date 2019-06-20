@@ -1,0 +1,209 @@
+gui:
+  main-page:
+    title: '&4Hilfe:'
+    slots: 45
+    close-button: 41
+    items:
+      '1':
+        item-name: '&6&lFraktionen'
+        item-material: DIAMOND_SWORD
+        enchanted: true
+        lore:
+        - '&6Klicke, um &lFraktionshilfe &6zu sehen!'
+        item-slot: 12
+        run: HELP-PAGE
+        page: 1
+      '2':
+        item-name: '&b&lParkour'
+        item-material: DIAMOND_BLOCK
+        enchanted: true
+        lore:
+        - '&6Lust auf einen &lParkour&6?'
+        - '&bKlicke hier!'
+        item-slot: 16
+        run: HELP-PAGE
+        page: 2
+      '3':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: BLUE_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 1
+        run: COSMETIC
+      '4':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: RED_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 2
+        run: COSMETIC
+      '5':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: BLUE_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 3
+        run: COSMETIC
+      '6':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: RED_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 4
+        run: COSMETIC
+      '7':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: BLUE_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 5
+        run: COSMETIC
+      '8':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: RED_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 6
+        run: COSMETIC
+      '9':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: BLUE_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 7
+        run: COSMETIC
+      '10':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: RED_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 8
+        run: COSMETIC
+      '11':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: BLUE_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 9
+        run: COSMETIC
+      '12':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: RED_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 10
+        run: COSMETIC
+      '13':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: RED_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 18
+        run: COSMETIC
+      '14':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: BLUE_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 19
+        run: COSMETIC
+      '15':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: BLUE_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 27
+        run: COSMETIC
+      '16':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: RED_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 28
+        run: COSMETIC
+      '17':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: RED_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 36
+        run: COSMETIC
+      '18':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: BLUE_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 37
+        run: COSMETIC
+      '19':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: RED_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 38
+        run: COSMETIC
+      '20':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: BLUE_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 39
+        run: COSMETIC
+      '21':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: RED_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 40
+        run: COSMETIC
+      '22':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: RED_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 42
+        run: COSMETIC
+      '23':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: BLUE_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 43
+        run: COSMETIC
+      '24':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: RED_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 44
+        run: COSMETIC
+      '25':
+        item-name: '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-material: BLUE_STAINED_GLASS_PANE
+        enchanted: false
+        lore:
+        - '&4&k1q1q1q1q1q1q1q1q1q1q1q1q1'
+        item-slot: 45
+        run: COSMETIC

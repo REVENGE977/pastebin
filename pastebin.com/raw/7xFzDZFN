@@ -1,0 +1,892 @@
+charlzk@Scarlett ~ $ sudo cat /var/tmp/portage/dev-haskell/stack-1.9.3-r1/temp/build.log 
+Пароль: 
+ * Package:    dev-haskell/stack-1.9.3-r1
+ * Repository: haskell
+ * Maintainer: haskell@gentoo.org
+ * USE:        abi_x86_64 amd64 elibc_glibc kernel_linux userland_GNU
+ * FEATURES:   ccache network-sandbox preserve-libs sandbox userpriv usersandbox
+>>> Unpacking source...
+>>> Unpacking stack-1.9.3.tar.gz to /var/tmp/portage/dev-haskell/stack-1.9.3-r1/work
+>>> Source unpacked in /var/tmp/portage/dev-haskell/stack-1.9.3-r1/work
+>>> Preparing source in /var/tmp/portage/dev-haskell/stack-1.9.3-r1/work/stack-1.9.3 ...
+>>> Source prepared.
+>>> Configuring source in /var/tmp/portage/dev-haskell/stack-1.9.3-r1/work/stack-1.9.3 ...
+ * Using cabal-2.4.0.1.
+ * Prepending /usr/lib64/ghc-8.6.4 to LD_LIBRARY_PATH
+/usr/bin/ghc -package Cabal-2.4.0.1 --make /var/tmp/portage/dev-haskell/stack-1.9.3-r1/work/stack-1.9.3/Setup.hs -j2 +RTS -A256M -qb0 -RTS -threaded -dynamic -o setup
+[1 of 1] Compiling Main             ( /var/tmp/portage/dev-haskell/stack-1.9.3-r1/work/stack-1.9.3/Setup.hs, /var/tmp/portage/dev-haskell/stack-1.9.3-r1/work/stack-1.9.3/Setup.o )
+Linking setup ...
+./setup configure --ghc --prefix=/usr --with-compiler=/usr/bin/ghc --with-hc-pkg=/usr/bin/ghc-pkg --prefix=/usr --libdir=/usr/lib64 --libsubdir=stack-1.9.3/ghc-8.6.4 --datadir=/usr/share/ --datasubdir=stack-1.9.3/ghc-8.6.4 --ghc-options=-j2 +RTS -A256M -qb0 -RTS --with-ar=x86_64-pc-linux-gnu-ar --ghc-option=-optc-O2 --ghc-option=-optc-pipe --ghc-option=-optl-Wl,-O1 --ghc-option=-optl-Wl,--as-needed --disable-executable-stripping --docdir=/usr/share/doc/stack-1.9.3-r1 --verbose --enable-shared --enable-executable-dynamic --sysconfdir=/etc --disable-library-stripping --flag=-disable-git-info --flag=-hide-dependency-versions --flag=-integration-tests --flag=-static --flag=-supported-build
+Using Parsec parser
+Configuring stack-1.9.3...
+Flags chosen: disable-git-info=False, hide-dependency-versions=False,
+integration-tests=False, static=False, supported-build=False
+Dependency Cabal -any: using Cabal-2.4.0.1
+Dependency aeson -any: using aeson-1.4.2.0
+Dependency annotated-wl-pprint -any: using annotated-wl-pprint-0.7.0
+Dependency ansi-terminal -any: using ansi-terminal-0.8.2
+Dependency async -any: using async-2.2.1
+Dependency attoparsec -any: using attoparsec-0.13.2.2
+Dependency base >=4.10 && <5: using base-4.12.0.0
+Dependency base64-bytestring -any: using base64-bytestring-1.0.0.1
+Dependency bindings-uname -any: using bindings-uname-0.1
+Dependency bytestring -any: using bytestring-0.10.8.2
+Dependency conduit -any: using conduit-1.3.1
+Dependency conduit-extra -any: using conduit-extra-1.3.1.1
+Dependency containers -any: using containers-0.6.0.1
+Dependency cryptonite -any: using cryptonite-0.25
+Dependency cryptonite-conduit -any: using cryptonite-conduit-0.2.2
+Dependency deepseq -any: using deepseq-1.4.4.0
+Dependency directory -any: using directory-1.3.3.0
+Dependency echo -any: using echo-0.1.3
+Dependency exceptions -any: using exceptions-0.10.1
+Dependency extra -any: using extra-1.6.14
+Dependency file-embed -any: using file-embed-0.0.10.1
+Dependency filelock -any: using filelock-0.1.1.2
+Dependency filepath -any: using filepath-1.4.2.1
+Dependency fsnotify -any: using fsnotify-0.2.1.2
+Dependency generic-deriving -any: using generic-deriving-1.12.3
+Dependency hackage-security -any: using hackage-security-0.5.3.0
+Dependency hashable -any: using hashable-1.2.7.0
+Dependency hpack -any: using hpack-0.31.1
+Dependency hpc -any: using hpc-0.6.0.3
+Dependency http-client -any: using http-client-0.5.13.1
+Dependency http-client-tls -any: using http-client-tls-0.3.5.3
+Dependency http-conduit -any: using http-conduit-2.3.7
+Dependency http-types -any: using http-types-0.12.3
+Dependency memory -any: using memory-0.14.18
+Dependency microlens -any: using microlens-0.4.10
+Dependency mintty -any: using mintty-0.1.2
+Dependency monad-logger -any: using monad-logger-0.3.30
+Dependency mono-traversable -any: using mono-traversable-1.0.9.0
+Dependency mtl -any: using mtl-2.2.2
+Dependency mustache -any: using mustache-2.3.0
+Dependency neat-interpolation -any: using neat-interpolation-0.3.2.1
+Dependency network-uri -any: using network-uri-2.6.1.0
+Dependency open-browser -any: using open-browser-0.2.1.0
+Dependency optparse-applicative -any: using optparse-applicative-0.14.3.0
+Dependency path -any: using path-0.6.1
+Dependency path-io -any: using path-io-1.4.2
+Dependency persistent -any: using persistent-2.9.1
+Dependency persistent-sqlite -any: using persistent-sqlite-2.9.2
+Dependency persistent-template -any: using persistent-template-2.6.0
+Dependency pretty -any: using pretty-1.1.3.6
+Dependency primitive -any: using primitive-0.6.4.0
+Dependency process -any: using process-1.6.5.0
+Dependency project-template -any: using project-template-0.2.0.1
+Dependency regex-applicative-text -any: using regex-applicative-text-0.1.0.1
+Dependency resourcet -any: using resourcet-1.2.2
+Dependency retry -any: using retry-0.8.0.0
+Dependency rio -any: using rio-0.1.9.2
+Dependency semigroups -any: using semigroups-0.18.5
+Dependency split -any: using split-0.2.3.3
+Dependency stm -any: using stm-2.5.0.0
+Dependency store -any: using store-0.4.3.2
+Dependency store-core -any: using store-core-0.4.4
+Dependency streaming-commons -any: using streaming-commons-0.2.1.0
+Dependency tar -any: using tar-0.5.1.0
+Dependency template-haskell -any: using template-haskell-2.14.0.0
+Dependency temporary -any: using temporary-1.3
+Dependency text -any: using text-1.2.3.1
+Dependency text-metrics -any: using text-metrics-0.3.0
+Dependency th-reify-many -any: using th-reify-many-0.1.8
+Dependency time -any: using time-1.8.0.2
+Dependency tls -any: using tls-1.4.1
+Dependency transformers -any: using transformers-0.5.6.2
+Dependency typed-process -any: using typed-process-0.2.3.0
+Dependency unicode-transforms -any: using unicode-transforms-0.3.4
+Dependency unix -any: using unix-2.7.2.2
+Dependency unix-compat -any: using unix-compat-0.5.0.1
+Dependency unliftio -any: using unliftio-0.2.10
+Dependency unordered-containers -any: using unordered-containers-0.2.10.0
+Dependency vector -any: using vector-0.12.0.2
+Dependency yaml -any: using yaml-0.11.0.0
+Dependency zip-archive -any: using zip-archive-0.3.3
+Dependency zlib -any: using zlib-0.6.2
+Dependency Cabal -any: using Cabal-2.4.0.1
+Dependency aeson -any: using aeson-1.4.2.0
+Dependency annotated-wl-pprint -any: using annotated-wl-pprint-0.7.0
+Dependency ansi-terminal -any: using ansi-terminal-0.8.2
+Dependency async -any: using async-2.2.1
+Dependency attoparsec -any: using attoparsec-0.13.2.2
+Dependency base >=4.10 && <5: using base-4.12.0.0
+Dependency base64-bytestring -any: using base64-bytestring-1.0.0.1
+Dependency bindings-uname -any: using bindings-uname-0.1
+Dependency bytestring -any: using bytestring-0.10.8.2
+Dependency conduit -any: using conduit-1.3.1
+Dependency conduit-extra -any: using conduit-extra-1.3.1.1
+Dependency containers -any: using containers-0.6.0.1
+Dependency cryptonite -any: using cryptonite-0.25
+Dependency cryptonite-conduit -any: using cryptonite-conduit-0.2.2
+Dependency deepseq -any: using deepseq-1.4.4.0
+Dependency directory -any: using directory-1.3.3.0
+Dependency echo -any: using echo-0.1.3
+Dependency exceptions -any: using exceptions-0.10.1
+Dependency extra -any: using extra-1.6.14
+Dependency file-embed -any: using file-embed-0.0.10.1
+Dependency filelock -any: using filelock-0.1.1.2
+Dependency filepath -any: using filepath-1.4.2.1
+Dependency fsnotify -any: using fsnotify-0.2.1.2
+Dependency generic-deriving -any: using generic-deriving-1.12.3
+Dependency githash -any: using githash-0.1.3.1
+Dependency hackage-security -any: using hackage-security-0.5.3.0
+Dependency hashable -any: using hashable-1.2.7.0
+Dependency hpack -any: using hpack-0.31.1
+Dependency hpc -any: using hpc-0.6.0.3
+Dependency http-client -any: using http-client-0.5.13.1
+Dependency http-client-tls -any: using http-client-tls-0.3.5.3
+Dependency http-conduit -any: using http-conduit-2.3.7
+Dependency http-types -any: using http-types-0.12.3
+Dependency memory -any: using memory-0.14.18
+Dependency microlens -any: using microlens-0.4.10
+Dependency mintty -any: using mintty-0.1.2
+Dependency monad-logger -any: using monad-logger-0.3.30
+Dependency mono-traversable -any: using mono-traversable-1.0.9.0
+Dependency mtl -any: using mtl-2.2.2
+Dependency mustache -any: using mustache-2.3.0
+Dependency neat-interpolation -any: using neat-interpolation-0.3.2.1
+Dependency network-uri -any: using network-uri-2.6.1.0
+Dependency open-browser -any: using open-browser-0.2.1.0
+Dependency optparse-applicative -any: using optparse-applicative-0.14.3.0
+Dependency optparse-simple -any: using optparse-simple-0.1.1.1
+Dependency path -any: using path-0.6.1
+Dependency path-io -any: using path-io-1.4.2
+Dependency persistent -any: using persistent-2.9.1
+Dependency persistent-sqlite -any: using persistent-sqlite-2.9.2
+Dependency persistent-template -any: using persistent-template-2.6.0
+Dependency pretty -any: using pretty-1.1.3.6
+Dependency primitive -any: using primitive-0.6.4.0
+Dependency process -any: using process-1.6.5.0
+Dependency project-template -any: using project-template-0.2.0.1
+Dependency regex-applicative-text -any: using regex-applicative-text-0.1.0.1
+Dependency resourcet -any: using resourcet-1.2.2
+Dependency retry -any: using retry-0.8.0.0
+Dependency rio -any: using rio-0.1.9.2
+Dependency semigroups -any: using semigroups-0.18.5
+Dependency split -any: using split-0.2.3.3
+Dependency stack -any: using stack-1.9.3
+Dependency stm -any: using stm-2.5.0.0
+Dependency store -any: using store-0.4.3.2
+Dependency store-core -any: using store-core-0.4.4
+Dependency streaming-commons -any: using streaming-commons-0.2.1.0
+Dependency tar -any: using tar-0.5.1.0
+Dependency template-haskell -any: using template-haskell-2.14.0.0
+Dependency temporary -any: using temporary-1.3
+Dependency text -any: using text-1.2.3.1
+Dependency text-metrics -any: using text-metrics-0.3.0
+Dependency th-reify-many -any: using th-reify-many-0.1.8
+Dependency time -any: using time-1.8.0.2
+Dependency tls -any: using tls-1.4.1
+Dependency transformers -any: using transformers-0.5.6.2
+Dependency typed-process -any: using typed-process-0.2.3.0
+Dependency unicode-transforms -any: using unicode-transforms-0.3.4
+Dependency unix -any: using unix-2.7.2.2
+Dependency unix-compat -any: using unix-compat-0.5.0.1
+Dependency unliftio -any: using unliftio-0.2.10
+Dependency unordered-containers -any: using unordered-containers-0.2.10.0
+Dependency vector -any: using vector-0.12.0.2
+Dependency yaml -any: using yaml-0.11.0.0
+Dependency zip-archive -any: using zip-archive-0.3.3
+Dependency zlib -any: using zlib-0.6.2
+Source component graph:
+    component lib
+    component exe:stack dependency lib
+Configured component graph:
+    component stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V
+        include Cabal-2.4.0.1
+        include aeson-1.4.2.0-21RmHbcU9h75Cr9mnH7mqZ
+        include annotated-wl-pprint-0.7.0-DGkZQ2VEej1K9q8cmlJu7D
+        include ansi-terminal-0.8.2-8WQDEUM7Kz3DSmwgHomKFP
+        include async-2.2.1-CnEO6bROc7S6QgTCMiGZte
+        include attoparsec-0.13.2.2-LD1fDxwE35v9USWzP4f6QF
+        include base-4.12.0.0
+        include base64-bytestring-1.0.0.1-G3Br32Wzx6yIe8CvhfIHtS
+        include bindings-uname-0.1-1dGevTkKbFEKdnTeLVvJMM
+        include bytestring-0.10.8.2
+        include conduit-1.3.1-2Knrx7RaYCGLPkpGIlSO4X
+        include conduit-extra-1.3.1.1-8cqwEaAoeiT2YNPUULlhIq
+        include containers-0.6.0.1
+        include cryptonite-0.25-1VY3WdimbMoh8etp8TxXE
+        include cryptonite-conduit-0.2.2-GOZxluO7byRBibXPArIDZd
+        include deepseq-1.4.4.0
+        include directory-1.3.3.0
+        include echo-0.1.3-AXdiOL4eM1hJL3CrJirdzK
+        include exceptions-0.10.1-DAIsgRx7P38KM6ECk2vYg9
+        include extra-1.6.14-9RDTFEs6jU08VgiDWse7GK
+        include file-embed-0.0.10.1-4n3SthIi1VAGLUU13frLcw
+        include filelock-0.1.1.2-4pmJkbCa2rfIMazOkrzcZK
+        include filepath-1.4.2.1
+        include fsnotify-0.2.1.2-CyFK4nfU2B23cNfYRwasRt
+        include generic-deriving-1.12.3-JrjQqUenjCQGeU1NdJ8Qv3
+        include hackage-security-0.5.3.0-GQGwaAv13aC47Aroadika3
+        include hashable-1.2.7.0-2SI038axTEd7AEZJ275kpi
+        include hpack-0.31.1-GS4PiagEjZ8V163Rm3fy8
+        include hpc-0.6.0.3
+        include http-client-0.5.13.1-97d7RLPHdxxFUPoK7uvYDU
+        include http-client-tls-0.3.5.3-HBQEWtDJtOU3ycAo6WgzDQ
+        include http-conduit-2.3.7-6Tc3jZSkuej1OlilMqoJlf
+        include http-types-0.12.3-4L76TmlQodx6G0dPW61wNW
+        include memory-0.14.18-8LdYq1aaDAu34qW98bOKgt
+        include microlens-0.4.10-LVgmazyXGvNKvoQElrYSfS
+        include mintty-0.1.2-H8nsJd1PqbAKjPWVQrDTEK
+        include monad-logger-0.3.30-9Pptyn0tyng5JzSWfxuy52
+        include mono-traversable-1.0.9.0-3K9i8CBm67LKnwF5o5siTA
+        include mtl-2.2.2
+        include mustache-2.3.0-2t3dEIxQnZG30YcR3KTFJj
+        include neat-interpolation-0.3.2.1-C53KW7LvQyQ4w7WaMsYCkq
+        include network-uri-2.6.1.0-K75fCYvLQE41EntOQ30cqK
+        include open-browser-0.2.1.0-JBhinIwNmWr8AQilwoAYz4
+        include optparse-applicative-0.14.3.0-I19ehCNzjec51ngeh6TrAc
+        include path-0.6.1-L3XkF9kZmeIENNZR6jDkE
+        include path-io-1.4.2-EaKS23AnbjE2XrlMtco7MP
+        include persistent-2.9.1-EIv37Fla2T5HvM5uw50MHE
+        include persistent-sqlite-2.9.2-Kd8A4n57bhfEmFWlLdg03f
+        include persistent-template-2.6.0-5FqCFfNZ3SfLBhAn56ablj
+        include pretty-1.1.3.6
+        include primitive-0.6.4.0-ILgywxtLpvnAOlEISPpP5b
+        include process-1.6.5.0
+        include project-template-0.2.0.1-6eswItAv9Fk8aRKFgujBNr
+        include regex-applicative-text-0.1.0.1-6cTcEmuiw6yEWPxf8X9cyP
+        include resourcet-1.2.2-1pputJSzjhq477MleOoM6R
+        include retry-0.8.0.0-5gNObUi29QH9rDDtKNUNIS
+        include rio-0.1.9.2-ByyS0DvmsqaBuQlGOAXTF1
+        include semigroups-0.18.5-H8WHGZY1kpx39L9IiFK62L
+        include split-0.2.3.3-6n1iQ0JLFvkeXvJXsAqQc
+        include stm-2.5.0.0
+        include store-0.4.3.2-FqkprB9naPv5APfKka4RyB
+        include store-core-0.4.4-BnKzpK69T9v49jNkmLatD0
+        include streaming-commons-0.2.1.0-Gl84xUdbgrNAjItOghaHaB
+        include tar-0.5.1.0-HaIVxa1LuWJqqT6yxHWqZ
+        include template-haskell-2.14.0.0
+        include temporary-1.3-IJzEMFMv92eIBFcHcHYiUJ
+        include text-1.2.3.1
+        include text-metrics-0.3.0-InFo6CtRgm12aWGz8GpXRR
+        include th-reify-many-0.1.8-1SDhmGaYoHuAkUQIHoqsYB
+        include time-1.8.0.2
+        include tls-1.4.1-3E85ARq2e2lHUdaUhAROSB
+        include transformers-0.5.6.2
+        include typed-process-0.2.3.0-44n60JoFgUCBGf4EKxrMpA
+        include unicode-transforms-0.3.4-7O1OeD8DxGE4YxxmjCWeuh
+        include unix-2.7.2.2
+        include unix-compat-0.5.0.1-JVtWPVi6xpJGKxx7ochVuw
+        include unliftio-0.2.10-BtoaavQPGa35f05Q9N3ZLB
+        include unordered-containers-0.2.10.0-LgoTL3wbBEY5bZIDJiyxW4
+        include vector-0.12.0.2-JMWQggIZox12SqdnR4PU2C
+        include yaml-0.11.0.0-25h1R1Kp0cP3VJHqQ04ORW
+        include zip-archive-0.3.3-6iU6tqKNqvaIRrsk0H459g
+        include zlib-0.6.2-3pk1bDtTM9z1oIHXfKAH9X
+    component stack-1.9.3-4IktSUVmq14EQFe7XCL2Gf-stack
+        include Cabal-2.4.0.1
+        include aeson-1.4.2.0-21RmHbcU9h75Cr9mnH7mqZ
+        include annotated-wl-pprint-0.7.0-DGkZQ2VEej1K9q8cmlJu7D
+        include ansi-terminal-0.8.2-8WQDEUM7Kz3DSmwgHomKFP
+        include async-2.2.1-CnEO6bROc7S6QgTCMiGZte
+        include attoparsec-0.13.2.2-LD1fDxwE35v9USWzP4f6QF
+        include base-4.12.0.0
+        include base64-bytestring-1.0.0.1-G3Br32Wzx6yIe8CvhfIHtS
+        include bindings-uname-0.1-1dGevTkKbFEKdnTeLVvJMM
+        include bytestring-0.10.8.2
+        include conduit-1.3.1-2Knrx7RaYCGLPkpGIlSO4X
+        include conduit-extra-1.3.1.1-8cqwEaAoeiT2YNPUULlhIq
+        include containers-0.6.0.1
+        include cryptonite-0.25-1VY3WdimbMoh8etp8TxXE
+        include cryptonite-conduit-0.2.2-GOZxluO7byRBibXPArIDZd
+        include deepseq-1.4.4.0
+        include directory-1.3.3.0
+        include echo-0.1.3-AXdiOL4eM1hJL3CrJirdzK
+        include exceptions-0.10.1-DAIsgRx7P38KM6ECk2vYg9
+        include extra-1.6.14-9RDTFEs6jU08VgiDWse7GK
+        include file-embed-0.0.10.1-4n3SthIi1VAGLUU13frLcw
+        include filelock-0.1.1.2-4pmJkbCa2rfIMazOkrzcZK
+        include filepath-1.4.2.1
+        include fsnotify-0.2.1.2-CyFK4nfU2B23cNfYRwasRt
+        include generic-deriving-1.12.3-JrjQqUenjCQGeU1NdJ8Qv3
+        include githash-0.1.3.1-KCEeyhNTjq6Dnt375TCBGp
+        include hackage-security-0.5.3.0-GQGwaAv13aC47Aroadika3
+        include hashable-1.2.7.0-2SI038axTEd7AEZJ275kpi
+        include hpack-0.31.1-GS4PiagEjZ8V163Rm3fy8
+        include hpc-0.6.0.3
+        include http-client-0.5.13.1-97d7RLPHdxxFUPoK7uvYDU
+        include http-client-tls-0.3.5.3-HBQEWtDJtOU3ycAo6WgzDQ
+        include http-conduit-2.3.7-6Tc3jZSkuej1OlilMqoJlf
+        include http-types-0.12.3-4L76TmlQodx6G0dPW61wNW
+        include memory-0.14.18-8LdYq1aaDAu34qW98bOKgt
+        include microlens-0.4.10-LVgmazyXGvNKvoQElrYSfS
+        include mintty-0.1.2-H8nsJd1PqbAKjPWVQrDTEK
+        include monad-logger-0.3.30-9Pptyn0tyng5JzSWfxuy52
+        include mono-traversable-1.0.9.0-3K9i8CBm67LKnwF5o5siTA
+        include mtl-2.2.2
+        include mustache-2.3.0-2t3dEIxQnZG30YcR3KTFJj
+        include neat-interpolation-0.3.2.1-C53KW7LvQyQ4w7WaMsYCkq
+        include network-uri-2.6.1.0-K75fCYvLQE41EntOQ30cqK
+        include open-browser-0.2.1.0-JBhinIwNmWr8AQilwoAYz4
+        include optparse-applicative-0.14.3.0-I19ehCNzjec51ngeh6TrAc
+        include optparse-simple-0.1.1.1-9iobrmkkYnK21HEI6CtWCK
+        include path-0.6.1-L3XkF9kZmeIENNZR6jDkE
+        include path-io-1.4.2-EaKS23AnbjE2XrlMtco7MP
+        include persistent-2.9.1-EIv37Fla2T5HvM5uw50MHE
+        include persistent-sqlite-2.9.2-Kd8A4n57bhfEmFWlLdg03f
+        include persistent-template-2.6.0-5FqCFfNZ3SfLBhAn56ablj
+        include pretty-1.1.3.6
+        include primitive-0.6.4.0-ILgywxtLpvnAOlEISPpP5b
+        include process-1.6.5.0
+        include project-template-0.2.0.1-6eswItAv9Fk8aRKFgujBNr
+        include regex-applicative-text-0.1.0.1-6cTcEmuiw6yEWPxf8X9cyP
+        include resourcet-1.2.2-1pputJSzjhq477MleOoM6R
+        include retry-0.8.0.0-5gNObUi29QH9rDDtKNUNIS
+        include rio-0.1.9.2-ByyS0DvmsqaBuQlGOAXTF1
+        include semigroups-0.18.5-H8WHGZY1kpx39L9IiFK62L
+        include split-0.2.3.3-6n1iQ0JLFvkeXvJXsAqQc
+        include stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V
+        include stm-2.5.0.0
+        include store-0.4.3.2-FqkprB9naPv5APfKka4RyB
+        include store-core-0.4.4-BnKzpK69T9v49jNkmLatD0
+        include streaming-commons-0.2.1.0-Gl84xUdbgrNAjItOghaHaB
+        include tar-0.5.1.0-HaIVxa1LuWJqqT6yxHWqZ
+        include template-haskell-2.14.0.0
+        include temporary-1.3-IJzEMFMv92eIBFcHcHYiUJ
+        include text-1.2.3.1
+        include text-metrics-0.3.0-InFo6CtRgm12aWGz8GpXRR
+        include th-reify-many-0.1.8-1SDhmGaYoHuAkUQIHoqsYB
+        include time-1.8.0.2
+        include tls-1.4.1-3E85ARq2e2lHUdaUhAROSB
+        include transformers-0.5.6.2
+        include typed-process-0.2.3.0-44n60JoFgUCBGf4EKxrMpA
+        include unicode-transforms-0.3.4-7O1OeD8DxGE4YxxmjCWeuh
+        include unix-2.7.2.2
+        include unix-compat-0.5.0.1-JVtWPVi6xpJGKxx7ochVuw
+        include unliftio-0.2.10-BtoaavQPGa35f05Q9N3ZLB
+        include unordered-containers-0.2.10.0-LgoTL3wbBEY5bZIDJiyxW4
+        include vector-0.12.0.2-JMWQggIZox12SqdnR4PU2C
+        include yaml-0.11.0.0-25h1R1Kp0cP3VJHqQ04ORW
+        include zip-archive-0.3.3-6iU6tqKNqvaIRrsk0H459g
+        include zlib-0.6.2-3pk1bDtTM9z1oIHXfKAH9X
+Linked component graph:
+    unit stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V
+        include Cabal-2.4.0.1
+        include aeson-1.4.2.0-21RmHbcU9h75Cr9mnH7mqZ
+        include annotated-wl-pprint-0.7.0-DGkZQ2VEej1K9q8cmlJu7D
+        include ansi-terminal-0.8.2-8WQDEUM7Kz3DSmwgHomKFP
+        include async-2.2.1-CnEO6bROc7S6QgTCMiGZte
+        include attoparsec-0.13.2.2-LD1fDxwE35v9USWzP4f6QF
+        include base-4.12.0.0
+        include base64-bytestring-1.0.0.1-G3Br32Wzx6yIe8CvhfIHtS
+        include bindings-uname-0.1-1dGevTkKbFEKdnTeLVvJMM
+        include bytestring-0.10.8.2
+        include conduit-1.3.1-2Knrx7RaYCGLPkpGIlSO4X
+        include conduit-extra-1.3.1.1-8cqwEaAoeiT2YNPUULlhIq
+        include containers-0.6.0.1
+        include cryptonite-0.25-1VY3WdimbMoh8etp8TxXE
+        include cryptonite-conduit-0.2.2-GOZxluO7byRBibXPArIDZd
+        include deepseq-1.4.4.0
+        include directory-1.3.3.0
+        include echo-0.1.3-AXdiOL4eM1hJL3CrJirdzK
+        include exceptions-0.10.1-DAIsgRx7P38KM6ECk2vYg9
+        include extra-1.6.14-9RDTFEs6jU08VgiDWse7GK
+        include file-embed-0.0.10.1-4n3SthIi1VAGLUU13frLcw
+        include filelock-0.1.1.2-4pmJkbCa2rfIMazOkrzcZK
+        include filepath-1.4.2.1
+        include fsnotify-0.2.1.2-CyFK4nfU2B23cNfYRwasRt
+        include generic-deriving-1.12.3-JrjQqUenjCQGeU1NdJ8Qv3
+        include hackage-security-0.5.3.0-GQGwaAv13aC47Aroadika3
+        include hashable-1.2.7.0-2SI038axTEd7AEZJ275kpi
+        include hpack-0.31.1-GS4PiagEjZ8V163Rm3fy8
+        include hpc-0.6.0.3
+        include http-client-0.5.13.1-97d7RLPHdxxFUPoK7uvYDU
+        include http-client-tls-0.3.5.3-HBQEWtDJtOU3ycAo6WgzDQ
+        include http-conduit-2.3.7-6Tc3jZSkuej1OlilMqoJlf
+        include http-types-0.12.3-4L76TmlQodx6G0dPW61wNW
+        include memory-0.14.18-8LdYq1aaDAu34qW98bOKgt
+        include microlens-0.4.10-LVgmazyXGvNKvoQElrYSfS
+        include mintty-0.1.2-H8nsJd1PqbAKjPWVQrDTEK
+        include monad-logger-0.3.30-9Pptyn0tyng5JzSWfxuy52
+        include mono-traversable-1.0.9.0-3K9i8CBm67LKnwF5o5siTA
+        include mtl-2.2.2
+        include mustache-2.3.0-2t3dEIxQnZG30YcR3KTFJj
+        include neat-interpolation-0.3.2.1-C53KW7LvQyQ4w7WaMsYCkq
+        include network-uri-2.6.1.0-K75fCYvLQE41EntOQ30cqK
+        include open-browser-0.2.1.0-JBhinIwNmWr8AQilwoAYz4
+        include optparse-applicative-0.14.3.0-I19ehCNzjec51ngeh6TrAc
+        include path-0.6.1-L3XkF9kZmeIENNZR6jDkE
+        include path-io-1.4.2-EaKS23AnbjE2XrlMtco7MP
+        include persistent-2.9.1-EIv37Fla2T5HvM5uw50MHE
+        include persistent-sqlite-2.9.2-Kd8A4n57bhfEmFWlLdg03f
+        include persistent-template-2.6.0-5FqCFfNZ3SfLBhAn56ablj
+        include pretty-1.1.3.6
+        include primitive-0.6.4.0-ILgywxtLpvnAOlEISPpP5b
+        include process-1.6.5.0
+        include project-template-0.2.0.1-6eswItAv9Fk8aRKFgujBNr
+        include regex-applicative-text-0.1.0.1-6cTcEmuiw6yEWPxf8X9cyP
+        include resourcet-1.2.2-1pputJSzjhq477MleOoM6R
+        include retry-0.8.0.0-5gNObUi29QH9rDDtKNUNIS
+        include rio-0.1.9.2-ByyS0DvmsqaBuQlGOAXTF1
+        include semigroups-0.18.5-H8WHGZY1kpx39L9IiFK62L
+        include split-0.2.3.3-6n1iQ0JLFvkeXvJXsAqQc
+        include stm-2.5.0.0
+        include store-0.4.3.2-FqkprB9naPv5APfKka4RyB
+        include store-core-0.4.4-BnKzpK69T9v49jNkmLatD0
+        include streaming-commons-0.2.1.0-Gl84xUdbgrNAjItOghaHaB
+        include tar-0.5.1.0-HaIVxa1LuWJqqT6yxHWqZ
+        include template-haskell-2.14.0.0
+        include temporary-1.3-IJzEMFMv92eIBFcHcHYiUJ
+        include text-1.2.3.1
+        include text-metrics-0.3.0-InFo6CtRgm12aWGz8GpXRR
+        include th-reify-many-0.1.8-1SDhmGaYoHuAkUQIHoqsYB
+        include time-1.8.0.2
+        include tls-1.4.1-3E85ARq2e2lHUdaUhAROSB
+        include transformers-0.5.6.2
+        include typed-process-0.2.3.0-44n60JoFgUCBGf4EKxrMpA
+        include unicode-transforms-0.3.4-7O1OeD8DxGE4YxxmjCWeuh
+        include unix-2.7.2.2
+        include unix-compat-0.5.0.1-JVtWPVi6xpJGKxx7ochVuw
+        include unliftio-0.2.10-BtoaavQPGa35f05Q9N3ZLB
+        include unordered-containers-0.2.10.0-LgoTL3wbBEY5bZIDJiyxW4
+        include vector-0.12.0.2-JMWQggIZox12SqdnR4PU2C
+        include yaml-0.11.0.0-25h1R1Kp0cP3VJHqQ04ORW
+        include zip-archive-0.3.3-6iU6tqKNqvaIRrsk0H459g
+        include zlib-0.6.2-3pk1bDtTM9z1oIHXfKAH9X
+        Control.Concurrent.Execute=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Control.Concurrent.Execute,Data.Aeson.Extended=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Data.Aeson.Extended,Data.Attoparsec.Args=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Data.Attoparsec.Args,Data.Attoparsec.Combinators=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Data.Attoparsec.Combinators,Data.Attoparsec.Interpreter=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Data.Attoparsec.Interpreter,Data.IORef.RunOnce=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Data.IORef.RunOnce,Data.Monoid.Map=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Data.Monoid.Map,Data.Store.VersionTagged=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Data.Store.VersionTagged,Network.HTTP.Download=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Network.HTTP.Download,Network.HTTP.Download.Verified=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Network.HTTP.Download.Verified,Network.HTTP.StackClient=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Network.HTTP.StackClient,Options.Applicative.Args=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Options.Applicative.Args,Options.Applicative.Builder.Extra=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Options.Applicative.Builder.Extra,Options.Applicative.Complicated=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Options.Applicative.Complicated,Path.CheckInstall=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Path.CheckInstall,Path.Extra=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Path.Extra,Path.Find=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Path.Find,Paths_stack=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Paths_stack,Stack.Build=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Build,Stack.Build.Cache=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Build.Cache,Stack.Build.ConstructPlan=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Build.ConstructPlan,Stack.Build.Execute=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Build.Execute,Stack.Build.Haddock=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Build.Haddock,Stack.Build.Installed=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Build.Installed,Stack.Build.Source=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Build.Source,Stack.Build.Target=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Build.Target,Stack.BuildPlan=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.BuildPlan,Stack.Clean=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Clean,Stack.Config=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Config,Stack.Config.Build=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Config.Build,Stack.Config.Docker=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Config.Docker,Stack.Config.Nix=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Config.Nix,Stack.Config.Urls=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Config.Urls,Stack.ConfigCmd=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.ConfigCmd,Stack.Constants=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Constants,Stack.Constants.Config=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Constants.Config,Stack.Coverage=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Coverage,Stack.DefaultColorWhen=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.DefaultColorWhen,Stack.Docker=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Docker,Stack.Docker.GlobalDB=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Docker.GlobalDB,Stack.Dot=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Dot,Stack.Fetch=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Fetch,Stack.FileWatch=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.FileWatch,Stack.GhcPkg=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.GhcPkg,Stack.Ghci=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Ghci,Stack.Ghci.Script=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Ghci.Script,Stack.Hoogle=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Hoogle,Stack.IDE=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.IDE,Stack.Image=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Image,Stack.Init=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Init,Stack.Ls=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Ls,Stack.New=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.New,Stack.Nix=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Nix,Stack.Options.BenchParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.BenchParser,Stack.Options.BuildMonoidParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.BuildMonoidParser,Stack.Options.BuildParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.BuildParser,Stack.Options.CleanParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.CleanParser,Stack.Options.Completion=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.Completion,Stack.Options.ConfigParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.ConfigParser,Stack.Options.DockerParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.DockerParser,Stack.Options.DotParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.DotParser,Stack.Options.ExecParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.ExecParser,Stack.Options.GhcBuildParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.GhcBuildParser,Stack.Options.GhcVariantParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.GhcVariantParser,Stack.Options.GhciParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.GhciParser,Stack.Options.GlobalParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.GlobalParser,Stack.Options.HaddockParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.HaddockParser,Stack.Options.HpcReportParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.HpcReportParser,Stack.Options.LogLevelParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.LogLevelParser,Stack.Options.NewParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.NewParser,Stack.Options.NixParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.NixParser,Stack.Options.PackageParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.PackageParser,Stack.Options.ResolverParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.ResolverParser,Stack.Options.SDistParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.SDistParser,Stack.Options.ScriptParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.ScriptParser,Stack.Options.SolverParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.SolverParser,Stack.Options.TestParser=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.TestParser,Stack.Options.Utils=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Options.Utils,Stack.Package=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Package,Stack.PackageDump=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.PackageDump,Stack.PackageIndex=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.PackageIndex,Stack.PackageLocation=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.PackageLocation,Stack.Path=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Path,Stack.Prelude=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Prelude,Stack.PrettyPrint=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.PrettyPrint,Stack.Runners=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Runners,Stack.SDist=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.SDist,Stack.Script=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Script,Stack.Setup=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Setup,Stack.Setup.Installed=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Setup.Installed,Stack.SetupCmd=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.SetupCmd,Stack.Sig=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Sig,Stack.Sig.GPG=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Sig.GPG,Stack.Sig.Sign=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Sig.Sign,Stack.Snapshot=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Snapshot,Stack.Solver=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Solver,Stack.StaticBytes=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.StaticBytes,Stack.Types.Build=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Build,Stack.Types.BuildPlan=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.BuildPlan,Stack.Types.Compiler=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Compiler,Stack.Types.CompilerBuild=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.CompilerBuild,Stack.Types.Config=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Config,Stack.Types.Config.Build=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Config.Build,Stack.Types.Docker=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Docker,Stack.Types.FlagName=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.FlagName,Stack.Types.GhcPkgId=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.GhcPkgId,Stack.Types.Image=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Image,Stack.Types.NamedComponent=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.NamedComponent,Stack.Types.Nix=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Nix,Stack.Types.Package=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Package,Stack.Types.PackageDump=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.PackageDump,Stack.Types.PackageIdentifier=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.PackageIdentifier,Stack.Types.PackageIndex=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.PackageIndex,Stack.Types.PackageName=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.PackageName,Stack.Types.Resolver=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Resolver,Stack.Types.Runner=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Runner,Stack.Types.Sig=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Sig,Stack.Types.TemplateName=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.TemplateName,Stack.Types.Urls=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Urls,Stack.Types.Version=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.Version,Stack.Types.VersionIntervals=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Types.VersionIntervals,Stack.Upgrade=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Upgrade,Stack.Upload=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Stack.Upload,System.Process.PagerEditor=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:System.Process.PagerEditor,System.Terminal=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:System.Terminal,Text.PrettyPrint.Leijen.Extended=stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V:Text.PrettyPrint.Leijen.Extended
+    unit stack-1.9.3-4IktSUVmq14EQFe7XCL2Gf-stack
+        include Cabal-2.4.0.1
+        include aeson-1.4.2.0-21RmHbcU9h75Cr9mnH7mqZ
+        include annotated-wl-pprint-0.7.0-DGkZQ2VEej1K9q8cmlJu7D
+        include ansi-terminal-0.8.2-8WQDEUM7Kz3DSmwgHomKFP
+        include async-2.2.1-CnEO6bROc7S6QgTCMiGZte
+        include attoparsec-0.13.2.2-LD1fDxwE35v9USWzP4f6QF
+        include base-4.12.0.0
+        include base64-bytestring-1.0.0.1-G3Br32Wzx6yIe8CvhfIHtS
+        include bindings-uname-0.1-1dGevTkKbFEKdnTeLVvJMM
+        include bytestring-0.10.8.2
+        include conduit-1.3.1-2Knrx7RaYCGLPkpGIlSO4X
+        include conduit-extra-1.3.1.1-8cqwEaAoeiT2YNPUULlhIq
+        include containers-0.6.0.1
+        include cryptonite-0.25-1VY3WdimbMoh8etp8TxXE
+        include cryptonite-conduit-0.2.2-GOZxluO7byRBibXPArIDZd
+        include deepseq-1.4.4.0
+        include directory-1.3.3.0
+        include echo-0.1.3-AXdiOL4eM1hJL3CrJirdzK
+        include exceptions-0.10.1-DAIsgRx7P38KM6ECk2vYg9
+        include extra-1.6.14-9RDTFEs6jU08VgiDWse7GK
+        include file-embed-0.0.10.1-4n3SthIi1VAGLUU13frLcw
+        include filelock-0.1.1.2-4pmJkbCa2rfIMazOkrzcZK
+        include filepath-1.4.2.1
+        include fsnotify-0.2.1.2-CyFK4nfU2B23cNfYRwasRt
+        include generic-deriving-1.12.3-JrjQqUenjCQGeU1NdJ8Qv3
+        include githash-0.1.3.1-KCEeyhNTjq6Dnt375TCBGp
+        include hackage-security-0.5.3.0-GQGwaAv13aC47Aroadika3
+        include hashable-1.2.7.0-2SI038axTEd7AEZJ275kpi
+        include hpack-0.31.1-GS4PiagEjZ8V163Rm3fy8
+        include hpc-0.6.0.3
+        include http-client-0.5.13.1-97d7RLPHdxxFUPoK7uvYDU
+        include http-client-tls-0.3.5.3-HBQEWtDJtOU3ycAo6WgzDQ
+        include http-conduit-2.3.7-6Tc3jZSkuej1OlilMqoJlf
+        include http-types-0.12.3-4L76TmlQodx6G0dPW61wNW
+        include memory-0.14.18-8LdYq1aaDAu34qW98bOKgt
+        include microlens-0.4.10-LVgmazyXGvNKvoQElrYSfS
+        include mintty-0.1.2-H8nsJd1PqbAKjPWVQrDTEK
+        include monad-logger-0.3.30-9Pptyn0tyng5JzSWfxuy52
+        include mono-traversable-1.0.9.0-3K9i8CBm67LKnwF5o5siTA
+        include mtl-2.2.2
+        include mustache-2.3.0-2t3dEIxQnZG30YcR3KTFJj
+        include neat-interpolation-0.3.2.1-C53KW7LvQyQ4w7WaMsYCkq
+        include network-uri-2.6.1.0-K75fCYvLQE41EntOQ30cqK
+        include open-browser-0.2.1.0-JBhinIwNmWr8AQilwoAYz4
+        include optparse-applicative-0.14.3.0-I19ehCNzjec51ngeh6TrAc
+        include optparse-simple-0.1.1.1-9iobrmkkYnK21HEI6CtWCK
+        include path-0.6.1-L3XkF9kZmeIENNZR6jDkE
+        include path-io-1.4.2-EaKS23AnbjE2XrlMtco7MP
+        include persistent-2.9.1-EIv37Fla2T5HvM5uw50MHE
+        include persistent-sqlite-2.9.2-Kd8A4n57bhfEmFWlLdg03f
+        include persistent-template-2.6.0-5FqCFfNZ3SfLBhAn56ablj
+        include pretty-1.1.3.6
+        include primitive-0.6.4.0-ILgywxtLpvnAOlEISPpP5b
+        include process-1.6.5.0
+        include project-template-0.2.0.1-6eswItAv9Fk8aRKFgujBNr
+        include regex-applicative-text-0.1.0.1-6cTcEmuiw6yEWPxf8X9cyP
+        include resourcet-1.2.2-1pputJSzjhq477MleOoM6R
+        include retry-0.8.0.0-5gNObUi29QH9rDDtKNUNIS
+        include rio-0.1.9.2-ByyS0DvmsqaBuQlGOAXTF1
+        include semigroups-0.18.5-H8WHGZY1kpx39L9IiFK62L
+        include split-0.2.3.3-6n1iQ0JLFvkeXvJXsAqQc
+        include stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V
+        include stm-2.5.0.0
+        include store-0.4.3.2-FqkprB9naPv5APfKka4RyB
+        include store-core-0.4.4-BnKzpK69T9v49jNkmLatD0
+        include streaming-commons-0.2.1.0-Gl84xUdbgrNAjItOghaHaB
+        include tar-0.5.1.0-HaIVxa1LuWJqqT6yxHWqZ
+        include template-haskell-2.14.0.0
+        include temporary-1.3-IJzEMFMv92eIBFcHcHYiUJ
+        include text-1.2.3.1
+        include text-metrics-0.3.0-InFo6CtRgm12aWGz8GpXRR
+        include th-reify-many-0.1.8-1SDhmGaYoHuAkUQIHoqsYB
+        include time-1.8.0.2
+        include tls-1.4.1-3E85ARq2e2lHUdaUhAROSB
+        include transformers-0.5.6.2
+        include typed-process-0.2.3.0-44n60JoFgUCBGf4EKxrMpA
+        include unicode-transforms-0.3.4-7O1OeD8DxGE4YxxmjCWeuh
+        include unix-2.7.2.2
+        include unix-compat-0.5.0.1-JVtWPVi6xpJGKxx7ochVuw
+        include unliftio-0.2.10-BtoaavQPGa35f05Q9N3ZLB
+        include unordered-containers-0.2.10.0-LgoTL3wbBEY5bZIDJiyxW4
+        include vector-0.12.0.2-JMWQggIZox12SqdnR4PU2C
+        include yaml-0.11.0.0-25h1R1Kp0cP3VJHqQ04ORW
+        include zip-archive-0.3.3-6iU6tqKNqvaIRrsk0H459g
+        include zlib-0.6.2-3pk1bDtTM9z1oIHXfKAH9X
+Ready component graph:
+    definite stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V
+        depends Cabal-2.4.0.1
+        depends aeson-1.4.2.0-21RmHbcU9h75Cr9mnH7mqZ
+        depends annotated-wl-pprint-0.7.0-DGkZQ2VEej1K9q8cmlJu7D
+        depends ansi-terminal-0.8.2-8WQDEUM7Kz3DSmwgHomKFP
+        depends async-2.2.1-CnEO6bROc7S6QgTCMiGZte
+        depends attoparsec-0.13.2.2-LD1fDxwE35v9USWzP4f6QF
+        depends base-4.12.0.0
+        depends base64-bytestring-1.0.0.1-G3Br32Wzx6yIe8CvhfIHtS
+        depends bindings-uname-0.1-1dGevTkKbFEKdnTeLVvJMM
+        depends bytestring-0.10.8.2
+        depends conduit-1.3.1-2Knrx7RaYCGLPkpGIlSO4X
+        depends conduit-extra-1.3.1.1-8cqwEaAoeiT2YNPUULlhIq
+        depends containers-0.6.0.1
+        depends cryptonite-0.25-1VY3WdimbMoh8etp8TxXE
+        depends cryptonite-conduit-0.2.2-GOZxluO7byRBibXPArIDZd
+        depends deepseq-1.4.4.0
+        depends directory-1.3.3.0
+        depends echo-0.1.3-AXdiOL4eM1hJL3CrJirdzK
+        depends exceptions-0.10.1-DAIsgRx7P38KM6ECk2vYg9
+        depends extra-1.6.14-9RDTFEs6jU08VgiDWse7GK
+        depends file-embed-0.0.10.1-4n3SthIi1VAGLUU13frLcw
+        depends filelock-0.1.1.2-4pmJkbCa2rfIMazOkrzcZK
+        depends filepath-1.4.2.1
+        depends fsnotify-0.2.1.2-CyFK4nfU2B23cNfYRwasRt
+        depends generic-deriving-1.12.3-JrjQqUenjCQGeU1NdJ8Qv3
+        depends hackage-security-0.5.3.0-GQGwaAv13aC47Aroadika3
+        depends hashable-1.2.7.0-2SI038axTEd7AEZJ275kpi
+        depends hpack-0.31.1-GS4PiagEjZ8V163Rm3fy8
+        depends hpc-0.6.0.3
+        depends http-client-0.5.13.1-97d7RLPHdxxFUPoK7uvYDU
+        depends http-client-tls-0.3.5.3-HBQEWtDJtOU3ycAo6WgzDQ
+        depends http-conduit-2.3.7-6Tc3jZSkuej1OlilMqoJlf
+        depends http-types-0.12.3-4L76TmlQodx6G0dPW61wNW
+        depends memory-0.14.18-8LdYq1aaDAu34qW98bOKgt
+        depends microlens-0.4.10-LVgmazyXGvNKvoQElrYSfS
+        depends mintty-0.1.2-H8nsJd1PqbAKjPWVQrDTEK
+        depends monad-logger-0.3.30-9Pptyn0tyng5JzSWfxuy52
+        depends mono-traversable-1.0.9.0-3K9i8CBm67LKnwF5o5siTA
+        depends mtl-2.2.2
+        depends mustache-2.3.0-2t3dEIxQnZG30YcR3KTFJj
+        depends neat-interpolation-0.3.2.1-C53KW7LvQyQ4w7WaMsYCkq
+        depends network-uri-2.6.1.0-K75fCYvLQE41EntOQ30cqK
+        depends open-browser-0.2.1.0-JBhinIwNmWr8AQilwoAYz4
+        depends optparse-applicative-0.14.3.0-I19ehCNzjec51ngeh6TrAc
+        depends path-0.6.1-L3XkF9kZmeIENNZR6jDkE
+        depends path-io-1.4.2-EaKS23AnbjE2XrlMtco7MP
+        depends persistent-2.9.1-EIv37Fla2T5HvM5uw50MHE
+        depends persistent-sqlite-2.9.2-Kd8A4n57bhfEmFWlLdg03f
+        depends persistent-template-2.6.0-5FqCFfNZ3SfLBhAn56ablj
+        depends pretty-1.1.3.6
+        depends primitive-0.6.4.0-ILgywxtLpvnAOlEISPpP5b
+        depends process-1.6.5.0
+        depends project-template-0.2.0.1-6eswItAv9Fk8aRKFgujBNr
+        depends regex-applicative-text-0.1.0.1-6cTcEmuiw6yEWPxf8X9cyP
+        depends resourcet-1.2.2-1pputJSzjhq477MleOoM6R
+        depends retry-0.8.0.0-5gNObUi29QH9rDDtKNUNIS
+        depends rio-0.1.9.2-ByyS0DvmsqaBuQlGOAXTF1
+        depends semigroups-0.18.5-H8WHGZY1kpx39L9IiFK62L
+        depends split-0.2.3.3-6n1iQ0JLFvkeXvJXsAqQc
+        depends stm-2.5.0.0
+        depends store-0.4.3.2-FqkprB9naPv5APfKka4RyB
+        depends store-core-0.4.4-BnKzpK69T9v49jNkmLatD0
+        depends streaming-commons-0.2.1.0-Gl84xUdbgrNAjItOghaHaB
+        depends tar-0.5.1.0-HaIVxa1LuWJqqT6yxHWqZ
+        depends template-haskell-2.14.0.0
+        depends temporary-1.3-IJzEMFMv92eIBFcHcHYiUJ
+        depends text-1.2.3.1
+        depends text-metrics-0.3.0-InFo6CtRgm12aWGz8GpXRR
+        depends th-reify-many-0.1.8-1SDhmGaYoHuAkUQIHoqsYB
+        depends time-1.8.0.2
+        depends tls-1.4.1-3E85ARq2e2lHUdaUhAROSB
+        depends transformers-0.5.6.2
+        depends typed-process-0.2.3.0-44n60JoFgUCBGf4EKxrMpA
+        depends unicode-transforms-0.3.4-7O1OeD8DxGE4YxxmjCWeuh
+        depends unix-2.7.2.2
+        depends unix-compat-0.5.0.1-JVtWPVi6xpJGKxx7ochVuw
+        depends unliftio-0.2.10-BtoaavQPGa35f05Q9N3ZLB
+        depends unordered-containers-0.2.10.0-LgoTL3wbBEY5bZIDJiyxW4
+        depends vector-0.12.0.2-JMWQggIZox12SqdnR4PU2C
+        depends yaml-0.11.0.0-25h1R1Kp0cP3VJHqQ04ORW
+        depends zip-archive-0.3.3-6iU6tqKNqvaIRrsk0H459g
+        depends zlib-0.6.2-3pk1bDtTM9z1oIHXfKAH9X
+    definite stack-1.9.3-4IktSUVmq14EQFe7XCL2Gf-stack
+        depends Cabal-2.4.0.1
+        depends aeson-1.4.2.0-21RmHbcU9h75Cr9mnH7mqZ
+        depends annotated-wl-pprint-0.7.0-DGkZQ2VEej1K9q8cmlJu7D
+        depends ansi-terminal-0.8.2-8WQDEUM7Kz3DSmwgHomKFP
+        depends async-2.2.1-CnEO6bROc7S6QgTCMiGZte
+        depends attoparsec-0.13.2.2-LD1fDxwE35v9USWzP4f6QF
+        depends base-4.12.0.0
+        depends base64-bytestring-1.0.0.1-G3Br32Wzx6yIe8CvhfIHtS
+        depends bindings-uname-0.1-1dGevTkKbFEKdnTeLVvJMM
+        depends bytestring-0.10.8.2
+        depends conduit-1.3.1-2Knrx7RaYCGLPkpGIlSO4X
+        depends conduit-extra-1.3.1.1-8cqwEaAoeiT2YNPUULlhIq
+        depends containers-0.6.0.1
+        depends cryptonite-0.25-1VY3WdimbMoh8etp8TxXE
+        depends cryptonite-conduit-0.2.2-GOZxluO7byRBibXPArIDZd
+        depends deepseq-1.4.4.0
+        depends directory-1.3.3.0
+        depends echo-0.1.3-AXdiOL4eM1hJL3CrJirdzK
+        depends exceptions-0.10.1-DAIsgRx7P38KM6ECk2vYg9
+        depends extra-1.6.14-9RDTFEs6jU08VgiDWse7GK
+        depends file-embed-0.0.10.1-4n3SthIi1VAGLUU13frLcw
+        depends filelock-0.1.1.2-4pmJkbCa2rfIMazOkrzcZK
+        depends filepath-1.4.2.1
+        depends fsnotify-0.2.1.2-CyFK4nfU2B23cNfYRwasRt
+        depends generic-deriving-1.12.3-JrjQqUenjCQGeU1NdJ8Qv3
+        depends githash-0.1.3.1-KCEeyhNTjq6Dnt375TCBGp
+        depends hackage-security-0.5.3.0-GQGwaAv13aC47Aroadika3
+        depends hashable-1.2.7.0-2SI038axTEd7AEZJ275kpi
+        depends hpack-0.31.1-GS4PiagEjZ8V163Rm3fy8
+        depends hpc-0.6.0.3
+        depends http-client-0.5.13.1-97d7RLPHdxxFUPoK7uvYDU
+        depends http-client-tls-0.3.5.3-HBQEWtDJtOU3ycAo6WgzDQ
+        depends http-conduit-2.3.7-6Tc3jZSkuej1OlilMqoJlf
+        depends http-types-0.12.3-4L76TmlQodx6G0dPW61wNW
+        depends memory-0.14.18-8LdYq1aaDAu34qW98bOKgt
+        depends microlens-0.4.10-LVgmazyXGvNKvoQElrYSfS
+        depends mintty-0.1.2-H8nsJd1PqbAKjPWVQrDTEK
+        depends monad-logger-0.3.30-9Pptyn0tyng5JzSWfxuy52
+        depends mono-traversable-1.0.9.0-3K9i8CBm67LKnwF5o5siTA
+        depends mtl-2.2.2
+        depends mustache-2.3.0-2t3dEIxQnZG30YcR3KTFJj
+        depends neat-interpolation-0.3.2.1-C53KW7LvQyQ4w7WaMsYCkq
+        depends network-uri-2.6.1.0-K75fCYvLQE41EntOQ30cqK
+        depends open-browser-0.2.1.0-JBhinIwNmWr8AQilwoAYz4
+        depends optparse-applicative-0.14.3.0-I19ehCNzjec51ngeh6TrAc
+        depends optparse-simple-0.1.1.1-9iobrmkkYnK21HEI6CtWCK
+        depends path-0.6.1-L3XkF9kZmeIENNZR6jDkE
+        depends path-io-1.4.2-EaKS23AnbjE2XrlMtco7MP
+        depends persistent-2.9.1-EIv37Fla2T5HvM5uw50MHE
+        depends persistent-sqlite-2.9.2-Kd8A4n57bhfEmFWlLdg03f
+        depends persistent-template-2.6.0-5FqCFfNZ3SfLBhAn56ablj
+        depends pretty-1.1.3.6
+        depends primitive-0.6.4.0-ILgywxtLpvnAOlEISPpP5b
+        depends process-1.6.5.0
+        depends project-template-0.2.0.1-6eswItAv9Fk8aRKFgujBNr
+        depends regex-applicative-text-0.1.0.1-6cTcEmuiw6yEWPxf8X9cyP
+        depends resourcet-1.2.2-1pputJSzjhq477MleOoM6R
+        depends retry-0.8.0.0-5gNObUi29QH9rDDtKNUNIS
+        depends rio-0.1.9.2-ByyS0DvmsqaBuQlGOAXTF1
+        depends semigroups-0.18.5-H8WHGZY1kpx39L9IiFK62L
+        depends split-0.2.3.3-6n1iQ0JLFvkeXvJXsAqQc
+        depends stack-1.9.3-CBcTHj7Q0ZK9thncNtjT5V
+        depends stm-2.5.0.0
+        depends store-0.4.3.2-FqkprB9naPv5APfKka4RyB
+        depends store-core-0.4.4-BnKzpK69T9v49jNkmLatD0
+        depends streaming-commons-0.2.1.0-Gl84xUdbgrNAjItOghaHaB
+        depends tar-0.5.1.0-HaIVxa1LuWJqqT6yxHWqZ
+        depends template-haskell-2.14.0.0
+        depends temporary-1.3-IJzEMFMv92eIBFcHcHYiUJ
+        depends text-1.2.3.1
+        depends text-metrics-0.3.0-InFo6CtRgm12aWGz8GpXRR
+        depends th-reify-many-0.1.8-1SDhmGaYoHuAkUQIHoqsYB
+        depends time-1.8.0.2
+        depends tls-1.4.1-3E85ARq2e2lHUdaUhAROSB
+        depends transformers-0.5.6.2
+        depends typed-process-0.2.3.0-44n60JoFgUCBGf4EKxrMpA
+        depends unicode-transforms-0.3.4-7O1OeD8DxGE4YxxmjCWeuh
+        depends unix-2.7.2.2
+        depends unix-compat-0.5.0.1-JVtWPVi6xpJGKxx7ochVuw
+        depends unliftio-0.2.10-BtoaavQPGa35f05Q9N3ZLB
+        depends unordered-containers-0.2.10.0-LgoTL3wbBEY5bZIDJiyxW4
+        depends vector-0.12.0.2-JMWQggIZox12SqdnR4PU2C
+        depends yaml-0.11.0.0-25h1R1Kp0cP3VJHqQ04ORW
+        depends zip-archive-0.3.3-6iU6tqKNqvaIRrsk0H459g
+        depends zlib-0.6.2-3pk1bDtTM9z1oIHXfKAH9X
+Using Cabal-2.4.0.1 compiled by ghc-8.6
+Using compiler: ghc-8.6.4
+Using install prefix: /usr
+Executables installed in: /usr/bin
+Libraries installed in: /usr/lib64/stack-1.9.3/ghc-8.6.4
+Dynamic Libraries installed in: /usr/lib64/x86_64-linux-ghc-8.6.4
+Private executables installed in:
+/usr/libexec/x86_64-linux-ghc-8.6.4/stack-1.9.3
+Data files installed in: /usr/share/stack-1.9.3/ghc-8.6.4
+Documentation installed in: /usr/share/doc/stack-1.9.3-r1
+Configuration files installed in: /etc
+No alex found
+Using ar given by user at: /usr/bin/x86_64-pc-linux-gnu-ar
+No c2hs found
+No cpphs found
+No doctest found
+Using gcc version 8.2.0 found on system at:
+/usr/lib64/ccache/bin/x86_64-pc-linux-gnu-gcc
+Using ghc version 8.6.4 given by user at: /usr/bin/ghc
+Using ghc-pkg version 8.6.4 given by user at: /usr/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.22.0 found on system at: /usr/bin/haddock-ghc-8.6.4
+No happy found
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.67 found on system at: /usr/bin/hpc
+Using hsc2hs version 0.68.5 found on system at: /usr/bin/hsc2hs
+No hscolour found
+No jhc found
+Using ld found on system at: /usr/bin/x86_64-pc-linux-gnu-ld
+Using pkg-config version 0.29.2 found on system at: /usr/bin/pkg-config
+Using runghc version 8.6.4 found on system at: /usr/bin/runghc
+Using strip version 2.31 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+>>> Source configured.
+>>> Compiling source in /var/tmp/portage/dev-haskell/stack-1.9.3-r1/work/stack-1.9.3 ...
+./setup build
+Preprocessing library for stack-1.9.3..
+Building library for stack-1.9.3..
+[  1 of 127] Compiling Network.HTTP.StackClient ( src/Network/HTTP/StackClient.hs, dist/build/Network/HTTP/StackClient.o )
+[  2 of 127] Compiling Hackage.Security.Client.Repository.HttpLib.HttpClient ( src/Hackage/Security/Client/Repository/HttpLib/HttpClient.hs, dist/build/Hackage/Security/Client/Repository/HttpLib/HttpClient.o )
+[  3 of 127] Compiling Path.Extra       ( src/Path/Extra.hs, dist/build/Path/Extra.o )
+[  4 of 127] Compiling Paths_stack      ( dist/build/autogen/Paths_stack.hs, dist/build/Paths_stack.o )
+[  5 of 127] Compiling Stack.Prelude    ( src/Stack/Prelude.hs, dist/build/Stack/Prelude.o )
+[  6 of 127] Compiling Stack.Options.Utils ( src/Stack/Options/Utils.hs, dist/build/Stack/Options/Utils.o )
+[  7 of 127] Compiling Stack.Options.LogLevelParser ( src/Stack/Options/LogLevelParser.hs, dist/build/Stack/Options/LogLevelParser.o )
+[  8 of 127] Compiling Stack.Ghci.Script ( src/Stack/Ghci/Script.hs, dist/build/Stack/Ghci/Script.o )
+[  9 of 127] Compiling Stack.FileWatch  ( src/Stack/FileWatch.hs, dist/build/Stack/FileWatch.o )
+[ 10 of 127] Compiling Path.Find        ( src/Path/Find.hs, dist/build/Path/Find.o )
+[ 11 of 127] Compiling Options.Applicative.Complicated ( src/Options/Applicative/Complicated.hs, dist/build/Options/Applicative/Complicated.o )
+[ 12 of 127] Compiling Options.Applicative.Builder.Extra ( src/Options/Applicative/Builder/Extra.hs, dist/build/Options/Applicative/Builder/Extra.o )
+[ 13 of 127] Compiling Stack.Options.SolverParser ( src/Stack/Options/SolverParser.hs, dist/build/Stack/Options/SolverParser.o )
+[ 14 of 127] Compiling Data.Store.VersionTagged ( src/Data/Store/VersionTagged.hs, dist/build/Data/Store/VersionTagged.o )
+[ 15 of 127] Compiling Data.Monoid.Map  ( src/Data/Monoid/Map.hs, dist/build/Data/Monoid/Map.o )
+[ 16 of 127] Compiling Data.IORef.RunOnce ( src/Data/IORef/RunOnce.hs, dist/build/Data/IORef/RunOnce.o )
+[ 17 of 127] Compiling Data.Attoparsec.Combinators ( src/Data/Attoparsec/Combinators.hs, dist/build/Data/Attoparsec/Combinators.o )
+[ 18 of 127] Compiling Data.Attoparsec.Args ( src/Data/Attoparsec/Args.hs, dist/build/Data/Attoparsec/Args.o )
+[ 19 of 127] Compiling Options.Applicative.Args ( src/Options/Applicative/Args.hs, dist/build/Options/Applicative/Args.o )
+[ 20 of 127] Compiling Data.Aeson.Extended ( src/Data/Aeson/Extended.hs, dist/build/Data/Aeson/Extended.o )
+[ 21 of 127] Compiling Stack.StaticBytes ( src/Stack/StaticBytes.hs, dist/build/Stack/StaticBytes.o )
+[ 22 of 127] Compiling Stack.Types.CompilerBuild ( src/Stack/Types/CompilerBuild.hs, dist/build/Stack/Types/CompilerBuild.o )
+[ 23 of 127] Compiling Stack.Options.GhcBuildParser ( src/Stack/Options/GhcBuildParser.hs, dist/build/Stack/Options/GhcBuildParser.o )
+[ 24 of 127] Compiling Stack.Types.FlagName ( src/Stack/Types/FlagName.hs, dist/build/Stack/Types/FlagName.o )
+[ 25 of 127] Compiling Stack.Types.GhcPkgId ( src/Stack/Types/GhcPkgId.hs, dist/build/Stack/Types/GhcPkgId.o )
+[ 26 of 127] Compiling Stack.Types.Image ( src/Stack/Types/Image.hs, dist/build/Stack/Types/Image.o )
+[ 27 of 127] Compiling Stack.Types.Nix  ( src/Stack/Types/Nix.hs, dist/build/Stack/Types/Nix.o )
+[ 28 of 127] Compiling Stack.Types.PackageName ( src/Stack/Types/PackageName.hs, dist/build/Stack/Types/PackageName.o )
+[ 29 of 127] Compiling Stack.Types.NamedComponent ( src/Stack/Types/NamedComponent.hs, dist/build/Stack/Types/NamedComponent.o )
+[ 30 of 127] Compiling Stack.Types.Config.Build ( src/Stack/Types/Config/Build.hs, dist/build/Stack/Types/Config/Build.o )
+[ 31 of 127] Compiling Stack.Options.PackageParser ( src/Stack/Options/PackageParser.hs, dist/build/Stack/Options/PackageParser.o )
+[ 32 of 127] Compiling Stack.Types.Sig  ( src/Stack/Types/Sig.hs, dist/build/Stack/Types/Sig.o )
+[ 33 of 127] Compiling Stack.Sig.GPG    ( src/Stack/Sig/GPG.hs, dist/build/Stack/Sig/GPG.o )
+[ 34 of 127] Compiling Stack.Types.TemplateName ( src/Stack/Types/TemplateName.hs, dist/build/Stack/Types/TemplateName.o )
+[ 35 of 127] Compiling Stack.Types.Urls ( src/Stack/Types/Urls.hs, dist/build/Stack/Types/Urls.o )
+[ 36 of 127] Compiling Stack.Config.Urls ( src/Stack/Config/Urls.hs, dist/build/Stack/Config/Urls.o )
+[ 37 of 127] Compiling Stack.Types.Version ( src/Stack/Types/Version.hs, dist/build/Stack/Types/Version.o )
+[ 38 of 127] Compiling Stack.Types.PackageIdentifier ( src/Stack/Types/PackageIdentifier.hs, dist/build/Stack/Types/PackageIdentifier.o )
+[ 39 of 127] Compiling Stack.Types.PackageIndex ( src/Stack/Types/PackageIndex.hs, dist/build/Stack/Types/PackageIndex.o )
+[ 40 of 127] Compiling Stack.Types.PackageDump ( src/Stack/Types/PackageDump.hs, dist/build/Stack/Types/PackageDump.o )
+[ 41 of 127] Compiling Control.Concurrent.Execute ( src/Control/Concurrent/Execute.hs, dist/build/Control/Concurrent/Execute.o )
+[ 42 of 127] Compiling Stack.Types.Compiler ( src/Stack/Types/Compiler.hs, dist/build/Stack/Types/Compiler.o )
+[ 43 of 127] Compiling Stack.Types.Resolver ( src/Stack/Types/Resolver.hs, dist/build/Stack/Types/Resolver.o )
+[ 44 of 127] Compiling Stack.Options.ResolverParser ( src/Stack/Options/ResolverParser.hs, dist/build/Stack/Options/ResolverParser.o )
+[ 45 of 127] Compiling Stack.Constants  ( src/Stack/Constants.hs, dist/build/Stack/Constants.o )
+[ 46 of 127] Compiling Stack.Types.Docker ( src/Stack/Types/Docker.hs, dist/build/Stack/Types/Docker.o )
+[ 47 of 127] Compiling Data.Attoparsec.Interpreter ( src/Data/Attoparsec/Interpreter.hs, dist/build/Data/Attoparsec/Interpreter.o )
+[ 48 of 127] Compiling Stack.Types.VersionIntervals ( src/Stack/Types/VersionIntervals.hs, dist/build/Stack/Types/VersionIntervals.o )
+[ 49 of 127] Compiling Stack.Types.BuildPlan ( src/Stack/Types/BuildPlan.hs, dist/build/Stack/Types/BuildPlan.o )
+[ 50 of 127] Compiling System.Process.PagerEditor ( src/System/Process/PagerEditor.hs, dist/build/System/Process/PagerEditor.o )
+[ 51 of 127] Compiling System.Terminal  ( dist/build/System/Terminal.hs, dist/build/System/Terminal.o )
+[ 52 of 127] Compiling Stack.Types.Runner ( src/Stack/Types/Runner.hs, dist/build/Stack/Types/Runner.o )
+[ 53 of 127] Compiling Stack.DefaultColorWhen ( src/unix/Stack/DefaultColorWhen.hs, dist/build/Stack/DefaultColorWhen.o )
+[ 54 of 127] Compiling Stack.Config.Nix ( src/Stack/Config/Nix.hs, dist/build/Stack/Config/Nix.o )
+[ 55 of 127] Compiling Text.PrettyPrint.Leijen.Extended ( src/Text/PrettyPrint/Leijen/Extended.hs, dist/build/Text/PrettyPrint/Leijen/Extended.o )
+[ 56 of 127] Compiling Stack.PrettyPrint ( src/Stack/PrettyPrint.hs, dist/build/Stack/PrettyPrint.o )
+[ 57 of 127] Compiling Network.HTTP.Download.Verified ( src/Network/HTTP/Download/Verified.hs, dist/build/Network/HTTP/Download/Verified.o )
+[ 58 of 127] Compiling Network.HTTP.Download ( src/Network/HTTP/Download.hs, dist/build/Network/HTTP/Download.o )
+[ 59 of 127] Compiling Stack.PackageIndex ( src/Stack/PackageIndex.hs, dist/build/Stack/PackageIndex.o )
+[ 60 of 127] Compiling Stack.Types.Config ( src/Stack/Types/Config.hs, dist/build/Stack/Types/Config.o )
+[ 61 of 127] Compiling Stack.Upload     ( src/Stack/Upload.hs, dist/build/Stack/Upload.o )
+[ 62 of 127] Compiling Stack.Types.Package ( src/Stack/Types/Package.hs, dist/build/Stack/Types/Package.o )
+[ 63 of 127] Compiling Stack.Types.Build ( src/Stack/Types/Build.hs, dist/build/Stack/Types/Build.o )
+[ 64 of 127] Compiling Stack.GhcPkg     ( src/Stack/GhcPkg.hs, dist/build/Stack/GhcPkg.o )
+[ 65 of 127] Compiling Stack.PackageDump ( src/Stack/PackageDump.hs, dist/build/Stack/PackageDump.o )
+[ 66 of 127] Compiling Stack.Setup.Installed ( src/Stack/Setup/Installed.hs, dist/build/Stack/Setup/Installed.o )
+[ 67 of 127] Compiling Stack.Options.TestParser ( src/Stack/Options/TestParser.hs, dist/build/Stack/Options/TestParser.o )
+[ 68 of 127] Compiling Stack.Options.HaddockParser ( src/Stack/Options/HaddockParser.hs, dist/build/Stack/Options/HaddockParser.o )
+[ 69 of 127] Compiling Stack.Options.GhcVariantParser ( src/Stack/Options/GhcVariantParser.hs, dist/build/Stack/Options/GhcVariantParser.o )
+[ 70 of 127] Compiling Stack.Options.BenchParser ( src/Stack/Options/BenchParser.hs, dist/build/Stack/Options/BenchParser.o )
+[ 71 of 127] Compiling Stack.Docker.GlobalDB ( src/Stack/Docker/GlobalDB.hs, dist/build/Stack/Docker/GlobalDB.o )
+[ 72 of 127] Compiling Stack.Constants.Config ( src/Stack/Constants/Config.hs, dist/build/Stack/Constants/Config.o )
+[ 73 of 127] Compiling Stack.Image      ( src/Stack/Image.hs, dist/build/Stack/Image.o )
+[ 74 of 127] Compiling Stack.Config.Docker ( src/Stack/Config/Docker.hs, dist/build/Stack/Config/Docker.o )
+[ 75 of 127] Compiling Stack.Config.Build ( src/Stack/Config/Build.hs, dist/build/Stack/Config/Build.o )
+[ 76 of 127] Compiling Stack.Build.Haddock ( src/Stack/Build/Haddock.hs, dist/build/Stack/Build/Haddock.o )
+[ 77 of 127] Compiling Stack.Build.Cache ( src/Stack/Build/Cache.hs, dist/build/Stack/Build/Cache.o )
+[ 78 of 127] Compiling Stack.Build.Installed ( src/Stack/Build/Installed.hs, dist/build/Stack/Build/Installed.o )
+[ 79 of 127] Compiling Path.CheckInstall ( src/Path/CheckInstall.hs, dist/build/Path/CheckInstall.o )
+[ 80 of 127] Compiling Stack.Path       ( src/Stack/Path.hs, dist/build/Stack/Path.o )
+[ 81 of 127] Compiling Stack.New        ( src/Stack/New.hs, dist/build/Stack/New.o )
+[ 82 of 127] Compiling Stack.Fetch      ( src/Stack/Fetch.hs, dist/build/Stack/Fetch.o )
+[ 83 of 127] Compiling Stack.Package    ( src/Stack/Package.hs, dist/build/Stack/Package.o )
+[ 84 of 127] Compiling Stack.Sig.Sign   ( src/Stack/Sig/Sign.hs, dist/build/Stack/Sig/Sign.o )
+[ 85 of 127] Compiling Stack.Sig        ( src/Stack/Sig.hs, dist/build/Stack/Sig.o )
+[ 86 of 127] Compiling Stack.PackageLocation ( src/Stack/PackageLocation.hs, dist/build/Stack/PackageLocation.o )
+[ 87 of 127] Compiling Stack.Snapshot   ( src/Stack/Snapshot.hs, dist/build/Stack/Snapshot.o )
+[ 88 of 127] Compiling Stack.Config     ( src/Stack/Config.hs, dist/build/Stack/Config.o )
+[ 89 of 127] Compiling Stack.Nix        ( src/Stack/Nix.hs, dist/build/Stack/Nix.o )
+[ 90 of 127] Compiling Stack.Options.NixParser ( src/Stack/Options/NixParser.hs, dist/build/Stack/Options/NixParser.o )
+[ 91 of 127] Compiling Stack.ConfigCmd  ( src/Stack/ConfigCmd.hs, dist/build/Stack/ConfigCmd.o )
+[ 92 of 127] Compiling Stack.Clean      ( src/Stack/Clean.hs, dist/build/Stack/Clean.o )
+
+src/Stack/Clean.hs:30:33: error:
+    Ambiguous occurrence ‘exitFailure’
+    It could refer to either ‘Stack.Prelude.exitFailure’,
+                             imported from ‘Stack.Prelude’ at src/Stack/Clean.hs:14:1-30
+                             (and originally defined in ‘rio-0.1.9.2:RIO.Prelude.Exit’)
+                          or ‘System.Exit.exitFailure’,
+                             imported from ‘System.Exit’ at src/Stack/Clean.hs:22:31-41
+   |
+30 |     when (or failures) $ liftIO exitFailure
+   |                                 ^^^^^^^^^^^
+[ 94 of 127] Compiling Stack.Build.Target ( src/Stack/Build/Target.hs, dist/build/Stack/Build/Target.o )
+[ 95 of 127] Compiling Stack.IDE        ( src/Stack/IDE.hs, dist/build/Stack/IDE.o )
+[ 96 of 127] Compiling Stack.Coverage   ( src/Stack/Coverage.hs, dist/build/Stack/Coverage.o )
+[ 97 of 127] Compiling Stack.BuildPlan  ( src/Stack/BuildPlan.hs, dist/build/Stack/BuildPlan.o )
+[ 98 of 127] Compiling Stack.Build.Source ( src/Stack/Build/Source.hs, dist/build/Stack/Build/Source.o )
+[ 99 of 127] Compiling Stack.Build.ConstructPlan ( src/Stack/Build/ConstructPlan.hs, dist/build/Stack/Build/ConstructPlan.o )
+[100 of 127] Compiling Stack.Build.Execute ( src/Stack/Build/Execute.hs, dist/build/Stack/Build/Execute.o )
+[101 of 127] Compiling Stack.Build      ( src/Stack/Build.hs, dist/build/Stack/Build.o )
+[102 of 127] Compiling Stack.Setup      ( src/Stack/Setup.hs, dist/build/Stack/Setup.o )
+
+src/Stack/Setup.hs:1121:28: error:
+    Ambiguous occurrence ‘exitFailure’
+    It could refer to either ‘Stack.Prelude.exitFailure’,
+                             imported from ‘Stack.Prelude’ at src/Stack/Setup.hs:81:1-55
+                             (and originally defined in ‘rio-0.1.9.2:RIO.Prelude.Exit’)
+                          or ‘System.Exit.exitFailure’,
+                             imported from ‘System.Exit’ at src/Stack/Setup.hs:96:49-59
+     |
+1121 |                     liftIO exitFailure
+     |                            ^^^^^^^^^^^
+[109 of 127] Compiling Stack.SDist      ( src/Stack/SDist.hs, dist/build/Stack/SDist.o )
+[110 of 127] Compiling Stack.Options.BuildMonoidParser ( src/Stack/Options/BuildMonoidParser.hs, dist/build/Stack/Options/BuildMonoidParser.o )
+[114 of 127] Compiling Stack.Ghci       ( src/Stack/Ghci.hs, dist/build/Stack/Ghci.o )
+[115 of 127] Compiling Stack.Dot        ( src/Stack/Dot.hs, dist/build/Stack/Dot.o )
+ * ERROR: dev-haskell/stack-1.9.3-r1::haskell failed (compile phase):
+ *   setup build failed
+ * 
+ * Call stack:
+ *     ebuild.sh, line  124:  Called src_compile
+ *   environment, line 1970:  Called haskell-cabal_src_compile
+ *   environment, line 1639:  Called cabal_src_compile
+ *   environment, line  803:  Called cabal-build
+ *   environment, line  561:  Called die
+ * The specific snippet of code:
+ *       ./setup "$@" || die "setup build failed"
+ * 
+ * If you need support, post the output of `emerge --info '=dev-haskell/stack-1.9.3-r1::haskell'`,
+ * the complete build log and the output of `emerge -pqv '=dev-haskell/stack-1.9.3-r1::haskell'`.
+ * The complete build log is located at '/var/tmp/portage/dev-haskell/stack-1.9.3-r1/temp/build.log'.
+ * The ebuild environment file is located at '/var/tmp/portage/dev-haskell/stack-1.9.3-r1/temp/environment'.
+ * Working directory: '/var/tmp/portage/dev-haskell/stack-1.9.3-r1/work/stack-1.9.3'
+ * S: '/var/tmp/portage/dev-haskell/stack-1.9.3-r1/work/stack-1.9.3'

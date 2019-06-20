@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+<!-- Mirrored from pastebin.com/print/hiYXG8jp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Apr 2019 12:11:18 GMT -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Pastebin.com - Printed Paste ID: https://pastebin.com/hiYXG8jp</title>
+		<meta name="robots" content="noindex" />
+		<link href="../cache/css_lang/text.css" rel="stylesheet" type="text/css" />
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-58643-34', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		</script>
+		<style>
+			body{line-height: 1.5em;font-family:Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, monospace, serif;font-size:9pt;top:0;margin:0;padding:0;}ol{margin:0;}
+		</style>
+		<script>
+		function printpage()
+		{
+			window.print();
+		}
+		</script>
+	</head>
+	<body onload="printpage()">
+<div><ol class="text"><li class="li1"><div class="de1">select u.user_id, cm.course_id, aa.timestamp, aa.data, aa.session_id</div></li>
+<li class="li1"><div class="de1">from activity_accumulator aa</div></li>
+<li class="li1"><div class="de1">&nbsp; left join users u on u.pk1 = aa.user_pk1</div></li>
+<li class="li1"><div class="de1">&nbsp; left join course_main cm on cm.pk1 = aa.course_pk1</div></li>
+<li class="li2"><div class="de2">where u.user_id = 'm0384804@mcphs.edu'</div></li>
+<li class="li1"><div class="de1">and aa.timestamp &gt;= to_date('18-APR-2019','DD-MON-YYYY')</div></li>
+<li class="li1"><div class="de1">and aa.timestamp &lt; to_date('19-APR-2019','DD-MON-YYYY')</div></li>
+<li class="li1"><div class="de1">order by aa.timestamp;</div></li>
+</ol></div>	</body>
+
+<!-- Mirrored from pastebin.com/print/hiYXG8jp by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Apr 2019 12:11:18 GMT -->
+</html>

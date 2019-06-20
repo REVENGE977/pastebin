@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+    <style>
+        #mapid {
+            height: 500px;
+            width: 800px;
+            margin: 110px auto 0;
+        }
+
+        #data-type-form {
+            margin-left: 610px;
+            margin-top: 40px;
+        }
+
+        .info {
+            padding: 6px 8px;
+            font: 14px/16px Arial, Helvetica, sans-serif;
+            background: white;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        .info h5 {
+            margin: 0 0 5px;
+            color: #777;
+        }
+
+    </style>
+</head>
+<body>
+
+<form id="data-type-form" action="#">
+    <label>
+        <label style="margin-right: 55px">
+            <input class="with-gap" value="soil_info" checked name="group1" type="radio"/>
+            <span>Soil Type</span>
+        </label>
+    </label>
+    <label>
+        <label>
+            <input class="with-gap" value="earthquake_info" name="group1" type="radio"/>
+            <span>Earthquake Frequency</span>
+        </label>
+    </label>
+</form>
+
+<div id="mapid"></div>
+
+<script>
+
+    $(document).ready(function () {
+        clearMap();
+    });
+
+    var currentShape;
+    currentShape = $("input.with-gap:checked").val();
+
+    $("input.with-gap").on('click', function () {
+        currentShape = $(this).val();
+        clearMap();
+        info.update();
+    });
+
+    var soilShape = 'soil_info';
+    var earthquakeShape = 'earthquake_info';
+
+    var colorEarthquakeArray = ['#ffffcc', '#ffeda0', '#fed976', '#feb24c', '#fd8d3c',
+        '#fc4e2a', '#e31a1c', '#bd0026', '#800026', '#720413'];
+
+    var colorSoilGroupArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
+        '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
+        '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A',
+        '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',
+        '#66994D', '#B366CC', '#4D8000', '#B33300', '#CC80CC',
+        '#66664D'];
+
+    var colorSoilClass = new Map([['DS', '#66994D'], ['ST', '#B366CC'],
+        ['RK', '#4D8000'], ['WR', '#B33300'], ['CL', '#CC80CC'], ['ND', '#66664D']]);
+
+    function getColorBySoilGroup(soilClass) {
+        return colorSoilGroupArray[soilClass.charCodeAt(0) - 65];
+    }
+
+    function getSoilColor(properties) {
+        if (colorSoilClass.has(properties.domsoi)) {
+            return colorSoilClass.get(properties.domsoi);
+        } else {
+            return getColorBySoilGroup(properties.domsoi);
+        }
+    }
+
+    function getEarthquakeColor(properties) {
+        return colorEarthquakeArray[properties.dn - 1];
+    }
+
+    function style(feature) {
+        var colorFunctionToGet;
+        if (currentShape === soilShape) {
+            colorFunctionToGet = 'getSoilColor';
+        } else {
+            colorFunctionToGet = 'getEarthquakeColor';
+        }
+
+        return {
+            fillColor: eval(colorFunctionToGet)(feature.properties),
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.7
+        };
+    }
+
+    function highlightFeature(e) {
+        let layer = e.target;
+
+        layer.setStyle({
+            weight: 5,
+            color: '#666',
+            dashArray: '',
+            fillOpacity: 0.7
+        });
+
+        if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+            layer.bringToFront();
+        }
+        info.update(layer.feature.properties);
+    }
+
+    function resetHighlight(e) {
+        geoJson.resetStyle(e.target);
+        info.update();
+    }
+
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight
+        });
+    }
+
+    function clearMap() {
+        $.ajax({
+            url: "http://localhost:8080/map/clear",
+            type: "post",
+            success: function () {
+                removeLayers();
+            }
+        });
+    }
+
+    function removeLayers() {
+        for (let i in mymap._layers) {
+            if (mymap._layers[i]._path != undefined) {
+                try {
+                    mymap.removeLayer(mymap._layers[i]);
+                } catch (e) {
+                    console.log("problem with " + e + mymap._layers[i]);
+                }
+            }
+        }
+    }
+
+    var mymap = L.map('mapid').setView([34, -98], 6);
+
+    mymap.doubleClickZoom.disable();
+
+    var info = L.control();
+
+    info.onAdd = function (mymap) {
+        this._div = L.DomUtil.create('div', 'info');
+        this.update();
+        return this._div;
+    };
+
+    // method that we will use to update the control based on feature properties passed
+    info.update = function (props) {
+        if (currentShape === soilShape) {
+            this._div.innerHTML = '<h5>Soil Information</h5>' + (props ?
+                '<h6>Faosoil</h6>' +
+                '<b>' + props.faosoil + '</b><br />' +
+                '<h6>Domsoi</h6>' +
+                '<b>' + props.domsoi + '</b><br />' +
+                '<h6>Country</h6>' +
+                '<b>' + props.country.toLowerCase() + '</b><br />' +
+                '<h6>Square Kilometers</h6>' +
+                '<b>' + props.sqkm + '</b><br />'
+                : 'Hover over soil shape');
+        } else if (currentShape === earthquakeShape){
+            this._div.innerHTML = '<h5>Earthquake Information</h5>' + (props ?
+                '<span>' + '<h6>Scale: </h6>' + props.dn + '</span>'
+                : 'Hover over earthquake shape');
+        }
+    };
+
+    info.addTo(mymap);
+
+    var geoJson;
+
+    mymap.on("dblclick", function (ev) {
+        var latlng = mymap.mouseEventToLatLng(ev.originalEvent);
+
+        $.ajax({
+            url: "http://localhost:8080/map/getByCoords",
+            type: "post",
+            data: {
+                "pointX": latlng.lng,
+                "pointY": latlng.lat,
+                "shapeType": currentShape
+            },
+            success: function (response) {
+                if (response) {
+                    geoJson = jQuery.parseJSON(response);
+
+                    geoJson = L.geoJson(jQuery.parseJSON(response), {
+                        style: style,
+                        onEachFeature: onEachFeature
+                    }).addTo(mymap);
+                } else {
+                    alert("No data found for this area");
+                }
+            },
+            error: function (reason) {
+                alert(reason);
+            }
+        });
+    });
+
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 15,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+    L.easyButton('<i class="far fa-trash-alt"></i>', function () {
+        clearMap();
+    }).addTo(mymap);
+
+</script>
+
+</body>

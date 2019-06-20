@@ -1,0 +1,198 @@
+options:
+	prefix : &7
+	defaultperm : clan.use
+	noperm : You don't have permission to do this.
+	cmds : Commands
+
+
+on chat:
+	if {clan.%player%} is set:
+		set chat format to "%player's displayname% &6[%{clan.%player%}%] &8| &7%message%"
+
+
+command /clan [<text>] [<text>] [<text>]:
+	trigger:
+		player has permission "{@defaultperm}":
+			arg-1 isn't set:
+				execute player command "/clan help"
+			arg-1 is "help":
+				send "{@prefix} {@cmds}:"
+				send "{@prefix} /clan create <NAME> <TAG>"
+				send "{@prefix} /clan promote <PLAYER>"
+				send "{@prefix} /clan demote <PLAYER>"
+				send "{@prefix} /clan invite <PLAYER>"
+				send "{@prefix} /clan msg <MESSAGE>"
+				send "{@prefix} /clan accept <NAME>"
+				send "{@prefix} /clan deny <NAME>"
+				send "{@prefix} /clan kick <PLAYER>"
+				send "{@prefix} /clan disband [<CONFIRM>]"
+				send "{@prefix} /clan list"
+				send "{@prefix} /clan leave"
+				send "{@prefix} /clan sethome"
+				send "{@prefix} /clan /home"
+			arg-1 is "create":
+				arg-3 is set:
+					{clan.%player%} is set:
+						send "{@prefix} You're already in a clan. Use /clan leave."
+						stop
+					loop {tags::*}:
+						loop-value is "%arg-3%":
+							send "{@prefix} The tag is already in use."
+							stop
+					loop {clans::*}:
+						loop-value is "%arg-2%":
+							send "{@prefix} The clan name is already in use."
+							stop
+					set {clan.%player%} to "%arg-2%"
+					set {clantag.%player%} to "%arg-3%"
+					add "%arg-2%" to {clans::*}
+					add "%arg-3%" to {tags::*}
+					set {tag.%arg-2%} to arg-3
+					add player to {players.%arg-2%::*}
+					set {clan.leader.%{clan.%player%}%} to player
+					send "{@prefix} The clan %arg-2% [%arg-3%] has been created by %player%."
+			arg-1 is "promote":
+				arg-2 is set:
+					{clan.leader.%{clan.%player%}%} is player:
+						player is arg-2:
+							send "{@prefix} You're the leader of the clan."
+							stop
+						loop {players.%{clan.%player%}%::*}:
+							loop-value-1 is "%arg-2%":
+								loop {mods.%{clan.%player%}%::*}:
+									loop-value-2 is "%arg-2%":
+										send "{@prefix} %arg-2% is already a moderator."
+										stop
+								add arg-2 to {mods.%{clan.%player%}%::*}
+								send "{@prefix} You set %arg-2% as a moderator of the clan."
+								stop
+					else:
+						send "{@prefix} You aren't the leader of the clan."
+			arg-1 is "demote":
+				arg-2 is set:
+					{clan.leader.%{clan.%player%}%} is player:
+						player is arg-2:
+							send "{@prefix} You're the leader of the clan."
+							stop
+						loop {players.%{clan.%player%}%::*}:
+							loop-value-1 is "%arg-2%":
+								loop {mods.%{clan.%player%}%::*}:
+									loop-value-2 is "%arg-2%":
+										send "{@prefix} %arg-2% has been demoted to member."
+										remove arg-2 from {mods.%{clan.%player%}%::*}
+										stop
+								send "{@prefix} %arg-2% isn't a moderator."
+								stop
+					else:
+						send "{@prefix} You aren't the leader of the clan."
+			arg-1 is "invite":
+				arg-2 is set:
+					set {arg-2} to "%arg-2%" parsed as offlineplayer
+					"%{arg-2}%" is not "%player%"	
+					{clan.%arg-2%} isn't set:
+						{clan.leader.%{clan.%player%}%} is player:
+							loop {requests.%arg-2%::*}:
+								loop-value is {clan.%player%}:
+									send "{@prefix} You've already sent a request to that player!"
+									stop
+							add {clan.%player%} to {requests.%arg-2%::*}
+							send "{@prefix} You've sent a request to %arg-2%."
+							send "{@prefix} You've received a request from %player% to his clan %{clan.%player%}%." to {arg-2}
+							send "{@prefix} Use /clan accept %{clan.%player%}% to accept." to {arg-2}
+							stop
+			arg-1 is "chat":
+				arg-2 is set:
+					{clan.%player%} is set:
+						loop {players.%{clan.%player%}%::*}:
+							send "{@prefix} &8[%{clan.%player%}%] &7%arg-2%" to loop-value
+			arg-1 is "accept":
+				arg-2 is set:
+					loop {requests.%player%::*}:
+						loop-value is arg-2:
+							remove arg-2 from {requests.%player%::*}
+							add player to {players.%arg-2%::*}
+							set {clan.%player%} to arg-2
+							send "{@prefix} You've joined the clan %{clan.%player%}%."
+							loop {players.%{clan.%player%}%::*}:
+								send "{@prefix} %player% joined your clan." to loop-value-2
+			arg-1 is "deny":
+				arg-2 is set:
+					loop {requests.%player%::*}:
+						loop-value is arg-2:
+							remove arg-2 from {requests.%player%::*}
+							send "{@prefix} You've denied the request."
+							send "{@prefix} Your request to %player% has been denied" to {clan.leader.%loop-value%}
+			arg-1 is "kick":
+				arg-2 is set:
+					set {arg-2} to "%arg-2%" parsed as offlineplayer
+					{clan.leader.%{clan.%player%}%} is player:
+						loop {players.%{clan.%player%}%::*}:
+							loop-value is arg-2:
+								remove arg-2 from {players.%{clan.%player%}%::*}
+								delete {clan.%arg-2%}
+								send "{@prefix} You were kicked from the clan %{clan.%arg-2%}%." to {arg-2}
+								stop
+						send "{@prefix} This player isn't in your clan."
+					else:
+						send "{@prefix} You aren't the leader of the clan."
+			arg-1 is "disband":
+				{clan.leader.%{clan.%player%}%} is player:
+					arg-2 is "confirm":
+						loop {players.%{clan.%player%}%::*}:
+							remove loop-value from {players.%{clan.%player%}%::*}
+							remove {tag.%{clan.%player%}%} from {tags::*}
+							remove {clan.%player%} from {clans::*}
+							send "{@prefix} The clan has been deleted." to loop-value
+							delete {clan.%loop-value%}
+			arg-1 is "list":
+				{clan.%player%} is set:
+					send "{@prefix} &bClan-Members:"
+					arg-2 is set:
+						send "{@prefix} You can't see the list of players of other clans!"
+					send ""
+					loop {players.%{clan.%player%}%::*}:
+						set {already.%loop-value-1%} to false
+						loop {mods.%{clan.%player%}%::*}:
+							loop-value-2 is loop-value-1:
+								send "{@prefix} &b- %loop-value-1%"
+								set {already.%loop-value-1%} to true
+						{already.%loop-value-1%} is false:
+							loop-value-1 is {clan.leader.%{clan.%player%}%}:
+								send "{@prefix} &4- %loop-value-1%"
+							else:
+								send "{@prefix} &7- %loop-value-1%"
+					send ""
+			arg-1 is "info":
+				{clan.%player%} is set:
+					arg-2 is set:
+						send "{@prefix} &bClan-Info:"
+						send "{@prefix} Name: %arg-2%"
+						send "{@prefix} Tag: %{tag.%arg-2%}%"
+						send "{@prefix} Leader: %{clan.leader.%arg-2%}%"
+					else:
+						send "{@prefix} &bClan-Info:"
+						send "{@prefix} Name: %{clan.%player%}%"
+						send "{@prefix} Tag: %{tag.%{clan.%player%}%}%"
+						send "{@prefix} Leader: %{clan.leader.%{clan.%player%}%}%"
+			arg-1 is "sethome":
+				if {clan.%player%} is set:
+					if {mods.%{clan.%player%}%::*} contains "%player%":
+						set {clan.home.%{clan.%player%}%} to location of player
+						send "{@prefix} &7Successfully created clan home! &7&o( %{clan.home.%{clan.%player%}%}% )"
+					else:
+						if {clan.leader.%{clan.%player%}%} is player:
+							set {clan.home.%{clan.%player%}%} to location of player
+							send "{@prefix} &7Successfully created clan home! &7&o( %{clan.home.%{clan.%player%}%}% )"
+						else:
+							send "{@prefix} You need to be mod and above to set home!"
+				else:
+					send "{@prefix} &7You are not on a clan!"
+			arg-1 is "home":
+				if {clan.%player%} is set:
+					if {clan.home.%{clan.%player%}%} is set:
+						teleport player to {clan.home.%{clan.%player%}%}
+						send "{@prefix} &7Successfully teleported you to your Clan's home"
+					else:
+						send "{@prefix} &7You do not have a home set yet! /clan sethome"
+				else:
+					send "{@prefix} &7You are not on a clan!"

@@ -1,0 +1,11 @@
+- name: restart named-chroot
+  systemd:
+    name: named-chroot
+    daemon_reload: yes 
+    state: restarted
+
+- name: ensure named-chroot is started
+  systemd:
+    name: named-chroot
+    enabled: true
+    state: started

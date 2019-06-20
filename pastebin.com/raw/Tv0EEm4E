@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace homework1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+
+            int max = int.MinValue;
+            int min = int.MaxValue;
+
+
+
+            while (input != "END")
+            {
+                int n = int.Parse(input);
+
+                if (n < min)
+                {
+                    min = n;
+                }
+                if (n > max)
+                {
+                    max = n;
+                }
+                input = Console.ReadLine();
+
+            }
+
+            Console.WriteLine("Max number: " + max);
+            Console.WriteLine("Min number: " + min);
+        }
+    }
+}

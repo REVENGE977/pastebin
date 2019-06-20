@@ -1,0 +1,323 @@
+
+/* 
+ * Decompiled with CFR 0.0. 
+ *  
+ * Could not load the following classes: 
+ *  android.app.Notification 
+ *  android.app.Service 
+ *  android.content.BroadcastReceiver 
+ *  android.content.Context 
+ *  android.content.Intent 
+ *  android.content.IntentFilter 
+ *  android.location.Location 
+ *  android.os.Build 
+ *  android.os.Build$VERSION 
+ *  android.os.Bundle 
+ *  android.os.IBinder 
+ *  android.os.Parcelable 
+ *  android.os.PowerManager 
+ *  android.os.PowerManager$WakeLock 
+ *  android.support.v4.content.d 
+ *  android.util.Log 
+ *  android.widget.Toast 
+ *  com.google.android.gms.common.ConnectionResult 
+ *  com.google.android.gms.common.api.Api 
+ *  com.google.android.gms.common.api.GoogleApiClient 
+ *  com.google.android.gms.common.api.GoogleApiClient$Builder 
+ *  com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks 
+ *  com.google.android.gms.common.api.GoogleApiClient$OnConnectionFailedListener 
+ *  com.google.android.gms.common.api.PendingResult 
+ *  com.google.android.gms.location.FusedLocationProviderApi 
+ *  com.google.android.gms.location.LocationListener 
+ *  com.google.android.gms.location.LocationRequest 
+ *  com.google.android.gms.location.LocationServices 
+ *  java.lang.Boolean 
+ *  java.lang.CharSequence 
+ *  java.lang.Float 
+ *  java.lang.Object 
+ *  java.lang.String 
+ *  java.lang.StringBuilder 
+ *  java.lang.System 
+ *  java.text.DateFormat 
+ *  java.util.Date 
+ *  java.util.Locale 
+ */ 
+package com.zencomputing.zengps.tracking; 
+ 
+import android.app.Notification; 
+import android.app.Service; 
+import android.content.BroadcastReceiver; 
+import android.content.Context; 
+import android.content.Intent; 
+import android.content.IntentFilter; 
+import android.location.Location; 
+import android.os.Build; 
+import android.os.Bundle; 
+import android.os.IBinder; 
+import android.os.Parcelable; 
+import android.os.PowerManager; 
+import android.support.v4.content.d; 
+import android.util.Log; 
+import android.widget.Toast; 
+import com.google.android.gms.common.ConnectionResult; 
+import com.google.android.gms.common.api.Api; 
+import com.google.android.gms.common.api.GoogleApiClient; 
+import com.google.android.gms.common.api.PendingResult; 
+import com.google.android.gms.location.FusedLocationProviderApi; 
+import com.google.android.gms.location.LocationListener; 
+import com.google.android.gms.location.LocationRequest; 
+import com.google.android.gms.location.LocationServices; 
+import com.zencomputing.zencore.j.c; 
+import com.zencomputing.zengps.a; 
+import com.zencomputing.zengps.tracking.a; 
+import java.text.DateFormat; 
+import java.util.Date; 
+import java.util.Locale; 
+ 
+public class GpsService 
+extends Service 
+implements GoogleApiClient.ConnectionCallbacks, 
+GoogleApiClient.OnConnectionFailedListener, 
+LocationListener { 
+    private boolean a; 
+    private GoogleApiClient b; 
+    private LocationRequest c; 
+    private Boolean d; 
+    private Location e; 
+    private float f = 0.0f; 
+    private long g = 0L; 
+    private long h = 10000L; 
+    private long i = 5000L; 
+    private boolean j = false; 
+    private c k; 
+    private boolean l = false; 
+    private BroadcastReceiver m; 
+    private PowerManager.WakeLock n; 
+ 
+    private String a(String string) { 
+        Locale locale = Locale.getDefault(); 
+        Object[] arrobject = new Object[]{string, Float.valueOf((float)(this.f / 1000.0f))}; 
+        return String.format((Locale)locale, (String)"%s Distance : %.3f km", (Object[])arrobject); 
+    } 
+ 
+    private void a() { 
+        this.g = System.nanoTime(); 
+        this.d = true; 
+        this.g(); 
+        this.b("onStart: Connecting GoogleClient"); 
+        this.b.connect(); 
+    } 
+ 
+    private void b(Intent intent) { 
+        intent.putExtra("totalDistance", this.f); 
+        intent.putExtra("elapsedTimeSeconds", (System.nanoTime() - this.g) / 1000000000L); 
+        d.a((Context)this).a(intent); 
+    } 
+ 
+    private void b(String string) { 
+        if (!this.l) { 
+            return; 
+        } 
+        String string2 = DateFormat.getTimeInstance().format(new Date()); 
+        StringBuilder stringBuilder = new StringBuilder(); 
+        stringBuilder.append(string2); 
+        stringBuilder.append(" "); 
+        stringBuilder.append(string); 
+        Log.d((String)"GpsService", (String)stringBuilder.toString()); 
+        StringBuilder stringBuilder2 = new StringBuilder(); 
+        stringBuilder2.append(string2); 
+        stringBuilder2.append(" "); 
+        stringBuilder2.append(string); 
+        a.a((Context)this, "log", stringBuilder2.toString()); 
+    } 
+ 
+    private void k() { 
+        this.m = new BroadcastReceiver(){ 
+ 
+            public void onReceive(Context context, Intent intent) { 
+                if (intent.getBooleanExtra("requestState", false)) { 
+                    GpsService.this.i(); 
+                } 
+                if (intent.getBooleanExtra("stopGps", false)) { 
+                    GpsService.this.b(); 
+                    GpsService.this.stopSelf(); 
+                    return; 
+                } 
+                if (intent.getBooleanExtra("toggleGps", false)) { 
+                    GpsService.this.d = true ^ GpsService.this.d; 
+                    if (GpsService.this.d.booleanValue()) { 
+                        GpsService.this.k.a(GpsService.this.a("GPS en fonction."), a.a.ic_directions_car_white_24dp); 
+                        GpsService.this.e(); 
+                        return; 
+                    } 
+                    GpsService.this.k.a(GpsService.this.a("GPS en pause."), a.a.ic_location_off_white_24dp); 
+                    GpsService.this.f(); 
+                } 
+            } 
+        }; 
+        d.a((Context)this).a(this.m, new IntentFilter("ToGpsService")); 
+    } 
+ 
+    private void l() { 
+        if (this.m != null) { 
+            d.a((Context)this).a(this.m); 
+        } 
+    } 
+ 
+    private void m() { 
+        PowerManager powerManager = (PowerManager)this.getSystemService("power"); 
+        if (powerManager == null) { 
+            return; 
+        } 
+        this.n = powerManager.newWakeLock(1, "ZenGpsWakeLock"); 
+        this.n.acquire(); 
+    } 
+ 
+    private void n() { 
+        if (this.n != null) { 
+            this.n.release(); 
+        } 
+    } 
+ 
+    protected void a(Intent intent) { 
+    } 
+ 
+    protected void a(Location location) { 
+        Intent intent = a.a("locationChanged"); 
+        intent.putExtra("infoValue", (Parcelable)location); 
+        this.b(intent); 
+    } 
+ 
+    protected void b() { 
+    } 
+ 
+    protected Intent c() { 
+        return null; 
+    } 
+ 
+    public boolean d() { 
+        return this.a; 
+    } 
+ 
+    protected void e() { 
+        this.b("Starting location updates"); 
+        if (this.b.isConnected() && this.d.booleanValue()) { 
+            LocationServices.FusedLocationApi.requestLocationUpdates(this.b, this.c, (LocationListener)this); 
+        } 
+    } 
+ 
+    protected void f() { 
+        this.b("Stopping location updates"); 
+        if (this.b.isConnected()) { 
+            LocationServices.FusedLocationApi.removeLocationUpdates(this.b, (LocationListener)this); 
+        } 
+    } 
+ 
+    protected void g() { 
+        GpsService gpsService = this; 
+        synchronized (gpsService) { 
+            this.b = new GoogleApiClient.Builder((Context)this).addConnectionCallbacks((GoogleApiClient.ConnectionCallbacks)this).addOnConnectionFailedListener((GoogleApiClient.OnConnectionFailedListener)this).addApi(LocationServices.API).build(); 
+            this.h(); 
+            return; 
+        } 
+    } 
+ 
+    protected void h() { 
+        this.c = new LocationRequest(); 
+        this.c.setInterval(this.h).setFastestInterval(this.i).setPriority(100); 
+    } 
+ 
+    protected void i() { 
+        String string = this.d != false ? "running" : "pause"; 
+        Intent intent = a.a("gpsState"); 
+        intent.putExtra("infoValue", string); 
+        this.b(intent); 
+        this.a(intent); 
+        d.a((Context)this).a(intent); 
+    } 
+ 
+    protected void j() { 
+        this.k = new c((Context)this, "gps").a(1234).a("Distance Tracker").b(this.a("GPS en fonction.")).b(a.a.ic_directions_car_white_24dp).a(this.c()).a(false).b(true); 
+        this.k.b(); 
+    } 
+ 
+    public IBinder onBind(Intent intent) { 
+        return null; 
+    } 
+ 
+    public void onConnected(Bundle bundle) { 
+        this.b("Connected to GoogleClient"); 
+        this.e = LocationServices.FusedLocationApi.getLastLocation(this.b); 
+        if (this.e != null) { 
+            this.a(this.e); 
+        } 
+        this.e(); 
+    } 
+ 
+    public void onConnectionFailed(ConnectionResult connectionResult) { 
+        StringBuilder stringBuilder = new StringBuilder(); 
+        stringBuilder.append("Connection failed: errorCode = "); 
+        stringBuilder.append(connectionResult.getErrorCode()); 
+        this.b(stringBuilder.toString()); 
+    } 
+ 
+    public void onConnectionSuspended(int n2) { 
+        this.b("Connection suspended"); 
+        this.b.connect(); 
+    } 
+ 
+    public void onCreate() { 
+        this.a = false; 
+        this.m(); 
+        this.j(); 
+        this.l = false; 
+        if (Build.VERSION.SDK_INT >= 26) { 
+            this.startForeground(1234, this.k.a()); 
+            this.b("Setting service as foreground service..."); 
+        } 
+    } 
+ 
+    public void onDestroy() { 
+        this.n(); 
+        this.l(); 
+        this.k.d(); 
+        this.b("Disconnecting GoogleClient"); 
+        if (this.b != null) { 
+            this.b.disconnect(); 
+        } 
+    } 
+ 
+    public void onLocationChanged(Location location) { 
+        if (location == null) { 
+            return; 
+        } 
+        float f2 = this.e == null ? 0.0f : location.distanceTo(this.e); 
+        if (!(f2 < 0.5f || this.j && location.getAccuracy() >= 100.0f)) { 
+            this.f = f2 + this.f; 
+            this.k.a(this.a("GPS actif."), a.a.ic_directions_car_white_24dp); 
+            this.a(location); 
+        } 
+        this.e = location; 
+    } 
+ 
+    public void onLowMemory() { 
+        super.onLowMemory(); 
+        Toast.makeText((Context)this, (CharSequence)"Attention : capacit\u00e9 m\u00e9moire r\u00e9duite !", (int)0).show(); 
+    } 
+ 
+    public int onStartCommand(Intent intent, int n2, int n3) { 
+        if (this.a) { 
+            return 1; 
+        } 
+        if (intent != null) { 
+            this.h = intent.getLongExtra("updateInterval", 10000L); 
+            this.i = intent.getLongExtra("fastestUpdateInterval", 5000L); 
+            this.j = intent.getBooleanExtra("filterLocations", false); 
+        } 
+        this.k(); 
+        this.a(); 
+        this.a = true; 
+        return 1; 
+    } 
+ 
+}

@@ -1,0 +1,128 @@
+              org 100h
+
+Start:
+        call    GetProccessedNum
+        mov     ax, dx
+        call    GetProccessedNum
+        mov     bx,dx
+        push    bx
+        push    ax
+        call    CalculateResult
+        mov     dx, ax
+        call    OutputSoughtNumber
+        call    WaitForClick
+
+
+
+CalculateResult:
+        push     bp
+        mov      bp ,sp
+        mov      ax,[bp + 4]
+        mov      si, 10
+        mul      si
+        mov      si, ax
+        mov      ax, [bp + 6]
+        mul      ax
+        mov      cx, 6
+        mul      cx
+        xor       ax, si     
+        pop      bp
+        ret      4
+
+GetProccessedNum:  ; Result in DX
+        push     ax
+        mov      ah, 0ah
+        mov      dx, input
+        int      21h
+
+        mov      dh, [input + 1]
+        mov      [realSize], dh
+        call     ProccessNum
+        call     SetNewLine
+        pop      ax
+        ret
+
+
+ProccessNum:    ; Result in DX
+        push    cx
+        push    bx
+        xor     dx, dx
+        mov     ax, 1
+        mov     ch, 10
+        movzx   si, [realSize]
+
+LoopDigit:
+        xor     bx, bx
+        mov     bl, [input + si + 1]
+        sub     bl, '0'
+        mov     cl, al
+        mul     bl
+        add     dx, ax
+        mov     al, cl
+        mul     ch
+
+        dec     si
+        test    si,si
+        jnz     LoopDigit
+
+        pop     bx
+        pop     cx
+        ret
+
+SetNewLine:
+        push     ax
+        push     dx
+        mov      ah, 09h
+        mov      dx, newLine
+        int      21h
+        pop      dx
+        pop      ax
+        ret
+
+
+WaitForClick:
+        push     ax
+        mov      ah, 08h
+        int      21h
+        pop      ax
+        ret
+
+OutputSoughtNumber:        ;waits for dx
+        mov     [toOutput],dx
+        mov     bh, 10
+        xor     ax, ax
+        mov     ax, [toOutput]
+        test    ax, ax
+        jz      NumIsZero
+        mov     cx, 0
+DivideNum:
+        add     cx, 1
+        div     bh
+        xor     dx, dx
+        mov     dl, ah
+        push    dx
+        xor     ah, ah
+        test    ax, ax
+        jnz     DivideNum
+        jmp     OutputDigit
+
+NumIsZero:
+        push    0
+        mov     cx, 1
+
+OutputDigit:
+        pop     dx
+        add     dx, 30h
+        mov     ah, 02h
+        int     21h
+        loop    OutputDigit
+        ret  ;OutputSoughtNumber ret
+
+
+
+input            db      4,5 dup(?)
+newLine          db      13,10,'$'
+realSize         db      ?
+toOutput         dw      ?
+X       dw      ?
+Y       dw      ?

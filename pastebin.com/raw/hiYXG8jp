@@ -1,0 +1,8 @@
+select u.user_id, cm.course_id, aa.timestamp, aa.data, aa.session_id
+from activity_accumulator aa
+  left join users u on u.pk1 = aa.user_pk1
+  left join course_main cm on cm.pk1 = aa.course_pk1
+where u.user_id = 'm0384804@mcphs.edu'
+and aa.timestamp >= to_date('18-APR-2019','DD-MON-YYYY')
+and aa.timestamp < to_date('19-APR-2019','DD-MON-YYYY')
+order by aa.timestamp;

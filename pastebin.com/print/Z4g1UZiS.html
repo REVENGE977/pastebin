@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+<!-- Mirrored from pastebin.com/print/Z4g1UZiS by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Apr 2019 12:11:15 GMT -->
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Pastebin.com - Printed Paste ID: https://pastebin.com/Z4g1UZiS</title>
+		<meta name="robots" content="noindex" />
+		<link href="../cache/css_lang/java.css" rel="stylesheet" type="text/css" />
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-58643-34', 'auto');
+			ga('require', 'displayfeatures');
+			ga('send', 'pageview');
+		</script>
+		<style>
+			body{line-height: 1.5em;font-family:Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, monospace, serif;font-size:9pt;top:0;margin:0;padding:0;}ol{margin:0;}
+		</style>
+		<script>
+		function printpage()
+		{
+			window.print();
+		}
+		</script>
+	</head>
+	<body onload="printpage()">
+<div><ol class="java"><li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">/* </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* Decompiled with CFR 0.0. </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;</span></div></li>
+<li class="li2"><div class="de2"><span class="coMULTI">&nbsp;* Could not load the following classes: </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.app.Notification </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.app.Service </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.content.BroadcastReceiver </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.content.Context </span></div></li>
+<li class="li2"><div class="de2"><span class="coMULTI">&nbsp;* &nbsp;android.content.Intent </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.content.IntentFilter </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.location.Location </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.os.Build </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.os.Build$VERSION </span></div></li>
+<li class="li2"><div class="de2"><span class="coMULTI">&nbsp;* &nbsp;android.os.Bundle </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.os.IBinder </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.os.Parcelable </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.os.PowerManager </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.os.PowerManager$WakeLock </span></div></li>
+<li class="li2"><div class="de2"><span class="coMULTI">&nbsp;* &nbsp;android.support.v4.content.d </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.util.Log </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;android.widget.Toast </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;com.google.android.gms.common.ConnectionResult </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;com.google.android.gms.common.api.Api </span></div></li>
+<li class="li2"><div class="de2"><span class="coMULTI">&nbsp;* &nbsp;com.google.android.gms.common.api.GoogleApiClient </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;com.google.android.gms.common.api.GoogleApiClient$Builder </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;com.google.android.gms.common.api.GoogleApiClient$ConnectionCallbacks </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;com.google.android.gms.common.api.GoogleApiClient$OnConnectionFailedListener </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;com.google.android.gms.common.api.PendingResult </span></div></li>
+<li class="li2"><div class="de2"><span class="coMULTI">&nbsp;* &nbsp;com.google.android.gms.location.FusedLocationProviderApi </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;com.google.android.gms.location.LocationListener </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;com.google.android.gms.location.LocationRequest </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;com.google.android.gms.location.LocationServices </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;java.lang.Boolean </span></div></li>
+<li class="li2"><div class="de2"><span class="coMULTI">&nbsp;* &nbsp;java.lang.CharSequence </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;java.lang.Float </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;java.lang.Object </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;java.lang.String </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;java.lang.StringBuilder </span></div></li>
+<li class="li2"><div class="de2"><span class="coMULTI">&nbsp;* &nbsp;java.lang.System </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;java.text.DateFormat </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;java.util.Date </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;* &nbsp;java.util.Locale </span></div></li>
+<li class="li1"><div class="de1"><span class="coMULTI">&nbsp;*/</span> </div></li>
+<li class="li2"><div class="de2"><span class="kw1">package</span> <span class="co2">com.zencomputing.zengps.tracking</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">android.app.Notification</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">android.app.Service</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">android.content.BroadcastReceiver</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2"><span class="kw1">import</span> <span class="co2">android.content.Context</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">android.content.Intent</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">android.content.IntentFilter</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">android.location.Location</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">android.os.Build</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2"><span class="kw1">import</span> <span class="co2">android.os.Bundle</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">android.os.IBinder</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">android.os.Parcelable</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">android.os.PowerManager</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">android.support.v4.content.d</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2"><span class="kw1">import</span> <span class="co2">android.util.Log</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">android.widget.Toast</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">com.google.android.gms.common.ConnectionResult</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">com.google.android.gms.common.api.Api</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">com.google.android.gms.common.api.GoogleApiClient</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2"><span class="kw1">import</span> <span class="co2">com.google.android.gms.common.api.PendingResult</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">com.google.android.gms.location.FusedLocationProviderApi</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">com.google.android.gms.location.LocationListener</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">com.google.android.gms.location.LocationRequest</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">com.google.android.gms.location.LocationServices</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2"><span class="kw1">import</span> <span class="co2">com.zencomputing.zencore.j.c</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">com.zencomputing.zengps.a</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">com.zencomputing.zengps.tracking.a</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">java.text.DateFormat</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1"><span class="kw1">import</span> <span class="co2">java.util.Date</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2"><span class="kw1">import</span> <span class="co2">java.util.Locale</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">public</span> <span class="kw1">class</span> GpsService </div></li>
+<li class="li1"><div class="de1"><span class="kw1">extends</span> Service </div></li>
+<li class="li1"><div class="de1"><span class="kw1">implements</span> GoogleApiClient.<span class="me1">ConnectionCallbacks</span>, </div></li>
+<li class="li2"><div class="de2">GoogleApiClient.<span class="me1">OnConnectionFailedListener</span>, </div></li>
+<li class="li1"><div class="de1">LocationListener <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">boolean</span> a<span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> GoogleApiClient b<span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> LocationRequest c<span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw3">Boolean</span> d<span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> Location e<span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">float</span> f <span class="sy0">=</span> 0.0f<span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">long</span> g <span class="sy0">=</span> 0L<span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">long</span> h <span class="sy0">=</span> 10000L<span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">long</span> i <span class="sy0">=</span> 5000L<span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">boolean</span> j <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> c k<span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">boolean</span> l <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> BroadcastReceiver m<span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="kw1">private</span> PowerManager.<span class="me1">WakeLock</span> n<span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw3">String</span> a<span class="br0">&#40;</span><span class="kw3">String</span> string<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">Locale</span> locale <span class="sy0">=</span> <span class="kw3">Locale</span>.<span class="me1">getDefault</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">Object</span><span class="br0">&#91;</span><span class="br0">&#93;</span> arrobject <span class="sy0">=</span> <span class="kw1">new</span> <span class="kw3">Object</span><span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#123;</span>string, <span class="kw3">Float</span>.<span class="me1">valueOf</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw4">float</span><span class="br0">&#41;</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">f</span> <span class="sy0">/</span> 1000.0f<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="br0">&#125;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="kw3">String</span>.<span class="me1">format</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw3">Locale</span><span class="br0">&#41;</span>locale, <span class="br0">&#40;</span><span class="kw3">String</span><span class="br0">&#41;</span><span class="st0">&quot;%s Distance : %.3f km&quot;</span>, <span class="br0">&#40;</span><span class="kw3">Object</span><span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#41;</span>arrobject<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">void</span> a<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">g</span> <span class="sy0">=</span> <span class="kw3">System</span>.<span class="me1">nanoTime</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">d</span> <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">g</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span><span class="br0">&#40;</span><span class="st0">&quot;onStart: Connecting GoogleClient&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span>.<span class="me1">connect</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">void</span> b<span class="br0">&#40;</span>Intent intent<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; intent.<span class="me1">putExtra</span><span class="br0">&#40;</span><span class="st0">&quot;totalDistance&quot;</span>, <span class="kw1">this</span>.<span class="me1">f</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; intent.<span class="me1">putExtra</span><span class="br0">&#40;</span><span class="st0">&quot;elapsedTimeSeconds&quot;</span>, <span class="br0">&#40;</span><span class="kw3">System</span>.<span class="me1">nanoTime</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">-</span> <span class="kw1">this</span>.<span class="me1">g</span><span class="br0">&#41;</span> <span class="sy0">/</span> 1000000000L<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; d.<span class="me1">a</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw3">Context</span><span class="br0">&#41;</span><span class="kw1">this</span><span class="br0">&#41;</span>.<span class="me1">a</span><span class="br0">&#40;</span>intent<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">void</span> b<span class="br0">&#40;</span><span class="kw3">String</span> string<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span><span class="kw1">this</span>.<span class="me1">l</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">String</span> string2 <span class="sy0">=</span> <span class="kw3">DateFormat</span>.<span class="me1">getTimeInstance</span><span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">format</span><span class="br0">&#40;</span><span class="kw1">new</span> <span class="kw3">Date</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; StringBuilder stringBuilder <span class="sy0">=</span> <span class="kw1">new</span> StringBuilder<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; stringBuilder.<span class="me1">append</span><span class="br0">&#40;</span>string2<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; stringBuilder.<span class="me1">append</span><span class="br0">&#40;</span><span class="st0">&quot; &quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; stringBuilder.<span class="me1">append</span><span class="br0">&#40;</span>string<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; Log.<span class="me1">d</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw3">String</span><span class="br0">&#41;</span><span class="st0">&quot;GpsService&quot;</span>, <span class="br0">&#40;</span><span class="kw3">String</span><span class="br0">&#41;</span>stringBuilder.<span class="me1">toString</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; StringBuilder stringBuilder2 <span class="sy0">=</span> <span class="kw1">new</span> StringBuilder<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; stringBuilder2.<span class="me1">append</span><span class="br0">&#40;</span>string2<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; stringBuilder2.<span class="me1">append</span><span class="br0">&#40;</span><span class="st0">&quot; &quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; stringBuilder2.<span class="me1">append</span><span class="br0">&#40;</span>string<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; a.<span class="me1">a</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw3">Context</span><span class="br0">&#41;</span><span class="kw1">this</span>, <span class="st0">&quot;log&quot;</span>, stringBuilder2.<span class="me1">toString</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">void</span> k<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">m</span> <span class="sy0">=</span> <span class="kw1">new</span> BroadcastReceiver<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">public</span> <span class="kw4">void</span> onReceive<span class="br0">&#40;</span><span class="kw3">Context</span> context, Intent intent<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span>intent.<span class="me1">getBooleanExtra</span><span class="br0">&#40;</span><span class="st0">&quot;requestState&quot;</span>, <span class="kw2">false</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GpsService.<span class="kw1">this</span>.<span class="me1">i</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span>intent.<span class="me1">getBooleanExtra</span><span class="br0">&#40;</span><span class="st0">&quot;stopGps&quot;</span>, <span class="kw2">false</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GpsService.<span class="kw1">this</span>.<span class="me1">b</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GpsService.<span class="kw1">this</span>.<span class="me1">stopSelf</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span>intent.<span class="me1">getBooleanExtra</span><span class="br0">&#40;</span><span class="st0">&quot;toggleGps&quot;</span>, <span class="kw2">false</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GpsService.<span class="kw1">this</span>.<span class="me1">d</span> <span class="sy0">=</span> <span class="kw2">true</span> <span class="sy0">^</span> GpsService.<span class="kw1">this</span>.<span class="me1">d</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span>GpsService.<span class="kw1">this</span>.<span class="me1">d</span>.<span class="me1">booleanValue</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GpsService.<span class="kw1">this</span>.<span class="me1">k</span>.<span class="me1">a</span><span class="br0">&#40;</span>GpsService.<span class="kw1">this</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="st0">&quot;GPS en fonction.&quot;</span><span class="br0">&#41;</span>, a.<span class="me1">a</span>.<span class="me1">ic_directions_car_white_24dp</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GpsService.<span class="kw1">this</span>.<span class="me1">e</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GpsService.<span class="kw1">this</span>.<span class="me1">k</span>.<span class="me1">a</span><span class="br0">&#40;</span>GpsService.<span class="kw1">this</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="st0">&quot;GPS en pause.&quot;</span><span class="br0">&#41;</span>, a.<span class="me1">a</span>.<span class="me1">ic_location_off_white_24dp</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GpsService.<span class="kw1">this</span>.<span class="me1">f</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; d.<span class="me1">a</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw3">Context</span><span class="br0">&#41;</span><span class="kw1">this</span><span class="br0">&#41;</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">m</span>, <span class="kw1">new</span> IntentFilter<span class="br0">&#40;</span><span class="st0">&quot;ToGpsService&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">void</span> l<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">m</span> <span class="sy0">!=</span> <span class="kw2">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; d.<span class="me1">a</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw3">Context</span><span class="br0">&#41;</span><span class="kw1">this</span><span class="br0">&#41;</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">m</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">void</span> m<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; PowerManager powerManager <span class="sy0">=</span> <span class="br0">&#40;</span>PowerManager<span class="br0">&#41;</span><span class="kw1">this</span>.<span class="me1">getSystemService</span><span class="br0">&#40;</span><span class="st0">&quot;power&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span>powerManager <span class="sy0">==</span> <span class="kw2">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">n</span> <span class="sy0">=</span> powerManager.<span class="me1">newWakeLock</span><span class="br0">&#40;</span><span class="nu0">1</span>, <span class="st0">&quot;ZenGpsWakeLock&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">n</span>.<span class="me1">acquire</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">private</span> <span class="kw4">void</span> n<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">n</span> <span class="sy0">!=</span> <span class="kw2">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">n</span>.<span class="me1">release</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">protected</span> <span class="kw4">void</span> a<span class="br0">&#40;</span>Intent intent<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="kw1">protected</span> <span class="kw4">void</span> a<span class="br0">&#40;</span>Location location<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; Intent intent <span class="sy0">=</span> a.<span class="me1">a</span><span class="br0">&#40;</span><span class="st0">&quot;locationChanged&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; intent.<span class="me1">putExtra</span><span class="br0">&#40;</span><span class="st0">&quot;infoValue&quot;</span>, <span class="br0">&#40;</span>Parcelable<span class="br0">&#41;</span>location<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span><span class="br0">&#40;</span>intent<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">protected</span> <span class="kw4">void</span> b<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">protected</span> Intent c<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="kw2">null</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">public</span> <span class="kw4">boolean</span> d<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="kw1">this</span>.<span class="me1">a</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">protected</span> <span class="kw4">void</span> e<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span><span class="br0">&#40;</span><span class="st0">&quot;Starting location updates&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">b</span>.<span class="me1">isConnected</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">&amp;&amp;</span> <span class="kw1">this</span>.<span class="me1">d</span>.<span class="me1">booleanValue</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; LocationServices.<span class="me1">FusedLocationApi</span>.<span class="me1">requestLocationUpdates</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">b</span>, <span class="kw1">this</span>.<span class="me1">c</span>, <span class="br0">&#40;</span>LocationListener<span class="br0">&#41;</span><span class="kw1">this</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">protected</span> <span class="kw4">void</span> f<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span><span class="br0">&#40;</span><span class="st0">&quot;Stopping location updates&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">b</span>.<span class="me1">isConnected</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; LocationServices.<span class="me1">FusedLocationApi</span>.<span class="me1">removeLocationUpdates</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">b</span>, <span class="br0">&#40;</span>LocationListener<span class="br0">&#41;</span><span class="kw1">this</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">protected</span> <span class="kw4">void</span> g<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; GpsService gpsService <span class="sy0">=</span> <span class="kw1">this</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">synchronized</span> <span class="br0">&#40;</span>gpsService<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span> <span class="sy0">=</span> <span class="kw1">new</span> GoogleApiClient.<span class="me1">Builder</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw3">Context</span><span class="br0">&#41;</span><span class="kw1">this</span><span class="br0">&#41;</span>.<span class="me1">addConnectionCallbacks</span><span class="br0">&#40;</span><span class="br0">&#40;</span>GoogleApiClient.<span class="me1">ConnectionCallbacks</span><span class="br0">&#41;</span><span class="kw1">this</span><span class="br0">&#41;</span>.<span class="me1">addOnConnectionFailedListener</span><span class="br0">&#40;</span><span class="br0">&#40;</span>GoogleApiClient.<span class="me1">OnConnectionFailedListener</span><span class="br0">&#41;</span><span class="kw1">this</span><span class="br0">&#41;</span>.<span class="me1">addApi</span><span class="br0">&#40;</span>LocationServices.<span class="me1">API</span><span class="br0">&#41;</span>.<span class="me1">build</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">h</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="kw1">protected</span> <span class="kw4">void</span> h<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">c</span> <span class="sy0">=</span> <span class="kw1">new</span> LocationRequest<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">c</span>.<span class="me1">setInterval</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">h</span><span class="br0">&#41;</span>.<span class="me1">setFastestInterval</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">i</span><span class="br0">&#41;</span>.<span class="me1">setPriority</span><span class="br0">&#40;</span><span class="nu0">100</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="kw1">protected</span> <span class="kw4">void</span> i<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">String</span> string <span class="sy0">=</span> <span class="kw1">this</span>.<span class="me1">d</span> <span class="sy0">!=</span> <span class="kw2">false</span> <span class="sy0">?</span> <span class="st0">&quot;running&quot;</span> <span class="sy0">:</span> <span class="st0">&quot;pause&quot;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; Intent intent <span class="sy0">=</span> a.<span class="me1">a</span><span class="br0">&#40;</span><span class="st0">&quot;gpsState&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; intent.<span class="me1">putExtra</span><span class="br0">&#40;</span><span class="st0">&quot;infoValue&quot;</span>, string<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span><span class="br0">&#40;</span>intent<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">a</span><span class="br0">&#40;</span>intent<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; d.<span class="me1">a</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw3">Context</span><span class="br0">&#41;</span><span class="kw1">this</span><span class="br0">&#41;</span>.<span class="me1">a</span><span class="br0">&#40;</span>intent<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">protected</span> <span class="kw4">void</span> j<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">k</span> <span class="sy0">=</span> <span class="kw1">new</span> c<span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw3">Context</span><span class="br0">&#41;</span><span class="kw1">this</span>, <span class="st0">&quot;gps&quot;</span><span class="br0">&#41;</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="nu0">1234</span><span class="br0">&#41;</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="st0">&quot;Distance Tracker&quot;</span><span class="br0">&#41;</span>.<span class="me1">b</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="st0">&quot;GPS en fonction.&quot;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>.<span class="me1">b</span><span class="br0">&#40;</span>a.<span class="me1">a</span>.<span class="me1">ic_directions_car_white_24dp</span><span class="br0">&#41;</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">c</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="kw2">false</span><span class="br0">&#41;</span>.<span class="me1">b</span><span class="br0">&#40;</span><span class="kw2">true</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">k</span>.<span class="me1">b</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">public</span> IBinder onBind<span class="br0">&#40;</span>Intent intent<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="kw2">null</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">public</span> <span class="kw4">void</span> onConnected<span class="br0">&#40;</span>Bundle bundle<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span><span class="br0">&#40;</span><span class="st0">&quot;Connected to GoogleClient&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">e</span> <span class="sy0">=</span> LocationServices.<span class="me1">FusedLocationApi</span>.<span class="me1">getLastLocation</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">b</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">e</span> <span class="sy0">!=</span> <span class="kw2">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">e</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">e</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">public</span> <span class="kw4">void</span> onConnectionFailed<span class="br0">&#40;</span>ConnectionResult connectionResult<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; StringBuilder stringBuilder <span class="sy0">=</span> <span class="kw1">new</span> StringBuilder<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; stringBuilder.<span class="me1">append</span><span class="br0">&#40;</span><span class="st0">&quot;Connection failed: errorCode = &quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; stringBuilder.<span class="me1">append</span><span class="br0">&#40;</span>connectionResult.<span class="me1">getErrorCode</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span><span class="br0">&#40;</span>stringBuilder.<span class="me1">toString</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">public</span> <span class="kw4">void</span> onConnectionSuspended<span class="br0">&#40;</span><span class="kw4">int</span> n2<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span><span class="br0">&#40;</span><span class="st0">&quot;Connection suspended&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span>.<span class="me1">connect</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">public</span> <span class="kw4">void</span> onCreate<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">a</span> <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">m</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">j</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">l</span> <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span>Build.<span class="me1">VERSION</span>.<span class="me1">SDK_INT</span> <span class="sy0">&gt;=</span> <span class="nu0">26</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">startForeground</span><span class="br0">&#40;</span><span class="nu0">1234</span>, <span class="kw1">this</span>.<span class="me1">k</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span><span class="br0">&#40;</span><span class="st0">&quot;Setting service as foreground service...&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="kw1">public</span> <span class="kw4">void</span> onDestroy<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">n</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">l</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">k</span>.<span class="me1">d</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span><span class="br0">&#40;</span><span class="st0">&quot;Disconnecting GoogleClient&quot;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">b</span> <span class="sy0">!=</span> <span class="kw2">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">b</span>.<span class="me1">disconnect</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="kw1">public</span> <span class="kw4">void</span> onLocationChanged<span class="br0">&#40;</span>Location location<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span>location <span class="sy0">==</span> <span class="kw2">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw4">float</span> f2 <span class="sy0">=</span> <span class="kw1">this</span>.<span class="me1">e</span> <span class="sy0">==</span> <span class="kw2">null</span> <span class="sy0">?</span> 0.0f <span class="sy0">:</span> location.<span class="me1">distanceTo</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">e</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy0">!</span><span class="br0">&#40;</span>f2 <span class="sy0">&lt;</span> 0.5f <span class="sy0">||</span> <span class="kw1">this</span>.<span class="me1">j</span> <span class="sy0">&amp;&amp;</span> location.<span class="me1">getAccuracy</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">&gt;=</span> 100.0f<span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">f</span> <span class="sy0">=</span> f2 <span class="sy0">+</span> <span class="kw1">this</span>.<span class="me1">f</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">k</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="st0">&quot;GPS actif.&quot;</span><span class="br0">&#41;</span>, a.<span class="me1">a</span>.<span class="me1">ic_directions_car_white_24dp</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">a</span><span class="br0">&#40;</span>location<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">e</span> <span class="sy0">=</span> location<span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">public</span> <span class="kw4">void</span> onLowMemory<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">super</span>.<span class="me1">onLowMemory</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; Toast.<span class="me1">makeText</span><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw3">Context</span><span class="br0">&#41;</span><span class="kw1">this</span>, <span class="br0">&#40;</span>CharSequence<span class="br0">&#41;</span><span class="st0">&quot;Attention : capacit<span class="es0">\u</span>00e9 m<span class="es0">\u</span>00e9moire r<span class="es0">\u</span>00e9duite !&quot;</span>, <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span><span class="nu0">0</span><span class="br0">&#41;</span>.<span class="me1">show</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">public</span> <span class="kw4">int</span> onStartCommand<span class="br0">&#40;</span>Intent intent, <span class="kw4">int</span> n2, <span class="kw4">int</span> n3<span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span><span class="kw1">this</span>.<span class="me1">a</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="nu0">1</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span>intent <span class="sy0">!=</span> <span class="kw2">null</span><span class="br0">&#41;</span> <span class="br0">&#123;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">h</span> <span class="sy0">=</span> intent.<span class="me1">getLongExtra</span><span class="br0">&#40;</span><span class="st0">&quot;updateInterval&quot;</span>, 10000L<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">i</span> <span class="sy0">=</span> intent.<span class="me1">getLongExtra</span><span class="br0">&#40;</span><span class="st0">&quot;fastestUpdateInterval&quot;</span>, 5000L<span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">j</span> <span class="sy0">=</span> intent.<span class="me1">getBooleanExtra</span><span class="br0">&#40;</span><span class="st0">&quot;filterLocations&quot;</span>, <span class="kw2">false</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">k</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">a</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">this</span>.<span class="me1">a</span> <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span> </div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span> <span class="nu0">1</span><span class="sy0">;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="br0">&#125;</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="br0">&#125;</span></div></li>
+</ol></div>	</body>
+
+<!-- Mirrored from pastebin.com/print/Z4g1UZiS by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Apr 2019 12:11:15 GMT -->
+</html>

@@ -1,0 +1,47 @@
+package com.company;
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        double m1,m2;
+        double number;
+        do {
+            System.out.println();
+            System.out.print("Podaj wspolczynnik losowania czytelnikow (zakres od 0 do 1): ");
+            m1 = Double.parseDouble(scanner.nextLine());
+            System.out.print("Podaj wspolczynnik losowania pisarzy (zakres od 0 do 1): ");
+            m2 = Double.parseDouble(scanner.nextLine());
+
+        }
+        while ((m1 < 0 || m2 < 0) || (m1 > 1 || m2 > 1));
+
+        List<User> Queue = new ArrayList<>();
+
+        Library Library = new Library(20);
+        Random random = new Random();
+        while(true)
+        {
+            try {
+                number = random.nextDouble();
+                if (number < m1) {
+                    User czytelnik = new User("Czytelnik",Library);
+                    czytelnik.start();
+                }
+                if (number < m2) {
+                    User pisarz = new User("Pisarz",Library);
+                    pisarz.start();
+                }
+                Thread.sleep(20);
+            } catch (Exception ex) {;}
+
+
+        }
+
+
+
+    }
+
+}

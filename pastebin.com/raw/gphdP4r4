@@ -1,0 +1,33 @@
+root@OpenWrt:/# wifi status
+{
+        "radio0": {
+                "up": true,
+                "pending": false,
+                "autostart": true,
+                "disabled": false,
+                "retry_setup_failed": false,
+                "config": {
+                        "hwmode": "11g",
+                        "path": "platform\/10180000.wmac",
+                        "htmode": "HT20",
+                        "channel": "auto",
+                        "disabled": false
+                },
+                "interfaces": [
+                        {
+                                "section": "@wifi-iface[0]",
+                                "ifname": "wlan0",
+                                "config": {
+                                        "mode": "sta",
+                                        "encryption": "none",
+                                        "network": [
+                                                "wlan"
+                                        ],
+                                        "mode": "sta"
+                                }
+                        }
+                ]
+        }
+}
+root@OpenWrt:/# cat /sys/class/net/wlan0/operstate
+down

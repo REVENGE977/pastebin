@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace homework1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            float r = float.Parse(Console.ReadLine());
+
+            double areaCalc = Math.PI * r * r;
+            double perimeterCalc = 2 * Math.PI * r;
+
+            Console.WriteLine("Area= " + areaCalc + "\n" + "Perimeter=" +perimeterCalc);
+        }
+    }
+}
