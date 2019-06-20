@@ -1,0 +1,1215 @@
+<!DOCTYPE HTML>
+	
+<!-- Mirrored from pastebin.com/puTxnLe1 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Apr 2019 12:10:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58643-34"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-58643-34');
+</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>try:                                  recvdata, addr = sock.recvfrom( BUFFER )   - Pastebin.com</title>
+		<link rel="shortcut icon" href="https://pastebin.com/favicon.ico" />
+		<script src="https://pastebin.com/js/jquery.min.js"></script>
+		<script src="https://pastebin.com/js/pastebin.min.v3.js"></script>
+		<link href="https://pastebin.com/i/pastebin.min.v8.css" rel="stylesheet" type="text/css" />
+		<!--[if lt IE 10]>
+			<link href="/i/pastebin.ie8.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+
+			<link href="https://pastebin.com/cache/css_lang/text.css" rel="stylesheet" type="text/css" /> 
+		<style>body{-webkit-text-size-adjust:none;}</style>
+				<meta property="fb:app_id" content="231493360234820" />
+		<meta property="og:title" content="try:                                  recvdata, addr = sock.recvfrom( BUFFER )   - Pastebin.com" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://pastebin.com/puTxnLe1" />
+		<meta property="og:image" content="https://pastebin.com/i/facebook.png" />
+		<meta property="og:site_name" content="Pastebin" />
+		<meta name="google-site-verification" content="jkUAIOE8owUXu8UXIhRLB9oHJsWBfOgJbZzncqHoF4A" />
+		<link rel="canonical" href="https://pastebin.com/puTxnLe1" />
+				<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=1.0, user-scalable=yes">
+		<script type="text/javascript">
+			if (top != self)
+				top.location.href = location.href;
+		</script>
+	</head>
+	<body>
+	<div id="main_frame">
+		<div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-anchor-right jq-dropdown-scroll">
+			<ul class="jq-dropdown-menu">
+				
+				<li class="lih_640">
+					<form class="search_form_li" name="search_form_li" method="get" action="https://pastebin.com/search" id="cse-search-box-li">
+						<input class="search_input_li" type="text" name="q" size="5" value="" placeholder="search..." />
+					</form>
+
+				</li>
+				<li class="lih_div"></li>
+				<li onclick="location.href='https://pastebin.com/signup'" class="dd_su">Sign Up</li>
+				<li onclick="location.href='https://pastebin.com/login'" class="dd_lo">Login</li>
+				<li class="lih_div"></li>
+				<li onclick="location.href='https://pastebin.com/api'" class="lih_640">API</li>
+				<li onclick="location.href='https://pastebin.com/faq'" class="lih_640">FAQ</li>
+				<li onclick="location.href='https://pastebin.com/tools'" class="lih_640">Tools</li>
+				<li onclick="location.href='https://pastebin.com/archive'" class="lih_640">Archive</li>			</ul>
+		</div>
+		<div id="header">
+			<div id="header_wrap">
+				<div id="header_top">
+					<div id="header_logo" onclick="location.href='https://pastebin.com/'">PASTEBIN</div>
+					<div id="header_new_paste" class="new_paste_button" onclick="location.href='https://pastebin.com/'">new paste</div>
+					<div id="header_links">
+						<a href="https://pastebin.com/pro" class="mmh">PRO</a>					
+						<a href="https://pastebin.com/api" class="mmh">API</a>
+						<a href="https://pastebin.com/tools" class="mmh">tools</a>
+						<a href="https://pastebin.com/faq" class="mmh">faq</a>
+						<a href="https://deals.pastebin.com/" target="_blank" class="mmh">deals</a>						
+					</div>
+					<div id="header_search">
+						<form class="search_form" name="search_form" method="get" action="https://pastebin.com/search" id="cse-search-box">
+							<input class="search_input" type="text" name="q" size="5" value="" placeholder="search..." />
+						</form> 
+					</div>
+					
+					<div id="header_members">
+						<div id="header_dropdown" data-jq-dropdown="#jq-dropdown-1">&nbsp;</div>
+						<div id="header_icon"><a href="https://pastebin.com/login"><img src="https://pastebin.com/i/guest.png" class="header_icon" alt="" /></a></div>
+						<div id="header_user_frame">
+							<div id="header_username">Guest User</div>
+							<div id="header_user_status">-</div>
+						</div>
+						<div id="header_icons">
+							<a href="https://pastebin.com/login" title="My Pastebin"><img src="https://pastebin.com/i/t.gif" class="header_icons hi_mypastebin" alt="" /></a>
+							<a href="https://pastebin.com/messages" title="My Messages"><img src="https://pastebin.com/i/t.gif" class="header_icons hi_messages" alt="" /></a>
+							<a href="https://pastebin.com/alerts" title="My Alerts"><img src="https://pastebin.com/i/t.gif" class="header_icons hi_alerts" alt="" /></a>
+							<a href="https://pastebin.com/settings" title="My Settings"><img src="https://pastebin.com/i/t.gif" class="header_icons hi_settings" alt="" /></a>
+						</div>
+					</div>				</div>
+			</div>
+		</div>
+		<div id="super_frame">
+			<div id="monster_frame">
+				<div id="content_frame">
+					<div id="content_right">						
+
+	<div class="content_right_menu">
+									<div class="content_right_title"><a href="https://pastebin.com/archive">Public Pastes</a></div>
+									<div id="menu_2">
+										<ul class="right_menu"><li><a href="https://pastebin.com/NRVjd9AF">Untitled</a><span>4 sec ago</span></li><li><a href="https://pastebin.com/AUz85sP6">CorpseReborn Error...</a><span>5 sec ago</span></li><li><a href="https://pastebin.com/UJmdprYs">kpop groups</a><span>12 sec ago</span></li><li><a href="https://pastebin.com/d4rCvj0X">Untitled</a><span>14 sec ago</span></li><li><a href="https://pastebin.com/4qJPBwpR">Untitled</a><span>21 sec ago</span></li><li><a href="https://pastebin.com/qi4mAk1W">Untitled</a><span>31 sec ago</span></li><li><a href="https://pastebin.com/CrcZMzJH">Untitled</a><span>31 sec ago</span></li><li><a href="https://pastebin.com/YzbuaH9b">Untitled</a><span>Python | 32 sec ago</span></li></ul></div></div>	<div style="border:1px solid #DDD;padding:1px;width:156px; border-radius:3px;">
+		<div style="border:1px solid #ddd; font-size:0.75em;text-align:center;background:#F9F9F9; border-radius:3px;">	
+			<div style="padding: 3px 0">daily pastebin <a href="https://pastebin.com/pro?help=1"><img src="https://pastebin.com/i/t.gif" alt="" class="pro_btn_inv"></a> goal</div>
+			<div style="width:152px;height:37px;">
+				<div style="position:relative;border:1px solid #DDD;border-radius: 5px;width:126px;height:25px;margin:0 0 0 10px" title="Goal updates every 15 minutes...">
+					<div style="position:absolute;left:0;top:0;background-color: #DDD;border-radius: 0 0 0 0 ;width:26px;height:25px;"></div>
+					<div style="position:absolute;right:5px;width:25px;height:20px;top:0;">20%</div>
+				</div>
+			</div>
+			<div style="clear:both;margin: 0 0 10px 0"><a href="https://pastebin.com/pro?help=1" class="buttonpro" style="font-size:0.9em" title="Learn more about going PRO">help support pastebin</a></div>
+		</div>
+	</div>
+	<div id="abrpm2"></div>
+	
+			<div style="padding: 0; width:160px;margin: 10px 0;clear:left;">
+				<script type="text/javascript"><!--
+					e9 = new Object();
+					e9.size = "160x600,120x600";
+				//--></script>
+				<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/PastebincomNew/Sure/tags.js"></script>
+			</div>
+<div id="steadfast" title="Pastebin is proudly hosted by Steadfast.net" onclick="location.href='http://steadfast.net/?utm_source=pastebin.com&amp;utm_medium=referral&amp;utm_content=hosting_by_banner&amp;utm_campaign=referral_20140118_x_x_pastebin_partner&amp;source=referral_20140118_x_x_pastebin_partner'"></div>
+	</div>
+	<div id="content_left"><div id="ie_msg"></div>
+					
+		
+	<div class="paste_box_frame">
+		<div class="tweet h_800">
+			<div onclick="facebookpopup('/puTxnLe1'); return false;" id="b_facebook2" title="Share on Facebook!"><span id="b_facebook">SHARE</span></div>
+			<div onclick="twitpopup('/puTxnLe1'); return false;" id="b_twitter2" title="Share on Twitter!"><span id="b_twitter">TWEET</span></div>
+		</div>
+		<div class="paste_box_icon">
+			<img src="https://pastebin.com/i/t.gif" class="i_gb" title="Anonymous guest user" alt="" />
+		</div>
+		<div class="paste_box_info">
+			<div class="paste_box_line1" title="Untitled"><h1>Untitled</h1></div>
+			<div class="paste_box_line2">
+				<img src="https://pastebin.com/i/t.gif" class="img_line t_us" alt="" style="margin-left:0"> a guest 
+				<img src="https://pastebin.com/i/t.gif" class="img_line t_da" alt=""> <span title="Monday 22nd of April 2019 06:55:14 AM CDT">Apr 22nd, 2019</span>
+				<img src="https://pastebin.com/i/t.gif" class="img_line t_vi" alt="" title="Unique visits to this paste"> 45
+				<img src="https://pastebin.com/i/t.gif" class="img_line t_ex" alt="" title="When this paste gets automatically deleted"> Never
+			</div>
+		</div>
+	</div>
+	
+			<div id="abrpm"></div>
+			<div class="banner_728">
+				<script type="text/javascript"><!--
+					e9 = new Object();
+					e9.size = "970x250,728x90";
+				//--></script>
+				<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/PastebincomNew/Sure/tags.js"></script>
+			</div>
+			<div class="layout_clear"></div>
+			<div class="content_text no_padding">
+				<div id="notice" style="margin: 0 0 10px 0">
+					<b>Not a member of Pastebin yet?</b> <a href="https://pastebin.com/signup"><b><u>Sign Up</u></b></a>, it unlocks many cool features!
+				</div>
+			</div>
+	<div id="code_frame2">
+		<div id="code_frame">
+			<div id="code_buttons">
+				<span class="go_right">
+					<a href="https://pastebin.com/raw/puTxnLe1" class="buttonsm">raw</a><a href="https://pastebin.com/dl/puTxnLe1" class="buttonsm">download</a><a href="https://pastebin.com/index/puTxnLe1" class="buttonsm buttonhide">clone</a><a href="https://pastebin.com/embed/puTxnLe1" class="buttonsm buttonhide">embed</a><a href="https://pastebin.com/report/puTxnLe1" class="buttonsm">report</a><a href="https://pastebin.com/print/puTxnLe1" class="buttonsm buttonhide">print</a>
+				</span>
+				<span class="h_640"><a href="https://pastebin.com/archive/text" class="buttonsm" style="margin:0">text</a></span> 16.73 KB
+			</div>
+			<div id="selectable">
+				<ol class="text"><li class="li1"><div class="de1">try:</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; recvdata, addr = sock.recvfrom( BUFFER ) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ip_addr = str(addr[0]) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if len(recvdata) &gt; int(sys.argv[3]): #sucess &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;amp = len(recvdata) / pkt_size*1.0 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;amp = round( amp, 2 ) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; log( &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;{} {} [x{}]&quot;.format(ip_addr,len(recvdata),amp) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; except: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;except: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;## Create threads ### &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; def create_thread(function, *args): &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; thread = threading.Thread(target=function,args=args) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;thread.daemon = True &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;thread.start() &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return thread &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if __name__ == '__main__': &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# create logging thread &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; create_thread(logger_thread) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;print &quot;Started Scanning &quot;+str(SIZE)+&quot; targets&quot; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# create threads &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;thread_list = [] &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for t in CHUNKS: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;thread = create_thread( scanner, t ) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;thread_list.append( thread ) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# wait for threads to end &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print &quot;ThreadCount: &quot; + str(threading.active_count()) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for t in thread_list: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;t.join() &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;except KeyboardInterrupt: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; RUNNING = False &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; output.close() &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if 'nt' not in os.name: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # for unix systems &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;os.system(&quot;chmod 0777 &quot;+str(sys.argv[2])) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sys.exit() &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;filter.py&quot; [New] 123L, 2622C written</div></li>
+<li class="li1"><div class="de1">[root@vultr ~]# yum install -y python</div></li>
+<li class="li1"><div class="de1">Loaded plugins: fastestmirror</div></li>
+<li class="li2"><div class="de2">Loading mirror speeds from cached hostfile</div></li>
+<li class="li1"><div class="de1">&nbsp;* base: ftp-srv2.kddilabs.jp</div></li>
+<li class="li1"><div class="de1">&nbsp;* epel: ftp.iij.ad.jp</div></li>
+<li class="li1"><div class="de1">&nbsp;* extras: ftp-srv2.kddilabs.jp</div></li>
+<li class="li1"><div class="de1">&nbsp;* updates: ftp-srv2.kddilabs.jp</div></li>
+<li class="li2"><div class="de2">Resolving Dependencies</div></li>
+<li class="li1"><div class="de1">--&gt; Running transaction check</div></li>
+<li class="li1"><div class="de1">---&gt; Package python.x86_64 0:2.7.5-76.el7 will be updated</div></li>
+<li class="li1"><div class="de1">---&gt; Package python.x86_64 0:2.7.5-77.el7_6 will be an update</div></li>
+<li class="li1"><div class="de1">--&gt; Processing Dependency: python-libs(x86-64) = 2.7.5-77.el7_6 for package: python-2.7.5-77.el7_6.x86_64</div></li>
+<li class="li2"><div class="de2">--&gt; Running transaction check</div></li>
+<li class="li1"><div class="de1">---&gt; Package python-libs.x86_64 0:2.7.5-76.el7 will be updated</div></li>
+<li class="li1"><div class="de1">---&gt; Package python-libs.x86_64 0:2.7.5-77.el7_6 will be an update</div></li>
+<li class="li1"><div class="de1">--&gt; Finished Dependency Resolution</div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li2"><div class="de2">Dependencies Resolved</div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">========================================================================================== Package &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Arch &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Version &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Repository &nbsp; &nbsp; &nbsp; &nbsp; Size</div></li>
+<li class="li1"><div class="de1">==========================================================================================Updating:</div></li>
+<li class="li1"><div class="de1">&nbsp;python &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x86_64 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.7.5-77.el7_6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;updates &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;94 k</div></li>
+<li class="li2"><div class="de2">Updating for dependencies:</div></li>
+<li class="li1"><div class="de1">&nbsp;python-libs &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x86_64 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.7.5-77.el7_6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;updates &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5.6 M</div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">Transaction Summary</div></li>
+<li class="li1"><div class="de1">==========================================================================================Upgrade &nbsp;1 Package (+1 Dependent package)</div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1">Total download size: 5.7 M</div></li>
+<li class="li1"><div class="de1">Downloading packages:</div></li>
+<li class="li1"><div class="de1">Delta RPMs disabled because /usr/bin/applydeltarpm not installed.</div></li>
+<li class="li1"><div class="de1">(1/2): python-2.7.5-77.el7_6.x86_64.rpm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp;94 kB &nbsp;00:00:00 &nbsp; &nbsp; (2/2): python-libs-2.7.5-77.el7_6.x86_64.rpm &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; | 5.6 MB &nbsp;00:00:00 &nbsp; &nbsp; ------------------------------------------------------------------------------------------Total &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;16 MB/s | 5.7 MB &nbsp;00:00:00 &nbsp; &nbsp; Running transaction check</div></li>
+<li class="li2"><div class="de2">Running transaction test</div></li>
+<li class="li1"><div class="de1">Transaction test succeeded</div></li>
+<li class="li1"><div class="de1">Running transaction</div></li>
+<li class="li1"><div class="de1">&nbsp; Updating &nbsp; : python-libs-2.7.5-77.el7_6.x86_64 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1/4 &nbsp; Updating &nbsp; : python-2.7.5-77.el7_6.x86_64 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2/4 &nbsp; Cleanup &nbsp; &nbsp;: python-2.7.5-76.el7.x86_64 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3/4 &nbsp; Cleanup &nbsp; &nbsp;: python-libs-2.7.5-76.el7.x86_64 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4/4 &nbsp; Verifying &nbsp;: python-libs-2.7.5-77.el7_6.x86_64 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1/4 &nbsp; Verifying &nbsp;: python-2.7.5-77.el7_6.x86_64 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2/4 &nbsp; Verifying &nbsp;: python-2.7.5-76.el7.x86_64 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3/4 &nbsp; Verifying &nbsp;: python-libs-2.7.5-76.el7.x86_64 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4/4 </div></li>
+<li class="li1"><div class="de1">Updated:</div></li>
+<li class="li2"><div class="de2">&nbsp; python.x86_64 0:2.7.5-77.el7_6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div></li>
+<li class="li1"><div class="de1">Dependency Updated:</div></li>
+<li class="li1"><div class="de1">&nbsp; python-libs.x86_64 0:2.7.5-77.el7_6 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div></li>
+<li class="li1"><div class="de1">Complete!</div></li>
+<li class="li1"><div class="de1">[root@vultr ~]# chmod 777 filter.py</div></li>
+<li class="li2"><div class="de2">[root@vultr ~]# ./filter.py</div></li>
+<li class="li1"><div class="de1">Usage: &lt;input&gt; &lt;output&gt; &lt;mx size&gt;</div></li>
+<li class="li1"><div class="de1">[root@vultr ~]# ./filter.py dns.txt dns1.txt 100</div></li>
+<li class="li1"><div class="de1">21</div></li>
+<li class="li1"><div class="de1">Started Scanning 7143 targets</div></li>
+<li class="li2"><div class="de2">ThreadCount: 23</div></li>
+<li class="li1"><div class="de1">103.18.153.77 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.5.133.160 170 [x2.0]</div></li>
+<li class="li1"><div class="de1">154.0.0.28 3977 [x63.0]</div></li>
+<li class="li1"><div class="de1">213.152.39.60 512 [x8.0]</div></li>
+<li class="li2"><div class="de2">103.18.153.111 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.21.46.10 3991 [x63.0]</div></li>
+<li class="li1"><div class="de1">188.19.254.218 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">103.18.153.134 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">1.0.184.35 4077 [x64.0]</div></li>
+<li class="li2"><div class="de2">103.18.153.140 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">188.17.104.32 3020 [x47.0]</div></li>
+<li class="li1"><div class="de1">103.16.45.106 415 [x6.0]</div></li>
+<li class="li1"><div class="de1">94.137.47.142 4083 [x64.0]</div></li>
+<li class="li1"><div class="de1">103.2.44.78 252 [x4.0]</div></li>
+<li class="li2"><div class="de2">1.10.185.69 4083 [x64.0]</div></li>
+<li class="li1"><div class="de1">103.18.153.176 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">145.131.136.26 4077 [x64.0]</div></li>
+<li class="li1"><div class="de1">188.18.38.200 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">94.138.188.180 1297 [x20.0]</div></li>
+<li class="li2"><div class="de2">1.0.196.213 931 [x14.0]</div></li>
+<li class="li1"><div class="de1">69.10.193.92 123 [x1.0]</div></li>
+<li class="li1"><div class="de1">69.17.129.126 439 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.9.88.118 4013 [x63.0]</div></li>
+<li class="li1"><div class="de1">103.15.240.234 4012 [x63.0]</div></li>
+<li class="li2"><div class="de2">69.10.193.204 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">^C103.18.153.223 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.18.153.225 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.15.240.234 3983 [x63.0]</div></li>
+<li class="li1"><div class="de1">103.15.240.234 4057 [x64.0]</div></li>
+<li class="li2"><div class="de2">103.15.243.169 4083 [x64.0]</div></li>
+<li class="li1"><div class="de1">103.12.118.130 3591 [x57.0]</div></li>
+<li class="li1"><div class="de1">103.9.115.198 3941 [x62.0]</div></li>
+<li class="li1"><div class="de1">69.10.217.229 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">1.6.2.222 1250 [x19.0]</div></li>
+<li class="li2"><div class="de2">188.19.105.35 1841 [x29.0]</div></li>
+<li class="li1"><div class="de1">103.12.118.130 4082 [x64.0]</div></li>
+<li class="li1"><div class="de1">^C94.138.223.154 391 [x6.0]</div></li>
+<li class="li1"><div class="de1">1.0.243.58 731 [x11.0]</div></li>
+<li class="li1"><div class="de1">69.14.1.17 181 [x2.0]</div></li>
+<li class="li2"><div class="de2">103.21.217.46 305 [x4.0]</div></li>
+<li class="li1"><div class="de1">188.18.45.201 1275 [x20.0]</div></li>
+<li class="li1"><div class="de1">188.18.155.149 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">103.12.119.241 4229 [x67.0]</div></li>
+<li class="li1"><div class="de1">188.18.52.93 1024 [x16.0]</div></li>
+<li class="li2"><div class="de2">1.10.236.197 3991 [x63.0]</div></li>
+<li class="li1"><div class="de1">^C188.18.53.152 1911 [x30.0]</div></li>
+<li class="li1"><div class="de1">188.18.54.17 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">120.7.136.7 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">1.20.137.157 139 [x2.0]</div></li>
+<li class="li2"><div class="de2">188.16.5.116 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">120.7.141.46 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">1.10.243.184 170 [x2.0]</div></li>
+<li class="li1"><div class="de1">1.24.68.182 114 [x1.0]</div></li>
+<li class="li1"><div class="de1">120.6.82.235 103 [x1.0]</div></li>
+<li class="li2"><div class="de2">188.18.66.89 1841 [x29.0]</div></li>
+<li class="li1"><div class="de1">^[171.11.28.115 220 [x3.0]</div></li>
+<li class="li1"><div class="de1">188.19.140.71 1275 [x20.0]</div></li>
+<li class="li1"><div class="de1">188.16.8.135 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">188.16.61.241 1024 [x16.0]</div></li>
+<li class="li2"><div class="de2">1.20.158.225 731 [x11.0]</div></li>
+<li class="li1"><div class="de1">188.18.69.153 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">^C1.9.166.180 714 [x11.0]</div></li>
+<li class="li1"><div class="de1">69.1.49.115 305 [x4.0]</div></li>
+<li class="li1"><div class="de1">188.4.45.161 3020 [x47.0]</div></li>
+<li class="li2"><div class="de2">1.2.202.112 4077 [x64.0]</div></li>
+<li class="li1"><div class="de1">c1.2.205.86 2773 [x44.0]</div></li>
+<li class="li1"><div class="de1">^C69.4.33.58 1500 [x23.0]</div></li>
+<li class="li1"><div class="de1">^C1.11.81.116 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">188.19.157.141 512 [x8.0]</div></li>
+<li class="li2"><div class="de2">^C1.20.169.97 3569 [x56.0]</div></li>
+<li class="li1"><div class="de1">213.129.57.11 3977 [x63.0]</div></li>
+<li class="li1"><div class="de1">1.11.97.9 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">120.7.199.123 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">188.16.14.68 1024 [x16.0]</div></li>
+<li class="li2"><div class="de2">188.16.15.58 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">1.2.236.242 4077 [x64.0]</div></li>
+<li class="li1"><div class="de1">120.7.213.2 117 [x1.0]</div></li>
+<li class="li1"><div class="de1">1.20.170.206 731 [x11.0]</div></li>
+<li class="li1"><div class="de1">94.137.232.12 134 [x2.0]</div></li>
+<li class="li2"><div class="de2">69.9.191.4 1567 [x24.0]</div></li>
+<li class="li1"><div class="de1">108.61.10.10 3986 [x63.0]</div></li>
+<li class="li1"><div class="de1">103.24.125.58 299 [x4.0]</div></li>
+<li class="li1"><div class="de1">1.20.174.224 4077 [x64.0]</div></li>
+<li class="li1"><div class="de1">120.7.224.217 103 [x1.0]</div></li>
+<li class="li2"><div class="de2">103.24.126.52 170 [x2.0]</div></li>
+<li class="li1"><div class="de1">103.14.232.238 428 [x6.0]</div></li>
+<li class="li1"><div class="de1">154.16.126.38 551 [x8.0]</div></li>
+<li class="li1"><div class="de1">1.11.133.98 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">120.7.234.146 103 [x1.0]</div></li>
+<li class="li2"><div class="de2">103.22.244.28 298 [x4.0]</div></li>
+<li class="li1"><div class="de1">120.7.238.55 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">103.12.195.91 639 [x10.0]</div></li>
+<li class="li1"><div class="de1">103.22.250.202 4084 [x64.0]</div></li>
+<li class="li1"><div class="de1">188.16.23.233 1275 [x20.0]</div></li>
+<li class="li2"><div class="de2">103.23.17.61 4083 [x64.0]</div></li>
+<li class="li1"><div class="de1">188.19.181.49 1275 [x20.0]</div></li>
+<li class="li1"><div class="de1">188.19.182.28 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">188.18.132.85 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">188.18.132.166 1024 [x16.0]</div></li>
+<li class="li2"><div class="de2">188.18.133.37 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">188.17.240.54 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">188.16.148.52 1275 [x20.0]</div></li>
+<li class="li1"><div class="de1">103.6.212.123 1263 [x20.0]</div></li>
+<li class="li1"><div class="de1">1.20.198.17 931 [x14.0]</div></li>
+<li class="li2"><div class="de2">188.18.136.66 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">1.20.207.242 3569 [x56.0]</div></li>
+<li class="li1"><div class="de1">188.3.34.53 1250 [x19.0]</div></li>
+<li class="li1"><div class="de1">188.16.31.242 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">188.16.32.73 1024 [x16.0]</div></li>
+<li class="li2"><div class="de2">188.16.32.127 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">94.139.204.183 4083 [x64.0]</div></li>
+<li class="li1"><div class="de1">188.16.33.42 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">188.18.194.24 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">103.16.202.33 181 [x2.0]</div></li>
+<li class="li2"><div class="de2">188.18.195.49 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">103.18.8.10 167 [x2.0]</div></li>
+<li class="li1"><div class="de1">103.13.108.153 4024 [x63.0]</div></li>
+<li class="li1"><div class="de1">103.13.108.197 4024 [x63.0]</div></li>
+<li class="li1"><div class="de1">188.18.196.158 1275 [x20.0]</div></li>
+<li class="li2"><div class="de2">188.18.197.107 1275 [x20.0]</div></li>
+<li class="li1"><div class="de1">188.18.198.176 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">1.11.228.211 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">188.3.57.146 1199 [x19.0]</div></li>
+<li class="li1"><div class="de1">1.10.135.139 731 [x11.0]</div></li>
+<li class="li2"><div class="de2">103.13.109.33 4024 [x63.0]</div></li>
+<li class="li1"><div class="de1">1.21.15.145 4088 [x64.0]</div></li>
+<li class="li1"><div class="de1">213.136.66.193 551 [x8.0]</div></li>
+<li class="li1"><div class="de1">1.10.136.248 4043 [x64.0]</div></li>
+<li class="li1"><div class="de1">188.16.37.115 1024 [x16.0]</div></li>
+<li class="li2"><div class="de2">103.13.109.71 4024 [x63.0]</div></li>
+<li class="li1"><div class="de1">188.19.232.43 3020 [x47.0]</div></li>
+<li class="li1"><div class="de1">103.10.144.10 397 [x6.0]</div></li>
+<li class="li1"><div class="de1">1.10.153.68 731 [x11.0]</div></li>
+<li class="li1"><div class="de1">103.13.110.80 4024 [x63.0]</div></li>
+<li class="li2"><div class="de2">188.18.149.128 1275 [x20.0]</div></li>
+<li class="li1"><div class="de1">35.24.196.154 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">103.12.2.11 287 [x4.0]</div></li>
+<li class="li1"><div class="de1">103.10.170.11 4057 [x64.0]</div></li>
+<li class="li1"><div class="de1">188.5.118.215 1275 [x20.0]</div></li>
+<li class="li2"><div class="de2">103.18.153.37 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.13.110.134 4024 [x63.0]</div></li>
+<li class="li1"><div class="de1">103.10.171.2 4000 [x63.0]</div></li>
+<li class="li1"><div class="de1">103.13.110.147 4024 [x63.0]</div></li>
+<li class="li1"><div class="de1">188.19.12.212 1024 [x16.0]</div></li>
+<li class="li2"><div class="de2">1.23.235.33 1260 [x20.0]</div></li>
+<li class="li1"><div class="de1">[root@vultr ~]# ls</div></li>
+<li class="li1"><div class="de1">dns &nbsp;dns1.txt &nbsp;dns.c &nbsp;dns.txt &nbsp;filter.py</div></li>
+<li class="li1"><div class="de1">[root@vultr ~]# ./filter.py dns.txt dns1.txt 50</div></li>
+<li class="li1"><div class="de1">21</div></li>
+<li class="li2"><div class="de2">Started Scanning 9622 targets</div></li>
+<li class="li1"><div class="de1">ThreadCount: 23</div></li>
+<li class="li1"><div class="de1">108.61.10.10 3986 [x63.0]</div></li>
+<li class="li1"><div class="de1">69.10.193.205 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">213.147.102.66 4083 [x64.0]</div></li>
+<li class="li2"><div class="de2">1.10.183.235 731 [x11.0]</div></li>
+<li class="li1"><div class="de1">154.0.1.42 3982 [x63.0]</div></li>
+<li class="li1"><div class="de1">103.15.240.234 3996 [x63.0]</div></li>
+<li class="li1"><div class="de1">1.10.190.100 2784 [x44.0]</div></li>
+<li class="li1"><div class="de1">108.61.10.10 3986 [x63.0]</div></li>
+<li class="li2"><div class="de2">103.3.68.194 305 [x4.0]</div></li>
+<li class="li1"><div class="de1">69.10.193.226 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">69.10.193.125 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">103.23.235.210 503 [x7.0]</div></li>
+<li class="li1"><div class="de1">145.128.83.241 392 [x6.0]</div></li>
+<li class="li2"><div class="de2">103.21.44.90 4019 [x63.0]</div></li>
+<li class="li1"><div class="de1">213.128.64.219 495 [x7.0]</div></li>
+<li class="li1"><div class="de1">171.7.154.1 639 [x10.0]</div></li>
+<li class="li1"><div class="de1">103.15.108.133 280 [x4.0]</div></li>
+<li class="li1"><div class="de1">103.12.195.91 639 [x10.0]</div></li>
+<li class="li2"><div class="de2">103.18.153.32 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.20.184.68 673 [x10.0]</div></li>
+<li class="li1"><div class="de1">1.24.35.245 114 [x1.0]</div></li>
+<li class="li1"><div class="de1">1.24.43.7 114 [x1.0]</div></li>
+<li class="li1"><div class="de1">222.8.235.159 1656 [x26.0]</div></li>
+<li class="li2"><div class="de2">120.7.224.217 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">103.18.153.65 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">1.10.227.151 87 [x1.0]</div></li>
+<li class="li1"><div class="de1">1.25.21.1 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">1.10.229.233 87 [x1.0]</div></li>
+<li class="li2"><div class="de2">120.7.235.77 117 [x1.0]</div></li>
+<li class="li1"><div class="de1">171.8.254.102 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">52.9.6.25 815 [x12.0]</div></li>
+<li class="li1"><div class="de1">103.12.161.194 3994 [x63.0]</div></li>
+<li class="li1"><div class="de1">94.139.224.76 305 [x4.0]</div></li>
+<li class="li2"><div class="de2">1.20.198.250 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">108.61.10.10 3986 [x63.0]</div></li>
+<li class="li1"><div class="de1">1.1.133.139 3552 [x56.0]</div></li>
+<li class="li1"><div class="de1">103.24.62.140 78 [x1.0]</div></li>
+<li class="li1"><div class="de1">103.6.49.182 4034 [x64.0]</div></li>
+<li class="li2"><div class="de2">103.18.153.136 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.16.61.146 4083 [x64.0]</div></li>
+<li class="li1"><div class="de1">103.18.153.145 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">171.8.149.41 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">103.24.62.202 55 [x0.0]</div></li>
+<li class="li2"><div class="de2">1.0.150.32 170 [x2.0]</div></li>
+<li class="li1"><div class="de1">1.10.135.111 731 [x11.0]</div></li>
+<li class="li1"><div class="de1">103.16.62.138 4000 [x63.0]</div></li>
+<li class="li1"><div class="de1">1.1.135.31 1833 [x29.0]</div></li>
+<li class="li1"><div class="de1">120.7.238.55 103 [x1.0]</div></li>
+<li class="li2"><div class="de2">103.18.153.192 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">1.20.241.161 4096 [x65.0]</div></li>
+<li class="li1"><div class="de1">188.18.10.16 815 [x12.0]</div></li>
+<li class="li1"><div class="de1">103.16.72.158 4083 [x64.0]</div></li>
+<li class="li1"><div class="de1">103.8.43.116 4083 [x64.0]</div></li>
+<li class="li2"><div class="de2">1.11.71.4 804 [x12.0]</div></li>
+<li class="li1"><div class="de1">103.15.240.234 4041 [x64.0]</div></li>
+<li class="li1"><div class="de1">103.18.153.229 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.18.153.233 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">171.8.54.167 443 [x7.0]</div></li>
+<li class="li2"><div class="de2">103.17.180.6 551 [x8.0]</div></li>
+<li class="li1"><div class="de1">1.21.15.177 4088 [x64.0]</div></li>
+<li class="li1"><div class="de1">1.10.183.222 731 [x11.0]</div></li>
+<li class="li1"><div class="de1">1.24.198.6 114 [x1.0]</div></li>
+<li class="li1"><div class="de1">103.15.243.171 4083 [x64.0]</div></li>
+<li class="li2"><div class="de2">1.11.103.189 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">103.11.107.136 673 [x10.0]</div></li>
+<li class="li1"><div class="de1">188.21.99.195 175 [x2.0]</div></li>
+<li class="li1"><div class="de1">188.19.179.158 1275 [x20.0]</div></li>
+<li class="li1"><div class="de1">1.0.133.254 720 [x11.0]</div></li>
+<li class="li2"><div class="de2">171.8.254.102 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">103.21.82.34 1720 [x27.0]</div></li>
+<li class="li1"><div class="de1">103.13.110.83 4024 [x63.0]</div></li>
+<li class="li1"><div class="de1">213.136.69.107 815 [x12.0]</div></li>
+<li class="li1"><div class="de1">1.9.174.129 1525 [x24.0]</div></li>
+<li class="li2"><div class="de2">188.19.181.139 1275 [x20.0]</div></li>
+<li class="li1"><div class="de1">103.11.244.3 4094 [x64.0]</div></li>
+<li class="li1"><div class="de1">188.18.32.61 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">1.11.134.131 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">1.20.166.119 731 [x11.0]</div></li>
+<li class="li2"><div class="de2">1.9.147.105 1274 [x20.0]</div></li>
+<li class="li1"><div class="de1">1.9.149.195 815 [x12.0]</div></li>
+<li class="li1"><div class="de1">1.1.238.198 88 [x1.0]</div></li>
+<li class="li1"><div class="de1">188.18.32.225 1275 [x20.0]</div></li>
+<li class="li1"><div class="de1">120.7.175.120 103 [x1.0]</div></li>
+<li class="li2"><div class="de2">213.139.142.153 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">103.24.104.121 78 [x1.0]</div></li>
+<li class="li1"><div class="de1">188.18.34.27 1024 [x16.0]</div></li>
+<li class="li1"><div class="de1">1.25.13.53 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">1.10.237.245 88 [x1.0]</div></li>
+<li class="li2"><div class="de2">69.4.33.58 1500 [x23.0]</div></li>
+<li class="li1"><div class="de1">1.11.183.249 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">188.16.149.12 1275 [x20.0]</div></li>
+<li class="li1"><div class="de1">213.137.60.196 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">1.11.196.81 1135 [x18.0]</div></li>
+<li class="li2"><div class="de2">103.23.32.226 1333 [x21.0]</div></li>
+<li class="li1"><div class="de1">108.61.10.10 3986 [x63.0]</div></li>
+<li class="li1"><div class="de1">120.6.219.57 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">103.24.205.63 820 [x13.0]</div></li>
+<li class="li1"><div class="de1">103.6.207.250 234 [x3.0]</div></li>
+<li class="li2"><div class="de2">103.3.249.250 181 [x2.0]</div></li>
+<li class="li1"><div class="de1">108.61.10.10 3986 [x63.0]</div></li>
+<li class="li1"><div class="de1">108.61.10.10 3986 [x63.0]</div></li>
+<li class="li1"><div class="de1">94.139.241.150 3937 [x62.0]</div></li>
+<li class="li1"><div class="de1">94.141.169.223 4043 [x64.0]</div></li>
+<li class="li2"><div class="de2">1.24.134.91 114 [x1.0]</div></li>
+<li class="li1"><div class="de1">171.7.138.38 639 [x10.0]</div></li>
+<li class="li1"><div class="de1">1.9.196.82 1250 [x19.0]</div></li>
+<li class="li1"><div class="de1">94.137.189.181 164 [x2.0]</div></li>
+<li class="li1"><div class="de1">103.20.196.97 234 [x3.0]</div></li>
+<li class="li2"><div class="de2">103.18.153.197 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">69.4.36.40 815 [x12.0]</div></li>
+<li class="li1"><div class="de1">213.144.244.246 239 [x3.0]</div></li>
+<li class="li1"><div class="de1">213.129.57.11 4059 [x64.0]</div></li>
+<li class="li1"><div class="de1">120.7.50.190 103 [x1.0]</div></li>
+<li class="li2"><div class="de2">162.150.8.8 51 [x0.0]</div></li>
+<li class="li1"><div class="de1">1.0.149.78 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.11.244.3 4094 [x64.0]</div></li>
+<li class="li1"><div class="de1">69.2.175.92 815 [x12.0]</div></li>
+<li class="li1"><div class="de1">69.4.93.192 4034 [x64.0]</div></li>
+<li class="li2"><div class="de2">103.14.20.76 363 [x5.0]</div></li>
+<li class="li1"><div class="de1">103.13.110.108 4024 [x63.0]</div></li>
+<li class="li1"><div class="de1">1.11.252.52 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">103.4.119.78 181 [x2.0]</div></li>
+<li class="li1"><div class="de1">103.3.255.66 512 [x8.0]</div></li>
+<li class="li2"><div class="de2">103.12.2.11 287 [x4.0]</div></li>
+<li class="li1"><div class="de1">103.10.30.117 4000 [x63.0]</div></li>
+<li class="li1"><div class="de1">1.4.135.117 3937 [x62.0]</div></li>
+<li class="li1"><div class="de1">1.0.155.224 4018 [x63.0]</div></li>
+<li class="li1"><div class="de1">188.18.184.84 1275 [x20.0]</div></li>
+<li class="li2"><div class="de2">1.0.158.153 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.2.182.68 815 [x12.0]</div></li>
+<li class="li1"><div class="de1">1.2.188.22 4018 [x63.0]</div></li>
+<li class="li1"><div class="de1">103.18.153.23 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.15.240.234 3992 [x63.0]</div></li>
+<li class="li2"><div class="de2">69.14.56.161 804 [x12.0]</div></li>
+<li class="li1"><div class="de1">1.24.191.58 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">103.14.69.36 512 [x8.0]</div></li>
+<li class="li1"><div class="de1">103.10.63.30 207 [x3.0]</div></li>
+<li class="li1"><div class="de1">1.2.198.19 4083 [x64.0]</div></li>
+<li class="li2"><div class="de2">154.8.172.129 181 [x2.0]</div></li>
+<li class="li1"><div class="de1">103.11.107.136 673 [x10.0]</div></li>
+<li class="li1"><div class="de1">120.7.137.181 103 [x1.0]</div></li>
+<li class="li1"><div class="de1">1.0.179.11 4084 [x64.0]</div></li>
+<li class="li1"><div class="de1">1.0.180.128 4083 [x64.0]</div></li>
+<li class="li2"><div class="de2">1.0.181.3 4084 [x64.0]</div></li>
+<li class="li1"><div class="de1">1.0.182.215 4019 [x63.0]</div></li>
+<li class="li1"><div class="de1">213.138.100.193 321 [x5.0]</div></li>
+<li class="li1"><div class="de1">1.2.232.71 4084 [x64.0]</div></li>
+<li class="li1"><div class="de1">103.14.128.14 234 [x3.0]</div></li>
+<li class="li2"><div class="de2">188.4.225.147 3020 [x47.0]</div></li>
+<li class="li1"><div class="de1">103.17.250.181 305 [x4.0]</div></li>
+<li class="li1"><div class="de1">1.4.233.199 4018 [x63.0]</div></li>
+<li class="li1"><div class="de1">1.10.133.126 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">1.24.223.90 103 [x1.0]</div></li>
+<li class="li2"><div class="de2">69.12.113.68 175 [x2.0]</div></li>
+<li class="li1"><div class="de1">103.23.17.61 4083 [x64.0]</div></li>
+<li class="li1"><div class="de1">103.14.196.227 4085 [x64.0]</div></li>
+<li class="li1"><div class="de1">1.2.251.13 4031 [x63.0]</div></li>
+<li class="li1"><div class="de1">103.23.30.190 78 [x1.0]</div></li>
+<li class="li2"><div class="de2">94.146.198.163 181 [x2.0]</div></li>
+<li class="li1"><div class="de1">103.12.118.130 4079 [x64.0]</div></li>
+<li class="li1"><div class="de1">103.11.107.139 4000 [x63.0]</div></li>
+<li class="li1"><div class="de1">120.7.215.81 117 [x1.0]</div></li>
+<li class="li1"><div class="de1">69.17.129.126 439 [x6.0]</div></li>
+<li class="li2"><div class="de2">171.4.255.71 305 [x4.0]</div></li>
+<li class="li1"><div class="de1">103.18.153.86 381 [x6.0]</div></li>
+<li class="li1"><div class="de1">103.10.171.129 4057 [x64.0]</div></li>
+<li class="li1"><div class="de1">69.12.118.180 223 [x3.0]</div></li>
+<li class="li1"><div class="de1">103.10.170.1 4073 [x64.0]</div></li>
+<li class="li2"><div class="de2">103.23.79.139 495 [x7.0]</div></li>
+<li class="li1"><div class="de1">103.10.170.105 4011 [x63.0]</div></li>
+<li class="li1"><div class="de1">103.10.170.177 3982 [x63.0]</div></li>
+<li class="li1"><div class="de1">1.2.249.53 4000 [x63.0]</div></li>
+<li class="li1"><div class="de1">103.18.153.97 381 [x6.0]</div></li>
+<li class="li2"><div class="de2">213.133.87.225 3572 [x56.0]</div></li>
+<li class="li1"><div class="de1">103.10.171.85 3979 [x63.0]</div></li>
+<li class="li1"><div class="de1">103.8.43.179 714 [x11.0]</div></li>
+<li class="li1"><div class="de1">213.136.79.190 647 [x10.0]</div></li>
+<li class="li1"><div class="de1">108.61.10.10</div></li>
+<li class="li2"><div class="de2">69.10.193.205</div></li>
+<li class="li1"><div class="de1">213.147.102.66</div></li>
+<li class="li1"><div class="de1">1.10.183.235</div></li>
+<li class="li1"><div class="de1">154.0.1.42</div></li>
+<li class="li1"><div class="de1">103.15.240.234</div></li>
+<li class="li2"><div class="de2">1.10.190.100</div></li>
+<li class="li1"><div class="de1">108.61.10.10</div></li>
+<li class="li1"><div class="de1">69.10.193.205</div></li>
+<li class="li1"><div class="de1">213.147.102.66</div></li>
+<li class="li1"><div class="de1">1.10.183.235</div></li>
+<li class="li2"><div class="de2">154.0.1.42</div></li>
+<li class="li1"><div class="de1">103.15.240.234</div></li>
+<li class="li1"><div class="de1">1.10.190.100</div></li>
+<li class="li1"><div class="de1">108.61.10.10</div></li>
+<li class="li1"><div class="de1">103.3.68.194</div></li>
+<li class="li2"><div class="de2">69.10.193.226</div></li>
+<li class="li1"><div class="de1">69.10.193.125</div></li>
+<li class="li1"><div class="de1">103.23.235.210</div></li>
+<li class="li1"><div class="de1">145.128.83.241</div></li>
+<li class="li1"><div class="de1">103.21.44.90</div></li>
+<li class="li2"><div class="de2">213.128.64.219</div></li>
+<li class="li1"><div class="de1">171.7.154.1</div></li>
+<li class="li1"><div class="de1">103.15.108.133</div></li>
+<li class="li1"><div class="de1">103.12.195.91</div></li>
+<li class="li1"><div class="de1">103.18.153.32</div></li>
+<li class="li2"><div class="de2">103.20.184.68</div></li>
+<li class="li1"><div class="de1">1.24.35.245</div></li>
+<li class="li1"><div class="de1">1.24.43.7</div></li>
+<li class="li1"><div class="de1">222.8.235.159</div></li>
+<li class="li1"><div class="de1">120.7.224.217</div></li>
+<li class="li2"><div class="de2">103.18.153.65</div></li>
+<li class="li1"><div class="de1">1.10.227.151</div></li>
+<li class="li1"><div class="de1">1.25.21.1</div></li>
+<li class="li1"><div class="de1">1.10.229.233</div></li>
+<li class="li1"><div class="de1">120.7.235.77</div></li>
+<li class="li2"><div class="de2">171.8.254.102</div></li>
+<li class="li1"><div class="de1">52.9.6.25</div></li>
+<li class="li1"><div class="de1">103.12.161.194</div></li>
+<li class="li1"><div class="de1">94.139.224.76</div></li>
+<li class="li1"><div class="de1">108.61.10.10</div></li>
+<li class="li2"><div class="de2">69.10.193.205</div></li>
+<li class="li1"><div class="de1">1.0.133.254</div></li>
+<li class="li1"><div class="de1">108.61.10.10</div></li>
+<li class="li1"><div class="de1">188.4.225.147 1x1.cz</div></li>
+<li class="li1"><div class="de1">1.9.147.105 1x1.cz</div></li>
+<li class="li2"><div class="de2">1.0.133.254 1x1.cz</div></li>
+<li class="li1"><div class="de1">1.0.149.78 1x1.cz</div></li>
+<li class="li1"><div class="de1">1.0.150.32 1x1.cz</div></li>
+<li class="li1"><div class="de1">1.0.155.224 1x1.cz</div></li>
+<li class="li1"><div class="de1">1.0.158.153 1x1.cz</div></li>
+<li class="li2"><div class="de2">1.0.179.11 1x1.cz</div></li>
+<li class="li1"><div class="de1">1.0.180.128 1x1.cz</div></li>
+<li class="li1"><div class="de1">1.0.181.3 1x1.cz</div></li>
+<li class="li1"><div class="de1">1.0.182.215 1x1.cz</div></li>
+<li class="li1"><div class="de1">1.0.248.152 1x1.cz</div></li>
+<li class="li2"><div class="de2">103.10.170.1 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.10.170.105 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.10.170.177 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.10.171.129 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.10.171.85 1x1.cz</div></li>
+<li class="li2"><div class="de2">103.10.30.117 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.10.63.30 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.11.107.136 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.11.107.139 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.11.244.3 1x1.cz</div></li>
+<li class="li2"><div class="de2">103.12.118.130 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.12.161.194 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.12.195.91 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.12.2.11 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.13.110.108 1x1.cz</div></li>
+<li class="li2"><div class="de2">103.13.110.83 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.14.128.14 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.14.196.227 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.14.20.76 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.14.69.36 1x1.cz</div></li>
+<li class="li2"><div class="de2">103.15.108.133 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.15.240.234 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.15.243.171 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.15.63.65 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.16.202.33 1x1.cz</div></li>
+<li class="li2"><div class="de2">103.16.61.146 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.16.62.138 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.16.72.158 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.17.180.6 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.17.250.181 1x1.cz</div></li>
+<li class="li2"><div class="de2">103.18.153.136 1x1.cz</div></li>
+<li class="li1"><div class="de1">103.18.153.145 1x1.cz</div></li>
+</ol>
+			</div>
+		</div>
+	</div>
+	<div class="content_title no_border">RAW Paste Data<div id="bsa-footer"></div></div>
+	<div class="textarea_border" style="margin-bottom:0">
+		<textarea id="paste_code" class="paste_code" name="paste_code" onkeydown="return catchTab(this,event)">try:
+                                recvdata, addr = sock.recvfrom( BUFFER )                                                  ip_addr = str(addr[0])                                                                    if len(recvdata) &gt; int(sys.argv[3]): #sucess                                                      amp = len(recvdata) / pkt_size*1.0                                                        amp = round( amp, 2 )                                                                     log(                                                                                              "{} {} [x{}]".format(ip_addr,len(recvdata),amp)                                                                                                                                     )                                                                 except:                                                                                           pass                                                                      except:                                                                                           pass                                                              ## Create threads ###                                                                     def create_thread(function, *args):                                                               thread = threading.Thread(target=function,args=args)                                      thread.daemon = True                                                                      thread.start()                                                                            return thread                                                                     if __name__ == '__main__':                                                                        # create logging thread                                                                   create_thread(logger_thread)                                                              print "Started Scanning "+str(SIZE)+" targets"                                            # create threads                                                                          thread_list = []                                                                          for t in CHUNKS:                                                                                  thread = create_thread( scanner, t )                                                      thread_list.append( thread )                                                      # wait for threads to end                                                                 print "ThreadCount: " + str(threading.active_count())                                     for t in thread_list:                                                                             try:                                                                                              t.join()                                                                          except KeyboardInterrupt:                                                                         RUNNING = False                                                                           break                                                                     output.close()                                                                            if 'nt' not in os.name:                                                                           # for unix systems                                                                        os.system("chmod 0777 "+str(sys.argv[2]))                                         sys.exit()                                                                        "filter.py" [New] 123L, 2622C written
+[root@vultr ~]# yum install -y python
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: ftp-srv2.kddilabs.jp
+ * epel: ftp.iij.ad.jp
+ * extras: ftp-srv2.kddilabs.jp
+ * updates: ftp-srv2.kddilabs.jp
+Resolving Dependencies
+--&gt; Running transaction check
+---&gt; Package python.x86_64 0:2.7.5-76.el7 will be updated
+---&gt; Package python.x86_64 0:2.7.5-77.el7_6 will be an update
+--&gt; Processing Dependency: python-libs(x86-64) = 2.7.5-77.el7_6 for package: python-2.7.5-77.el7_6.x86_64
+--&gt; Running transaction check
+---&gt; Package python-libs.x86_64 0:2.7.5-76.el7 will be updated
+---&gt; Package python-libs.x86_64 0:2.7.5-77.el7_6 will be an update
+--&gt; Finished Dependency Resolution
+
+Dependencies Resolved
+
+========================================================================================== Package               Arch             Version                   Repository         Size
+==========================================================================================Updating:
+ python                x86_64           2.7.5-77.el7_6            updates            94 k
+Updating for dependencies:
+ python-libs           x86_64           2.7.5-77.el7_6            updates           5.6 M
+
+Transaction Summary
+==========================================================================================Upgrade  1 Package (+1 Dependent package)
+
+Total download size: 5.7 M
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+(1/2): python-2.7.5-77.el7_6.x86_64.rpm                            |  94 kB  00:00:00     (2/2): python-libs-2.7.5-77.el7_6.x86_64.rpm                       | 5.6 MB  00:00:00     ------------------------------------------------------------------------------------------Total                                                      16 MB/s | 5.7 MB  00:00:00     Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Updating   : python-libs-2.7.5-77.el7_6.x86_64                                      1/4   Updating   : python-2.7.5-77.el7_6.x86_64                                           2/4   Cleanup    : python-2.7.5-76.el7.x86_64                                             3/4   Cleanup    : python-libs-2.7.5-76.el7.x86_64                                        4/4   Verifying  : python-libs-2.7.5-77.el7_6.x86_64                                      1/4   Verifying  : python-2.7.5-77.el7_6.x86_64                                           2/4   Verifying  : python-2.7.5-76.el7.x86_64                                             3/4   Verifying  : python-libs-2.7.5-76.el7.x86_64                                        4/4 
+Updated:
+  python.x86_64 0:2.7.5-77.el7_6                                                          
+Dependency Updated:
+  python-libs.x86_64 0:2.7.5-77.el7_6                                                     
+Complete!
+[root@vultr ~]# chmod 777 filter.py
+[root@vultr ~]# ./filter.py
+Usage: &lt;input&gt; &lt;output&gt; &lt;mx size&gt;
+[root@vultr ~]# ./filter.py dns.txt dns1.txt 100
+21
+Started Scanning 7143 targets
+ThreadCount: 23
+103.18.153.77 381 [x6.0]
+103.5.133.160 170 [x2.0]
+154.0.0.28 3977 [x63.0]
+213.152.39.60 512 [x8.0]
+103.18.153.111 381 [x6.0]
+103.21.46.10 3991 [x63.0]
+188.19.254.218 512 [x8.0]
+103.18.153.134 381 [x6.0]
+1.0.184.35 4077 [x64.0]
+103.18.153.140 381 [x6.0]
+188.17.104.32 3020 [x47.0]
+103.16.45.106 415 [x6.0]
+94.137.47.142 4083 [x64.0]
+103.2.44.78 252 [x4.0]
+1.10.185.69 4083 [x64.0]
+103.18.153.176 381 [x6.0]
+145.131.136.26 4077 [x64.0]
+188.18.38.200 1024 [x16.0]
+94.138.188.180 1297 [x20.0]
+1.0.196.213 931 [x14.0]
+69.10.193.92 123 [x1.0]
+69.17.129.126 439 [x6.0]
+103.9.88.118 4013 [x63.0]
+103.15.240.234 4012 [x63.0]
+69.10.193.204 512 [x8.0]
+^C103.18.153.223 381 [x6.0]
+103.18.153.225 381 [x6.0]
+103.15.240.234 3983 [x63.0]
+103.15.240.234 4057 [x64.0]
+103.15.243.169 4083 [x64.0]
+103.12.118.130 3591 [x57.0]
+103.9.115.198 3941 [x62.0]
+69.10.217.229 512 [x8.0]
+1.6.2.222 1250 [x19.0]
+188.19.105.35 1841 [x29.0]
+103.12.118.130 4082 [x64.0]
+^C94.138.223.154 391 [x6.0]
+1.0.243.58 731 [x11.0]
+69.14.1.17 181 [x2.0]
+103.21.217.46 305 [x4.0]
+188.18.45.201 1275 [x20.0]
+188.18.155.149 512 [x8.0]
+103.12.119.241 4229 [x67.0]
+188.18.52.93 1024 [x16.0]
+1.10.236.197 3991 [x63.0]
+^C188.18.53.152 1911 [x30.0]
+188.18.54.17 1024 [x16.0]
+120.7.136.7 103 [x1.0]
+1.20.137.157 139 [x2.0]
+188.16.5.116 1024 [x16.0]
+120.7.141.46 103 [x1.0]
+1.10.243.184 170 [x2.0]
+1.24.68.182 114 [x1.0]
+120.6.82.235 103 [x1.0]
+188.18.66.89 1841 [x29.0]
+^[171.11.28.115 220 [x3.0]
+188.19.140.71 1275 [x20.0]
+188.16.8.135 1024 [x16.0]
+188.16.61.241 1024 [x16.0]
+1.20.158.225 731 [x11.0]
+188.18.69.153 512 [x8.0]
+^C1.9.166.180 714 [x11.0]
+69.1.49.115 305 [x4.0]
+188.4.45.161 3020 [x47.0]
+1.2.202.112 4077 [x64.0]
+c1.2.205.86 2773 [x44.0]
+^C69.4.33.58 1500 [x23.0]
+^C1.11.81.116 512 [x8.0]
+188.19.157.141 512 [x8.0]
+^C1.20.169.97 3569 [x56.0]
+213.129.57.11 3977 [x63.0]
+1.11.97.9 512 [x8.0]
+120.7.199.123 103 [x1.0]
+188.16.14.68 1024 [x16.0]
+188.16.15.58 1024 [x16.0]
+1.2.236.242 4077 [x64.0]
+120.7.213.2 117 [x1.0]
+1.20.170.206 731 [x11.0]
+94.137.232.12 134 [x2.0]
+69.9.191.4 1567 [x24.0]
+108.61.10.10 3986 [x63.0]
+103.24.125.58 299 [x4.0]
+1.20.174.224 4077 [x64.0]
+120.7.224.217 103 [x1.0]
+103.24.126.52 170 [x2.0]
+103.14.232.238 428 [x6.0]
+154.16.126.38 551 [x8.0]
+1.11.133.98 512 [x8.0]
+120.7.234.146 103 [x1.0]
+103.22.244.28 298 [x4.0]
+120.7.238.55 103 [x1.0]
+103.12.195.91 639 [x10.0]
+103.22.250.202 4084 [x64.0]
+188.16.23.233 1275 [x20.0]
+103.23.17.61 4083 [x64.0]
+188.19.181.49 1275 [x20.0]
+188.19.182.28 1024 [x16.0]
+188.18.132.85 1024 [x16.0]
+188.18.132.166 1024 [x16.0]
+188.18.133.37 1024 [x16.0]
+188.17.240.54 1024 [x16.0]
+188.16.148.52 1275 [x20.0]
+103.6.212.123 1263 [x20.0]
+1.20.198.17 931 [x14.0]
+188.18.136.66 1024 [x16.0]
+1.20.207.242 3569 [x56.0]
+188.3.34.53 1250 [x19.0]
+188.16.31.242 1024 [x16.0]
+188.16.32.73 1024 [x16.0]
+188.16.32.127 1024 [x16.0]
+94.139.204.183 4083 [x64.0]
+188.16.33.42 1024 [x16.0]
+188.18.194.24 1024 [x16.0]
+103.16.202.33 181 [x2.0]
+188.18.195.49 1024 [x16.0]
+103.18.8.10 167 [x2.0]
+103.13.108.153 4024 [x63.0]
+103.13.108.197 4024 [x63.0]
+188.18.196.158 1275 [x20.0]
+188.18.197.107 1275 [x20.0]
+188.18.198.176 1024 [x16.0]
+1.11.228.211 512 [x8.0]
+188.3.57.146 1199 [x19.0]
+1.10.135.139 731 [x11.0]
+103.13.109.33 4024 [x63.0]
+1.21.15.145 4088 [x64.0]
+213.136.66.193 551 [x8.0]
+1.10.136.248 4043 [x64.0]
+188.16.37.115 1024 [x16.0]
+103.13.109.71 4024 [x63.0]
+188.19.232.43 3020 [x47.0]
+103.10.144.10 397 [x6.0]
+1.10.153.68 731 [x11.0]
+103.13.110.80 4024 [x63.0]
+188.18.149.128 1275 [x20.0]
+35.24.196.154 512 [x8.0]
+103.12.2.11 287 [x4.0]
+103.10.170.11 4057 [x64.0]
+188.5.118.215 1275 [x20.0]
+103.18.153.37 381 [x6.0]
+103.13.110.134 4024 [x63.0]
+103.10.171.2 4000 [x63.0]
+103.13.110.147 4024 [x63.0]
+188.19.12.212 1024 [x16.0]
+1.23.235.33 1260 [x20.0]
+[root@vultr ~]# ls
+dns  dns1.txt  dns.c  dns.txt  filter.py
+[root@vultr ~]# ./filter.py dns.txt dns1.txt 50
+21
+Started Scanning 9622 targets
+ThreadCount: 23
+108.61.10.10 3986 [x63.0]
+69.10.193.205 512 [x8.0]
+213.147.102.66 4083 [x64.0]
+1.10.183.235 731 [x11.0]
+154.0.1.42 3982 [x63.0]
+103.15.240.234 3996 [x63.0]
+1.10.190.100 2784 [x44.0]
+108.61.10.10 3986 [x63.0]
+103.3.68.194 305 [x4.0]
+69.10.193.226 512 [x8.0]
+69.10.193.125 512 [x8.0]
+103.23.235.210 503 [x7.0]
+145.128.83.241 392 [x6.0]
+103.21.44.90 4019 [x63.0]
+213.128.64.219 495 [x7.0]
+171.7.154.1 639 [x10.0]
+103.15.108.133 280 [x4.0]
+103.12.195.91 639 [x10.0]
+103.18.153.32 381 [x6.0]
+103.20.184.68 673 [x10.0]
+1.24.35.245 114 [x1.0]
+1.24.43.7 114 [x1.0]
+222.8.235.159 1656 [x26.0]
+120.7.224.217 103 [x1.0]
+103.18.153.65 381 [x6.0]
+1.10.227.151 87 [x1.0]
+1.25.21.1 103 [x1.0]
+1.10.229.233 87 [x1.0]
+120.7.235.77 117 [x1.0]
+171.8.254.102 103 [x1.0]
+52.9.6.25 815 [x12.0]
+103.12.161.194 3994 [x63.0]
+94.139.224.76 305 [x4.0]
+1.20.198.250 381 [x6.0]
+108.61.10.10 3986 [x63.0]
+1.1.133.139 3552 [x56.0]
+103.24.62.140 78 [x1.0]
+103.6.49.182 4034 [x64.0]
+103.18.153.136 381 [x6.0]
+103.16.61.146 4083 [x64.0]
+103.18.153.145 381 [x6.0]
+171.8.149.41 103 [x1.0]
+103.24.62.202 55 [x0.0]
+1.0.150.32 170 [x2.0]
+1.10.135.111 731 [x11.0]
+103.16.62.138 4000 [x63.0]
+1.1.135.31 1833 [x29.0]
+120.7.238.55 103 [x1.0]
+103.18.153.192 381 [x6.0]
+1.20.241.161 4096 [x65.0]
+188.18.10.16 815 [x12.0]
+103.16.72.158 4083 [x64.0]
+103.8.43.116 4083 [x64.0]
+1.11.71.4 804 [x12.0]
+103.15.240.234 4041 [x64.0]
+103.18.153.229 381 [x6.0]
+103.18.153.233 381 [x6.0]
+171.8.54.167 443 [x7.0]
+103.17.180.6 551 [x8.0]
+1.21.15.177 4088 [x64.0]
+1.10.183.222 731 [x11.0]
+1.24.198.6 114 [x1.0]
+103.15.243.171 4083 [x64.0]
+1.11.103.189 512 [x8.0]
+103.11.107.136 673 [x10.0]
+188.21.99.195 175 [x2.0]
+188.19.179.158 1275 [x20.0]
+1.0.133.254 720 [x11.0]
+171.8.254.102 103 [x1.0]
+103.21.82.34 1720 [x27.0]
+103.13.110.83 4024 [x63.0]
+213.136.69.107 815 [x12.0]
+1.9.174.129 1525 [x24.0]
+188.19.181.139 1275 [x20.0]
+103.11.244.3 4094 [x64.0]
+188.18.32.61 1024 [x16.0]
+1.11.134.131 512 [x8.0]
+1.20.166.119 731 [x11.0]
+1.9.147.105 1274 [x20.0]
+1.9.149.195 815 [x12.0]
+1.1.238.198 88 [x1.0]
+188.18.32.225 1275 [x20.0]
+120.7.175.120 103 [x1.0]
+213.139.142.153 512 [x8.0]
+103.24.104.121 78 [x1.0]
+188.18.34.27 1024 [x16.0]
+1.25.13.53 103 [x1.0]
+1.10.237.245 88 [x1.0]
+69.4.33.58 1500 [x23.0]
+1.11.183.249 512 [x8.0]
+188.16.149.12 1275 [x20.0]
+213.137.60.196 512 [x8.0]
+1.11.196.81 1135 [x18.0]
+103.23.32.226 1333 [x21.0]
+108.61.10.10 3986 [x63.0]
+120.6.219.57 103 [x1.0]
+103.24.205.63 820 [x13.0]
+103.6.207.250 234 [x3.0]
+103.3.249.250 181 [x2.0]
+108.61.10.10 3986 [x63.0]
+108.61.10.10 3986 [x63.0]
+94.139.241.150 3937 [x62.0]
+94.141.169.223 4043 [x64.0]
+1.24.134.91 114 [x1.0]
+171.7.138.38 639 [x10.0]
+1.9.196.82 1250 [x19.0]
+94.137.189.181 164 [x2.0]
+103.20.196.97 234 [x3.0]
+103.18.153.197 381 [x6.0]
+69.4.36.40 815 [x12.0]
+213.144.244.246 239 [x3.0]
+213.129.57.11 4059 [x64.0]
+120.7.50.190 103 [x1.0]
+162.150.8.8 51 [x0.0]
+1.0.149.78 381 [x6.0]
+103.11.244.3 4094 [x64.0]
+69.2.175.92 815 [x12.0]
+69.4.93.192 4034 [x64.0]
+103.14.20.76 363 [x5.0]
+103.13.110.108 4024 [x63.0]
+1.11.252.52 512 [x8.0]
+103.4.119.78 181 [x2.0]
+103.3.255.66 512 [x8.0]
+103.12.2.11 287 [x4.0]
+103.10.30.117 4000 [x63.0]
+1.4.135.117 3937 [x62.0]
+1.0.155.224 4018 [x63.0]
+188.18.184.84 1275 [x20.0]
+1.0.158.153 381 [x6.0]
+103.2.182.68 815 [x12.0]
+1.2.188.22 4018 [x63.0]
+103.18.153.23 381 [x6.0]
+103.15.240.234 3992 [x63.0]
+69.14.56.161 804 [x12.0]
+1.24.191.58 103 [x1.0]
+103.14.69.36 512 [x8.0]
+103.10.63.30 207 [x3.0]
+1.2.198.19 4083 [x64.0]
+154.8.172.129 181 [x2.0]
+103.11.107.136 673 [x10.0]
+120.7.137.181 103 [x1.0]
+1.0.179.11 4084 [x64.0]
+1.0.180.128 4083 [x64.0]
+1.0.181.3 4084 [x64.0]
+1.0.182.215 4019 [x63.0]
+213.138.100.193 321 [x5.0]
+1.2.232.71 4084 [x64.0]
+103.14.128.14 234 [x3.0]
+188.4.225.147 3020 [x47.0]
+103.17.250.181 305 [x4.0]
+1.4.233.199 4018 [x63.0]
+1.10.133.126 381 [x6.0]
+1.24.223.90 103 [x1.0]
+69.12.113.68 175 [x2.0]
+103.23.17.61 4083 [x64.0]
+103.14.196.227 4085 [x64.0]
+1.2.251.13 4031 [x63.0]
+103.23.30.190 78 [x1.0]
+94.146.198.163 181 [x2.0]
+103.12.118.130 4079 [x64.0]
+103.11.107.139 4000 [x63.0]
+120.7.215.81 117 [x1.0]
+69.17.129.126 439 [x6.0]
+171.4.255.71 305 [x4.0]
+103.18.153.86 381 [x6.0]
+103.10.171.129 4057 [x64.0]
+69.12.118.180 223 [x3.0]
+103.10.170.1 4073 [x64.0]
+103.23.79.139 495 [x7.0]
+103.10.170.105 4011 [x63.0]
+103.10.170.177 3982 [x63.0]
+1.2.249.53 4000 [x63.0]
+103.18.153.97 381 [x6.0]
+213.133.87.225 3572 [x56.0]
+103.10.171.85 3979 [x63.0]
+103.8.43.179 714 [x11.0]
+213.136.79.190 647 [x10.0]
+108.61.10.10
+69.10.193.205
+213.147.102.66
+1.10.183.235
+154.0.1.42
+103.15.240.234
+1.10.190.100
+108.61.10.10
+69.10.193.205
+213.147.102.66
+1.10.183.235
+154.0.1.42
+103.15.240.234
+1.10.190.100
+108.61.10.10
+103.3.68.194
+69.10.193.226
+69.10.193.125
+103.23.235.210
+145.128.83.241
+103.21.44.90
+213.128.64.219
+171.7.154.1
+103.15.108.133
+103.12.195.91
+103.18.153.32
+103.20.184.68
+1.24.35.245
+1.24.43.7
+222.8.235.159
+120.7.224.217
+103.18.153.65
+1.10.227.151
+1.25.21.1
+1.10.229.233
+120.7.235.77
+171.8.254.102
+52.9.6.25
+103.12.161.194
+94.139.224.76
+108.61.10.10
+69.10.193.205
+1.0.133.254
+108.61.10.10
+188.4.225.147 1x1.cz
+1.9.147.105 1x1.cz
+1.0.133.254 1x1.cz
+1.0.149.78 1x1.cz
+1.0.150.32 1x1.cz
+1.0.155.224 1x1.cz
+1.0.158.153 1x1.cz
+1.0.179.11 1x1.cz
+1.0.180.128 1x1.cz
+1.0.181.3 1x1.cz
+1.0.182.215 1x1.cz
+1.0.248.152 1x1.cz
+103.10.170.1 1x1.cz
+103.10.170.105 1x1.cz
+103.10.170.177 1x1.cz
+103.10.171.129 1x1.cz
+103.10.171.85 1x1.cz
+103.10.30.117 1x1.cz
+103.10.63.30 1x1.cz
+103.11.107.136 1x1.cz
+103.11.107.139 1x1.cz
+103.11.244.3 1x1.cz
+103.12.118.130 1x1.cz
+103.12.161.194 1x1.cz
+103.12.195.91 1x1.cz
+103.12.2.11 1x1.cz
+103.13.110.108 1x1.cz
+103.13.110.83 1x1.cz
+103.14.128.14 1x1.cz
+103.14.196.227 1x1.cz
+103.14.20.76 1x1.cz
+103.14.69.36 1x1.cz
+103.15.108.133 1x1.cz
+103.15.240.234 1x1.cz
+103.15.243.171 1x1.cz
+103.15.63.65 1x1.cz
+103.16.202.33 1x1.cz
+103.16.61.146 1x1.cz
+103.16.62.138 1x1.cz
+103.16.72.158 1x1.cz
+103.17.180.6 1x1.cz
+103.17.250.181 1x1.cz
+103.18.153.136 1x1.cz
+103.18.153.145 1x1.cz</textarea>
+	</div><div id="abrpm3"></div>
+			<div style="padding: 10px 0 0 0;">
+				<script type="text/javascript"><!--
+					e9 = new Object();
+					e9.size = "300x600,300x250";
+				//--></script>
+				<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/PastebincomNew/Sure/tags.js"></script>
+			</div>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".close1").click(function(){return $("#float-box-1").hide(),createCookie("l2c_1",!0,90),!1});
+		$(".cookie_button").click(function(){return $("#float-box-1").hide(),createCookie("l2c_1",!0,90),!1});		
+		$(".close2").click(function(){return $("#float-box-2").hide(),createCookie("l2c_2",!0,14),!1});
+		$(".close3").click(function(){return $("#float-box-3").hide(),createCookie("l2c_2",!0,14),!1});
+		$(".close4").click(function(){return $("#float-box-4").hide(),createCookie("l2c_4",!0,7),!1});
+	});	
+	</script>
+	<div id="float-box-frame">		
+		<div id="float-box-1">
+			We use cookies for various purposes including analytics. By continuing to use Pastebin, you agree to our use of cookies as described in the <a href="https://pastebin.com/doc_cookies_policy">Cookies Policy</a>. <span class="cookie_button">OK, I Understand</span>
+		</div>
+		<div id="float-box-3">
+			<style>
+				#pro_promo_text{color:#333;float:right;display:block;font-size:14px;font-weight:400;width:270px}					
+				#pro_promo_img {background: #fff;width: 60px;height: 50px;float: left;}
+			</style>			
+			<div id="pro_promo_img"><a href="https://pastebin.com/signup"><img src="https://pastebin.com/i/hello.png" alt="" border="0" style="width:48px;height:48px;" /></a></div> 
+			<div id="pro_promo_text">Not a member of Pastebin yet?<br /><a href="https://pastebin.com/signup" style="text-decoration: underline dotted"><b>Sign Up</b></a>, it unlocks many cool features!</div>
+			<div class="close3" title="Close Me">&nbsp;</div>
+		</div></div>						</div>
+					</div>
+				</div>
+			</div>
+			<div id="mid_footer">
+				<a href="https://pastebin.com/tools#chrome" title="Google Chrome Extension"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 chrome" /></a>
+				<a href="https://pastebin.com/tools#firefox" title="Firefox Extension"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 firefox" /></a>
+				<a href="https://pastebin.com/tools#iphone" title="iPhone/iPad Application"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 iphone" /></a>
+				<a href="https://pastebin.com/tools#windows" title="Windows Desktop Application"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 windows" /></a>
+				<a href="https://pastebin.com/tools#android" title="Android Application"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 android" /></a>
+				<a href="https://pastebin.com/tools#macos" title="MacOS X Widget"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 macos" /></a>
+				<a href="https://pastebin.com/tools#opera" title="Opera Extension"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 opera" /></a>
+				<a href="https://pastebin.com/tools#pastebincl" title="Linux Application"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 unix" /></a>
+			</div> 
+		</div>
+		<div id="footer">
+			<div id="footer_links">
+				<a href="https://pastebin.com/">create new paste</a> &nbsp;/&nbsp; 
+				<a href="https://deals.pastebin.com/">deals</a><sup style="color:red">new!</sup> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/languages">syntax languages</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/archive">archive</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/faq">faq</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/tools">tools</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/night_mode">night mode</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/api">api</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/doc_scraping_api">scraping api</a> &nbsp;/&nbsp; 				
+				<a href="https://pastebin.com/pro">go <img src="https://pastebin.com/i/t.gif" alt="" title="Get a PRO account!" class="pro_btn_inv" /></a>
+				<br />
+				<a href="https://pastebin.com/doc_privacy_statement">privacy statement</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/doc_cookies_policy">cookies policy</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/doc_terms_of_service">terms of service</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/doc_security_disclosure">security disclosure</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/dmca">dmca</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/contact">contact</a>
+				<br /><br />
+				<span class="h_800">
+					By using Pastebin.com you agree to our <a href="https://pastebin.com/doc_cookies_policy">cookies policy</a> to enhance your experience.
+					<br />
+					Site design &amp; logo &copy; 2018 Pastebin; user contributions (pastes) licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="nofollow">cc by-sa 3.0</a> -- 
+				</span>
+				<a href="http://steadfast.net/services/dedicated-servers.php?utm_source=pastebin.com&amp;utm_medium=referral&amp;utm_content=footer_link_dedicated_server_hosting_by&amp;utm_campaign=referral_20140118_x_x_pastebin_partner&amp;source=referral_20140118_x_x_pastebin_partner" rel="nofollow" target="_blank">Dedicated Server Hosting</a> by <a href="http://steadfast.net/?utm_source=pastebin.com&amp;utm_medium=referral&amp;utm_content=footer_link_steadfast&amp;utm_campaign=referral_20140118_x_x_pastebin_partner&amp;source=referral_20140118_x_x_pastebin_partner" rel="nofollow" target="_blank">Steadfast</a>
+			</div>
+			<div id="footer_right" class="h_1024">
+			
+				<a href="https://facebook.com/pastebin" rel="nofollow" title="Like us on Facebook" target="_blank"><img src="https://pastebin.com/i/t.gif" alt="" class="icon40 facebook_circle" /></a>
+				<a href="https://twitter.com/pastebin" rel="nofollow" title="Follow us on Twitter" target="_blank"><img src="https://pastebin.com/i/t.gif" alt="" class="icon40 twitter_circle" /></a>
+							</div>
+		</div>
+
+			<script type="text/javascript"><!--
+			  e9 = new Object();
+			  e9.snackbar = true;
+			//--></script>
+			<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/PastebincomNew/SnackbarSafe/tags.js"></script>
+			<script src="http://m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+			<script>
+			(function() {
+			  if (typeof _bsa !== 'undefined' && _bsa) {
+				_bsa.init('fancybar', 'CKYDL2JL', 'placement:pastebincom');
+			  }
+			})();
+			</script>
+		<script type="text/javascript">
+			function abdd() {$("#adb-enabled").show(), $("#adb-not-enabled").hide(), $("#abrpm3").html("<center><iframe src='/pba/cube_safe.php' id='monkey_3' marginwidth='0' align='center' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' allowtransparency='true' width='300' height='250' style='width: 300px; height: 250px; margin-top:10px;'></iframe></center>"), $("#abrpm2").html("<iframe src='/pba/sky_safe.php' id='monkey' marginwidth='0' align='center' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' allowtransparency='true' width='160' height='600' style='width: 160px; height: 600px;'></iframe>"), $("#abrpm").html("<iframe src='/pba/lead_safe.php' id='monkey_2' marginwidth='0' align='center' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' allowtransparency='true' width='728' height='100' style='width: 728px; height: 100px;'></iframe>")}
+			function abnd(){$("#adb-enabled").hide(), $("#adb-not-enabled").show()}$(function(){}), "undefined" == typeof fuckAdBlock ? abdd() : (fuckAdBlock.setOption({debug: !1}), fuckAdBlock.onDetected(abdd).onNotDetected(abnd));
+			var $title=$("a,input,p,label,textarea[title],img,button,span");$.each($title,function(){$(this).tooltip({show:{delay:1},hide:{delay:1}})});
+		</script>		<script type="text/javascript">
+			function isIE(){var e=navigator.userAgent.toLowerCase();return-1!=e.indexOf("msie")?parseInt(e.split("msie")[1]):!1}if(isIE()&&isIE()<10){var div=document.getElementById("ie_msg");div.innerHTML=div.innerHTML+'<div id="old_browser">Your browser is outdated and insecure! Pastebin does not offer support for your browser. <a href="http://outdatedbrowser.com/" target="_blank" rel="nofollow">Click here to update your browser</a>!</div>'}
+		</script>
+		<div class="pub_300x250"></div><a href="#0" class="cd-top">Top</a>
+		
+	
+		
+	</body>
+
+<!-- Mirrored from pastebin.com/puTxnLe1 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Apr 2019 12:10:30 GMT -->
+</html>

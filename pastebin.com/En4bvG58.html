@@ -1,0 +1,659 @@
+<!DOCTYPE HTML>
+	
+<!-- Mirrored from pastebin.com/En4bvG58 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Apr 2019 12:10:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58643-34"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-58643-34');
+</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>[MySQL] CREATE TABLE Clothes (      ClothingID INT NOT NULL,      Brand VARCHAR(20) NOT  - Pastebin.com</title>
+		<link rel="shortcut icon" href="https://pastebin.com/favicon.ico" />
+		<script src="https://pastebin.com/js/jquery.min.js"></script>
+		<script src="https://pastebin.com/js/pastebin.min.v3.js"></script>
+		<link href="https://pastebin.com/i/pastebin.min.v8.css" rel="stylesheet" type="text/css" />
+		<!--[if lt IE 10]>
+			<link href="/i/pastebin.ie8.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+
+			<link href="https://pastebin.com/cache/css_lang/mysql.css" rel="stylesheet" type="text/css" /> 
+		<style>body{-webkit-text-size-adjust:none;}</style>
+				<meta property="fb:app_id" content="231493360234820" />
+		<meta property="og:title" content="[MySQL] CREATE TABLE Clothes (      ClothingID INT NOT NULL,      Brand VARCHAR(20) NOT  - Pastebin.com" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://pastebin.com/En4bvG58" />
+		<meta property="og:image" content="https://pastebin.com/i/facebook.png" />
+		<meta property="og:site_name" content="Pastebin" />
+		<meta name="google-site-verification" content="jkUAIOE8owUXu8UXIhRLB9oHJsWBfOgJbZzncqHoF4A" />
+		<link rel="canonical" href="https://pastebin.com/En4bvG58" />
+				<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=1.0, user-scalable=yes">
+		<script type="text/javascript">
+			if (top != self)
+				top.location.href = location.href;
+		</script>
+	</head>
+	<body>
+	<div id="main_frame">
+		<div id="jq-dropdown-1" class="jq-dropdown jq-dropdown-anchor-right jq-dropdown-scroll">
+			<ul class="jq-dropdown-menu">
+				
+				<li class="lih_640">
+					<form class="search_form_li" name="search_form_li" method="get" action="https://pastebin.com/search" id="cse-search-box-li">
+						<input class="search_input_li" type="text" name="q" size="5" value="" placeholder="search..." />
+					</form>
+
+				</li>
+				<li class="lih_div"></li>
+				<li onclick="location.href='https://pastebin.com/signup'" class="dd_su">Sign Up</li>
+				<li onclick="location.href='https://pastebin.com/login'" class="dd_lo">Login</li>
+				<li class="lih_div"></li>
+				<li onclick="location.href='https://pastebin.com/api'" class="lih_640">API</li>
+				<li onclick="location.href='https://pastebin.com/faq'" class="lih_640">FAQ</li>
+				<li onclick="location.href='https://pastebin.com/tools'" class="lih_640">Tools</li>
+				<li onclick="location.href='https://pastebin.com/archive'" class="lih_640">Archive</li>			</ul>
+		</div>
+		<div id="header">
+			<div id="header_wrap">
+				<div id="header_top">
+					<div id="header_logo" onclick="location.href='https://pastebin.com/'">PASTEBIN</div>
+					<div id="header_new_paste" class="new_paste_button" onclick="location.href='https://pastebin.com/'">new paste</div>
+					<div id="header_links">
+						<a href="https://pastebin.com/pro" class="mmh">PRO</a>					
+						<a href="https://pastebin.com/api" class="mmh">API</a>
+						<a href="https://pastebin.com/tools" class="mmh">tools</a>
+						<a href="https://pastebin.com/faq" class="mmh">faq</a>
+						<a href="https://deals.pastebin.com/" target="_blank" class="mmh">deals</a>						
+					</div>
+					<div id="header_search">
+						<form class="search_form" name="search_form" method="get" action="https://pastebin.com/search" id="cse-search-box">
+							<input class="search_input" type="text" name="q" size="5" value="" placeholder="search..." />
+						</form> 
+					</div>
+					
+					<div id="header_members">
+						<div id="header_dropdown" data-jq-dropdown="#jq-dropdown-1">&nbsp;</div>
+						<div id="header_icon"><a href="https://pastebin.com/login"><img src="https://pastebin.com/i/guest.png" class="header_icon" alt="" /></a></div>
+						<div id="header_user_frame">
+							<div id="header_username">Guest User</div>
+							<div id="header_user_status">-</div>
+						</div>
+						<div id="header_icons">
+							<a href="https://pastebin.com/login" title="My Pastebin"><img src="https://pastebin.com/i/t.gif" class="header_icons hi_mypastebin" alt="" /></a>
+							<a href="https://pastebin.com/messages" title="My Messages"><img src="https://pastebin.com/i/t.gif" class="header_icons hi_messages" alt="" /></a>
+							<a href="https://pastebin.com/alerts" title="My Alerts"><img src="https://pastebin.com/i/t.gif" class="header_icons hi_alerts" alt="" /></a>
+							<a href="https://pastebin.com/settings" title="My Settings"><img src="https://pastebin.com/i/t.gif" class="header_icons hi_settings" alt="" /></a>
+						</div>
+					</div>				</div>
+			</div>
+		</div>
+		<div id="super_frame">
+			<div id="monster_frame">
+				<div id="content_frame">
+					<div id="content_right">						
+
+	<div class="content_right_menu">
+									<div class="content_right_title"><a href="https://pastebin.com/archive">Public Pastes</a></div>
+									<div id="menu_2">
+										<ul class="right_menu"><li><a href="https://pastebin.com/NRVjd9AF">Untitled</a><span>8 sec ago</span></li><li><a href="https://pastebin.com/AUz85sP6">CorpseReborn Error...</a><span>9 sec ago</span></li><li><a href="https://pastebin.com/UJmdprYs">kpop groups</a><span>16 sec ago</span></li><li><a href="https://pastebin.com/d4rCvj0X">Untitled</a><span>18 sec ago</span></li><li><a href="https://pastebin.com/4qJPBwpR">Untitled</a><span>25 sec ago</span></li><li><a href="https://pastebin.com/qi4mAk1W">Untitled</a><span>35 sec ago</span></li><li><a href="https://pastebin.com/CrcZMzJH">Untitled</a><span>35 sec ago</span></li><li><a href="https://pastebin.com/YzbuaH9b">Untitled</a><span>Python | 36 sec ago</span></li></ul></div></div>	<div style="border:1px solid #DDD;padding:1px;width:156px; border-radius:3px;">
+		<div style="border:1px solid #ddd; font-size:0.75em;text-align:center;background:#F9F9F9; border-radius:3px;">	
+			<div style="padding: 3px 0">daily pastebin <a href="https://pastebin.com/pro?help=1"><img src="https://pastebin.com/i/t.gif" alt="" class="pro_btn_inv"></a> goal</div>
+			<div style="width:152px;height:37px;">
+				<div style="position:relative;border:1px solid #DDD;border-radius: 5px;width:126px;height:25px;margin:0 0 0 10px" title="Goal updates every 15 minutes...">
+					<div style="position:absolute;left:0;top:0;background-color: #DDD;border-radius: 0 0 0 0 ;width:26px;height:25px;"></div>
+					<div style="position:absolute;right:5px;width:25px;height:20px;top:0;">20%</div>
+				</div>
+			</div>
+			<div style="clear:both;margin: 0 0 10px 0"><a href="https://pastebin.com/pro?help=1" class="buttonpro" style="font-size:0.9em" title="Learn more about going PRO">help support pastebin</a></div>
+		</div>
+	</div>
+	<div id="abrpm2"></div>
+	
+			<div style="padding: 0; width:160px;margin: 10px 0;clear:left;">
+				<script type="text/javascript"><!--
+					e9 = new Object();
+					e9.size = "160x600,120x600";
+				//--></script>
+				<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/PastebincomNew/Sure/tags.js"></script>
+			</div>
+<div id="steadfast" title="Pastebin is proudly hosted by Steadfast.net" onclick="location.href='http://steadfast.net/?utm_source=pastebin.com&amp;utm_medium=referral&amp;utm_content=hosting_by_banner&amp;utm_campaign=referral_20140118_x_x_pastebin_partner&amp;source=referral_20140118_x_x_pastebin_partner'"></div>
+	</div>
+	<div id="content_left"><div id="ie_msg"></div>
+					
+		
+	<div class="paste_box_frame">
+		<div class="tweet h_800">
+			<div onclick="facebookpopup('/En4bvG58'); return false;" id="b_facebook2" title="Share on Facebook!"><span id="b_facebook">SHARE</span></div>
+			<div onclick="twitpopup('/En4bvG58'); return false;" id="b_twitter2" title="Share on Twitter!"><span id="b_twitter">TWEET</span></div>
+		</div>
+		<div class="paste_box_icon">
+			<img src="https://pastebin.com/i/t.gif" class="i_gb" title="Anonymous guest user" alt="" />
+		</div>
+		<div class="paste_box_info">
+			<div class="paste_box_line1" title="Untitled"><h1>Untitled</h1></div>
+			<div class="paste_box_line2">
+				<img src="https://pastebin.com/i/t.gif" class="img_line t_us" alt="" style="margin-left:0"> a guest 
+				<img src="https://pastebin.com/i/t.gif" class="img_line t_da" alt=""> <span title="Monday 22nd of April 2019 06:54:17 AM CDT">Apr 22nd, 2019</span>
+				<img src="https://pastebin.com/i/t.gif" class="img_line t_vi" alt="" title="Unique visits to this paste"> 44
+				<img src="https://pastebin.com/i/t.gif" class="img_line t_ex" alt="" title="When this paste gets automatically deleted"> Never
+			</div>
+		</div>
+	</div>
+	
+			<div id="abrpm"></div>
+			<div class="banner_728">
+				<script type="text/javascript"><!--
+					e9 = new Object();
+					e9.size = "970x250,728x90";
+				//--></script>
+				<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/PastebincomNew/Sure/tags.js"></script>
+			</div>
+			<div class="layout_clear"></div>
+			<div class="content_text no_padding">
+				<div id="notice" style="margin: 0 0 10px 0">
+					<b>Not a member of Pastebin yet?</b> <a href="https://pastebin.com/signup"><b><u>Sign Up</u></b></a>, it unlocks many cool features!
+				</div>
+			</div>
+	<div id="code_frame2">
+		<div id="code_frame">
+			<div id="code_buttons">
+				<span class="go_right">
+					<a href="https://pastebin.com/raw/En4bvG58" class="buttonsm">raw</a><a href="https://pastebin.com/dl/En4bvG58" class="buttonsm">download</a><a href="https://pastebin.com/index/En4bvG58" class="buttonsm buttonhide">clone</a><a href="https://pastebin.com/embed/En4bvG58" class="buttonsm buttonhide">embed</a><a href="https://pastebin.com/report/En4bvG58" class="buttonsm">report</a><a href="https://pastebin.com/print/En4bvG58" class="buttonsm buttonhide">print</a>
+				</span>
+				<span class="h_640"><a href="https://pastebin.com/archive/mysql" class="buttonsm" style="margin:0">MySQL</a></span> 8.15 KB
+			</div>
+			<div id="selectable">
+				<ol class="mysql"><li class="li1"><div class="de1"><span class="kw1">CREATE</span> <span class="kw1">TABLE</span> Clothes <span class="br0">&#40;</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; ClothingID <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; Brand <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; Model <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; Country <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; ArticleNr <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; Weight <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span> <span class="co2"># Grams</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; CSize <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; SalesPrice <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; SupplierPrice <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; Color <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; AmmountLeft <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; Category <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; AmmountSold <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">PRIMARY KEY</span><span class="br0">&#40;</span>ClothingID<span class="br0">&#41;</span></div></li>
+<li class="li1"><div class="de1"><span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="co2"># Det är ju egentligen ingen skillnad på ClothingID och ArticleNr, behöver vi båda?</span></div></li>
+<li class="li1"><div class="de1"><span class="kw2">INSERT</span> <span class="kw1">INTO</span> Clothes <span class="kw1">VALUES</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">0</span><span class="sy2">,</span> <span class="st0">'Ralph Lauren'</span><span class="sy2">,</span> <span class="st0">'Oxford Shirt'</span><span class="sy2">,</span> <span class="st0">'United States'</span><span class="sy2">,</span> <span class="nu0">0</span><span class="sy2">,</span> <span class="nu0">300</span><span class="sy2">,</span> <span class="st0">'L'</span><span class="sy2">,</span> <span class="nu0">900</span><span class="sy2">,</span> <span class="nu0">500</span><span class="sy2">,</span> <span class="st0">'White'</span><span class="sy2">,</span> <span class="nu0">10</span><span class="sy2">,</span> <span class="st0">'Shirts Men'</span><span class="sy2">,</span> <span class="nu0">3</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#40;</span><span class="nu0">1</span><span class="sy2">,</span><span class="st0">'Gant'</span><span class="sy2">,</span> <span class="st0">'Collage'</span><span class="sy2">,</span><span class="st0">'United Kingdom'</span><span class="sy2">,</span><span class="nu0">1</span><span class="sy2">,</span> <span class="nu0">600</span><span class="sy2">,</span> <span class="st0">'L'</span><span class="sy2">,</span> <span class="nu0">1100</span><span class="sy2">,</span> <span class="nu0">750</span><span class="sy2">,</span> <span class="st0">'Red'</span><span class="sy2">,</span> <span class="nu0">15</span><span class="sy2">,</span> <span class="st0">'Shits Women'</span><span class="sy2">,</span> <span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#40;</span><span class="nu0">2</span><span class="sy2">,</span> <span class="st0">'Gant'</span><span class="sy2">,</span> <span class="st0">'Oxford Shirt'</span><span class="sy2">,</span> <span class="st0">'United Kingdom'</span><span class="sy2">,</span> <span class="nu0">2</span><span class="sy2">,</span> <span class="nu0">400</span><span class="sy2">,</span> <span class="st0">'M'</span><span class="sy2">,</span> <span class="nu0">999</span> <span class="sy2">,</span> <span class="nu0">600</span><span class="sy2">,</span> <span class="st0">'Blue'</span><span class="sy2">,</span> <span class="nu0">15</span><span class="sy2">,</span> <span class="st0">'Shirts Men'</span><span class="sy2">,</span> <span class="nu0">2</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#40;</span><span class="nu0">3</span><span class="sy2">,</span> <span class="st0">'Sail Racing'</span><span class="sy2">,</span> <span class="st0">'T-shirt'</span><span class="sy2">,</span> <span class="st0">'United Kingdom'</span><span class="sy2">,</span> <span class="nu0">3</span><span class="sy2">,</span> <span class="nu0">500</span><span class="sy2">,</span> <span class="st0">'S'</span><span class="sy2">,</span> <span class="nu0">500</span><span class="sy2">,</span> <span class="nu0">250</span><span class="sy2">,</span> <span class="st0">'Black'</span><span class="sy2">,</span> <span class="nu0">10</span><span class="sy2">,</span> <span class="st0">'Shirts Women'</span><span class="sy2">,</span> <span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#40;</span><span class="nu0">4</span><span class="sy2">,</span> <span class="st0">'Ralph Lauren'</span><span class="sy2">,</span> <span class="st0">'T-Shirt'</span><span class="sy2">,</span> <span class="st0">'United States'</span><span class="sy2">,</span> <span class="nu0">4</span><span class="sy2">,</span> <span class="nu0">600</span><span class="sy2">,</span> <span class="st0">'XL'</span><span class="sy2">,</span> <span class="nu0">800</span><span class="sy2">,</span> <span class="nu0">500</span><span class="sy2">,</span> <span class="st0">'White'</span><span class="sy2">,</span> <span class="nu0">10</span><span class="sy2">,</span> <span class="st0">'Shirts Women'</span><span class="sy2">,</span> <span class="nu0">5</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#40;</span><span class="nu0">5</span><span class="sy2">,</span> <span class="st0">'Sail Racing'</span><span class="sy2">,</span> <span class="st0">'Oxford Shirt'</span><span class="sy2">,</span> <span class="st0">'United Kingdom'</span><span class="sy2">,</span> <span class="nu0">5</span><span class="sy2">,</span> <span class="nu0">900</span><span class="sy2">,</span> <span class="st0">'M'</span><span class="sy2">,</span> <span class="nu0">900</span><span class="sy2">,</span> <span class="nu0">500</span><span class="sy2">,</span> <span class="st0">'White'</span><span class="sy2">,</span> <span class="nu0">10</span><span class="sy2">,</span> <span class="st0">'Shirts Men'</span><span class="sy2">,</span> <span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#40;</span><span class="nu0">6</span><span class="sy2">,</span> <span class="st0">'Ralph Lauren'</span><span class="sy2">,</span> <span class="st0">'Sweater'</span><span class="sy2">,</span> <span class="st0">'United States'</span><span class="sy2">,</span> <span class="nu0">6</span><span class="sy2">,</span> <span class="nu0">1010</span><span class="sy2">,</span> <span class="st0">'L'</span><span class="sy2">,</span> <span class="nu0">1200</span><span class="sy2">,</span> <span class="nu0">700</span><span class="sy2">,</span> <span class="st0">'Blue'</span><span class="sy2">,</span> <span class="nu0">5</span><span class="sy2">,</span> <span class="st0">'Sweater Men'</span><span class="sy2">,</span> <span class="nu0">6</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#40;</span><span class="nu0">7</span><span class="sy2">,</span><span class="st0">'Gant'</span><span class="sy2">,</span> <span class="st0">'Sweater'</span><span class="sy2">,</span><span class="st0">'United Kingdom'</span><span class="sy2">,</span><span class="nu0">7</span><span class="sy2">,</span> <span class="nu0">1200</span><span class="sy2">,</span> <span class="st0">'XL'</span><span class="sy2">,</span> <span class="nu0">1300</span><span class="sy2">,</span> <span class="nu0">700</span><span class="sy2">,</span> <span class="st0">'Green'</span><span class="sy2">,</span> <span class="nu0">5</span><span class="sy2">,</span> <span class="st0">'Sweater Women'</span><span class="sy2">,</span> <span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#40;</span><span class="nu0">8</span><span class="sy2">,</span> <span class="st0">'Gant'</span><span class="sy2">,</span> <span class="st0">'Jacket'</span><span class="sy2">,</span> <span class="st0">'United Kingdom'</span><span class="sy2">,</span> <span class="nu0">8</span><span class="sy2">,</span> <span class="nu0">1400</span><span class="sy2">,</span> <span class="st0">'M'</span><span class="sy2">,</span> <span class="nu0">3700</span> <span class="sy2">,</span> <span class="nu0">2500</span><span class="sy2">,</span> <span class="st0">'Black'</span><span class="sy2">,</span> <span class="nu0">15</span><span class="sy2">,</span> <span class="st0">'Jacket Men'</span><span class="sy2">,</span> <span class="nu0">7</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#40;</span><span class="nu0">9</span><span class="sy2">,</span> <span class="st0">'Sail Racing'</span><span class="sy2">,</span> <span class="st0">'T-shirt'</span><span class="sy2">,</span> <span class="st0">'United States'</span><span class="sy2">,</span> <span class="nu0">9</span><span class="sy2">,</span> <span class="nu0">500</span><span class="sy2">,</span> <span class="st0">'S'</span><span class="sy2">,</span> <span class="nu0">700</span><span class="sy2">,</span> <span class="nu0">300</span><span class="sy2">,</span> <span class="st0">'Yellow'</span><span class="sy2">,</span> <span class="nu0">15</span><span class="sy2">,</span> <span class="st0">'Shirts Women'</span><span class="sy2">,</span> <span class="nu0">1</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="br0">&#40;</span><span class="nu0">10</span><span class="sy2">,</span> <span class="st0">'Ralph Lauren'</span><span class="sy2">,</span> <span class="st0">'Collage'</span> <span class="sy2">,</span> <span class="st0">'United States'</span><span class="sy2">,</span> <span class="nu0">10</span><span class="sy2">,</span> <span class="nu0">1100</span><span class="sy2">,</span> <span class="st0">'XL'</span><span class="sy2">,</span> <span class="nu0">1500</span><span class="sy2">,</span> <span class="nu0">900</span><span class="sy2">,</span> <span class="st0">'White'</span><span class="sy2">,</span> <span class="nu0">10</span><span class="sy2">,</span> <span class="st0">'Sweater Men'</span><span class="sy2">,</span> <span class="nu0">10</span><span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> Clothes<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">DROP</span> <span class="kw1">TABLE</span> Clothes<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">CREATE</span> <span class="kw1">TABLE</span> Orders <span class="br0">&#40;</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; OrderNr <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; PNr <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span> <span class="co2"># Social security number</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; TotalSum <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; DeliveryHomeAdress <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">30</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; DeliveryPostAdress <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; Country <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; TotalWeight <span class="kw4">FLOAT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; OrderDate <span class="kw5">DATE</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; OrderTime <span class="kw5">TIME</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; DiscountID <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; ClothingID <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">PRIMARY KEY</span><span class="br0">&#40;</span>OrderNr<span class="sy2">,</span> PNr<span class="br0">&#41;</span><span class="co2">#,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="co2">#FOREIGN KEY (OrderNr) REFERENCES Revenue(OrderNr),</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="co2">#FOREIGN KEY (Pnr) REFERENCES Customer(PNr),</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="co2">#FOREIGN KEY (DiscountID) REFERENCES Discount(DiscountID)</span></div></li>
+<li class="li1"><div class="de1"><span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw2">INSERT</span> <span class="kw1">INTO</span> Orders <span class="kw1">VALUES</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">0</span><span class="sy2">,</span> <span class="st0">'9603074833'</span><span class="sy2">,</span> <span class="nu0">900</span><span class="sy2">,</span> <span class="st0">'Gamla Infartsvägen 3b'</span><span class="sy2">,</span> <span class="st0">'371 41 Karlskrona'</span><span class="sy2">,</span> <span class="st0">'Sweden'</span><span class="sy2">,</span> <span class="nu0">300.0</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="nu0">0</span><span class="sy2">,</span> <span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">1</span><span class="sy2">,</span> <span class="st0">'9804208172'</span><span class="sy2">,</span> <span class="nu0">2000</span><span class="sy2">,</span> <span class="st0">'Valhallavägen 2'</span><span class="sy2">,</span> <span class="st0">'371 40 Karlskrona'</span><span class="sy2">,</span> <span class="st0">'Sweden'</span><span class="sy2">,</span> <span class="nu0">1500.0</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span><span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span><span class="nu0">800</span><span class="sy2">,</span> <span class="nu0">1</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">2</span><span class="sy2">,</span> <span class="st0">'9402208182'</span><span class="sy2">,</span> <span class="nu0">500</span><span class="sy2">,</span> <span class="st0">'Infartsvägen 3b'</span><span class="sy2">,</span> <span class="st0">'371 41 Karlskrona'</span><span class="sy2">,</span> <span class="st0">'Sweden'</span><span class="sy2">,</span> <span class="nu0">400.0</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="nu0">0</span><span class="sy2">,</span> <span class="nu0">2</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">3</span><span class="sy2">,</span> <span class="st0">'9803074823'</span><span class="sy2">,</span> <span class="nu0">5000</span><span class="sy2">,</span> <span class="st0">'Lotsvägen 7'</span><span class="sy2">,</span> <span class="st0">'541 55 Alingsas'</span><span class="sy2">,</span> <span class="st0">'Sweden'</span><span class="sy2">,</span> <span class="nu0">2000.0</span><span class="sy2">,</span> <span class="st0">'2019-04-18'</span><span class="sy2">,</span><span class="st0">'12:04:18'</span><span class="sy2">,</span> <span class="nu0">0</span><span class="sy2">,</span> <span class="nu0">3</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">4</span><span class="sy2">,</span> <span class="st0">'9209234823'</span><span class="sy2">,</span> <span class="nu0">1100</span><span class="sy2">,</span> <span class="st0">'Arklimästaregatan 25b'</span> <span class="sy2">,</span> <span class="st0">'371 42 Karlskrona'</span><span class="sy2">,</span> <span class="st0">'Sweden'</span><span class="sy2">,</span> <span class="nu0">1100.0</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="nu0">0</span><span class="sy2">,</span> <span class="nu0">4</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">5</span><span class="sy2">,</span> <span class="st0">'9012075431'</span><span class="sy2">,</span> <span class="nu0">900</span><span class="sy2">,</span> <span class="st0">'Gamla Djuret 31b'</span><span class="sy2">,</span> <span class="st0">'371 45 Karlskrona'</span><span class="sy2">,</span> <span class="st0">'Sweden'</span><span class="sy2">,</span> <span class="nu0">500.0</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="nu0">0</span><span class="sy2">,</span> <span class="nu0">5</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">6</span><span class="sy2">,</span> <span class="st0">'0503071234'</span><span class="sy2">,</span><span class="nu0">15000</span><span class="sy2">,</span> <span class="st0">'Andralang 2b'</span><span class="sy2">,</span> <span class="st0">'343 41 Stockholm'</span><span class="sy2">,</span> <span class="st0">'Sweden'</span><span class="sy2">,</span> <span class="nu0">5000.0</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="nu0">0</span><span class="sy2">,</span> <span class="nu0">6</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">7</span><span class="sy2">,</span> <span class="st0">'0211278723'</span><span class="sy2">,</span> <span class="nu0">2200</span><span class="sy2">,</span> <span class="st0">'Seglaregatan 3'</span><span class="sy2">,</span> <span class="st0">'441 51 Alingsas'</span><span class="sy2">,</span> <span class="st0">'Sweden'</span><span class="sy2">,</span> <span class="nu0">1500.0</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="nu0">0</span><span class="sy2">,</span> <span class="nu0">7</span><span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> Orders<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li2"><div class="de2"><span class="kw1">CREATE</span> <span class="kw1">TABLE</span> Revenue <span class="br0">&#40;</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; OrderNr <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; TotalSum <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; TransortationCost <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; SupplierPrice <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; LastReturnDate <span class="kw5">DATE</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">PRIMARY KEY</span><span class="br0">&#40;</span>OrderNr<span class="br0">&#41;</span></div></li>
+<li class="li1"><div class="de1"><span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li2"><div class="de2"><span class="kw2">INSERT</span> <span class="kw1">INTO</span> Revenue <span class="kw1">VALUES</span><span class="br0">&#40;</span><span class="nu0">0</span><span class="sy2">,</span> <span class="nu0">900</span><span class="sy2">,</span> <span class="nu0">50</span><span class="sy2">,</span> <span class="nu0">550</span><span class="sy2">,</span> <span class="kw17">DATE_ADD</span><span class="br0">&#40;</span><span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="kw11">INTERVAL</span> <span class="nu0">14</span> <span class="kw9">DAY</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> Revenue<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">CREATE</span> <span class="kw1">TABLE</span> Customer <span class="br0">&#40;</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; PNr <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; FName <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; LName <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; MobileNr <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; EMail <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">30</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; Gender <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; HomeAdress <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">30</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; PostAdress <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; ShoppedSum <span class="kw4">FLOAT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="kw1">CONSTRAINT</span> PK</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">PRIMARY KEY</span> <span class="br0">&#40;</span>PNr<span class="br0">&#41;</span></div></li>
+<li class="li1"><div class="de1"><span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw2">INSERT</span> <span class="kw1">INTO</span> Customer <span class="kw1">VALUES</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="st0">'9603074833'</span><span class="sy2">,</span> <span class="st0">'Anton'</span><span class="sy2">,</span> <span class="st0">'Karlsson'</span><span class="sy2">,</span> <span class="st0">'0723535592'</span><span class="sy2">,</span> <span class="st0">'antonamkarlsson@hotmail.com'</span><span class="sy2">,</span> <span class="st0">'Male'</span><span class="sy2">,</span> <span class="st0">'Gamla Infartsvägen 3b'</span><span class="sy2">,</span> <span class="st0">'371 41 Karlskrona'</span><span class="sy2">,</span> <span class="nu0">900</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="st0">'9804208172'</span><span class="sy2">,</span> <span class="st0">'Emil'</span><span class="sy2">,</span> <span class="st0">'Einerskog'</span><span class="sy2">,</span> <span class="st0">'0707453881'</span><span class="sy2">,</span> <span class="st0">'emil@einerskog.se'</span><span class="sy2">,</span> <span class="st0">'Male'</span><span class="sy2">,</span> <span class="st0">'Valhallavägen 2'</span><span class="sy2">,</span> <span class="st0">'371 40 Karlskrona'</span><span class="sy2">,</span> <span class="nu0">1200</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="st0">'9402208182'</span><span class="sy2">,</span> <span class="st0">'Lars'</span><span class="sy2">,</span> <span class="st0">'Svensson'</span><span class="sy2">,</span> <span class="st0">'0708233212'</span><span class="sy2">,</span> <span class="st0">'larssvensson@hotmail.com'</span><span class="sy2">,</span> <span class="st0">'Male'</span><span class="sy2">,</span> <span class="st0">'Infartsvägen 3b'</span><span class="sy2">,</span> <span class="st0">'371 41 Karlskrona'</span><span class="sy2">,</span> <span class="nu0">500</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="st0">'9803074823'</span><span class="sy2">,</span> <span class="st0">'Markus'</span><span class="sy2">,</span> <span class="st0">'Nilsson'</span><span class="sy2">,</span> <span class="st0">'0707083421'</span><span class="sy2">,</span> <span class="st0">'markusnilsson@hotmail.com'</span><span class="sy2">,</span> <span class="st0">'Male'</span><span class="sy2">,</span> <span class="st0">'Lotsvägen 7'</span><span class="sy2">,</span> <span class="st0">'541 55 Alingsas'</span><span class="sy2">,</span> <span class="nu0">5000</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="st0">'9209234823'</span><span class="sy2">,</span> <span class="st0">'Sven'</span><span class="sy2">,</span> <span class="st0">'Svensson'</span><span class="sy2">,</span> <span class="st0">'0745621212'</span><span class="sy2">,</span> <span class="st0">'svensvensson@hotmail.com'</span><span class="sy2">,</span> <span class="st0">'Male'</span><span class="sy2">,</span> <span class="st0">'Arklimästaregatan 25b'</span> <span class="sy2">,</span> <span class="st0">'371 42 Karlskrona'</span><span class="sy2">,</span> <span class="nu0">1100</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="st0">'9012075431'</span><span class="sy2">,</span> <span class="st0">'John'</span><span class="sy2">,</span> <span class="st0">'Ren'</span><span class="sy2">,</span> <span class="st0">'070732142122'</span><span class="sy2">,</span> <span class="st0">'johnren@hotmail.com'</span><span class="sy2">,</span> <span class="st0">'Male'</span><span class="sy2">,</span> <span class="st0">'Gamla Djuret 31b'</span><span class="sy2">,</span> <span class="st0">'371 45 Karlskrona'</span><span class="sy2">,</span> <span class="nu0">900</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="st0">'0503071234'</span><span class="sy2">,</span> <span class="st0">'Lisa'</span><span class="sy2">,</span> <span class="st0">'Axelsson'</span><span class="sy2">,</span> <span class="st0">'07235421592'</span><span class="sy2">,</span> <span class="st0">'lisaaxelsson@hotmail.com'</span><span class="sy2">,</span> <span class="st0">'Female'</span><span class="sy2">,</span> <span class="st0">'Andralang 2b'</span><span class="sy2">,</span> <span class="st0">'343 41 Stockholm'</span><span class="sy2">,</span> <span class="nu0">15000</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="st0">'0211278723'</span><span class="sy2">,</span> <span class="st0">'Felicia'</span><span class="sy2">,</span> <span class="st0">'Abrahamsson'</span><span class="sy2">,</span> <span class="st0">'0723532123'</span><span class="sy2">,</span> <span class="st0">'FeliciaAbrahamsson@hotmail.com'</span><span class="sy2">,</span> <span class="st0">'Female'</span><span class="sy2">,</span> <span class="st0">'Seglaregatan 3'</span><span class="sy2">,</span> <span class="st0">'441 51 Alingsas'</span><span class="sy2">,</span> <span class="nu0">900</span><span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> Customer<span class="sy2">;</span></div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">CREATE</span> <span class="kw1">TABLE</span> Discount <span class="br0">&#40;</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; DiscountID <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; CodeName <span class="kw4">VARCHAR</span><span class="br0">&#40;</span><span class="nu0">20</span><span class="br0">&#41;</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; AmountDiscount <span class="kw4">FLOAT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; StartDate <span class="kw5">DATE</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; EndDate <span class="kw5">DATE</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">PRIMARY KEY</span> <span class="br0">&#40;</span>DiscountID<span class="br0">&#41;</span></div></li>
+<li class="li1"><div class="de1"><span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw2">INSERT</span> <span class="kw1">INTO</span> Discount <span class="kw1">VALUES</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">0</span><span class="sy2">,</span> <span class="st0">'Easter Deal'</span><span class="sy2">,</span> <span class="nu0">0.8</span><span class="sy2">,</span> <span class="st0">&quot;2019-04-18&quot;</span><span class="sy2">,</span> <span class="st0">&quot;2019-04-22&quot;</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">1</span><span class="sy2">,</span> <span class="st0">'Summer Deal'</span><span class="sy2">,</span> <span class="nu0">0.6</span><span class="sy2">,</span> <span class="st0">&quot;2019-06-10&quot;</span><span class="sy2">,</span> <span class="st0">&quot;2019-08-12&quot;</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">2</span><span class="sy2">,</span> <span class="st0">'Spring Deal'</span><span class="sy2">,</span> <span class="nu0">0.7</span><span class="sy2">,</span> <span class="st0">&quot;2019-03-18&quot;</span><span class="sy2">,</span> <span class="st0">&quot;2019-04-14&quot;</span><span class="br0">&#41;</span><span class="sy2">,</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#40;</span><span class="nu0">3</span><span class="sy2">,</span> <span class="st0">'New Customer Deal'</span><span class="sy2">,</span> <span class="nu0">0.9</span><span class="sy2">,</span> <span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span><span class="kw17">DATE_ADD</span><span class="br0">&#40;</span><span class="kw17">NOW</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy2">,</span> <span class="kw11">INTERVAL</span> <span class="nu0">1</span> <span class="kw9">DAY</span> <span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> Discount<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">CREATE</span> <span class="kw1">TABLE</span> BoughtClothes <span class="br0">&#40;</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; OrderNr <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; ClothingID <span class="kw4">INT</span> <span class="kw10">NOT</span> <span class="kw3">NULL</span><span class="sy2">,</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">PRIMARY KEY</span> <span class="br0">&#40;</span>OrderNr<span class="sy2">,</span>ClothingID<span class="br0">&#41;</span><span class="co2">#,</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="co2">#FOREIGN KEY (ClothingID) REFERENCES Clothes(ClothingID),</span></div></li>
+<li class="li2"><div class="de2">&nbsp; &nbsp; <span class="co2">#FOREIGN KEY (OrderNr) REFERENCES Orders(OrderNr)</span></div></li>
+<li class="li1"><div class="de1"><span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw2">INSERT</span> <span class="kw1">INTO</span> BoughtClothes <span class="kw1">VALUES</span><span class="br0">&#40;</span><span class="nu0">0</span><span class="sy2">,</span> <span class="nu0">0</span><span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li2"><div class="de2"><span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> BoughtClothes<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co2">#VIEWS</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">CREATE</span> <span class="kw1">VIEW</span> CheapClothes <span class="kw1">AS</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> Clothes <span class="kw1">WHERE</span> SalesPrice <span class="sy1">&lt;</span> <span class="nu0">500</span><span class="sy2">;</span></div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> CheapClothes<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">CREATE</span> <span class="kw1">VIEW</span> BestSeller <span class="kw1">AS</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> Clothes <span class="kw1">GROUP BY</span> AmmountSold <span class="kw1">DESC</span> <span class="kw1">LIMIT</span> <span class="nu0">10</span><span class="sy2">;</span></div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> BestSeller<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="co2">#CustomerView</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">CREATE</span> <span class="kw1">VIEW</span> CustomerView <span class="kw1">AS</span></div></li>
+<li class="li2"><div class="de2">&nbsp; <span class="kw1">SELECT</span> <span class="kw1">DISTINCT</span> Brand<span class="sy2">,</span> Model<span class="sy2">,</span> ArticleNr<span class="sy2">,</span> SalesPrice<span class="sy2">,</span> Color<span class="sy2">,</span> AmmountLeft<span class="sy2">,</span> Weight<span class="sy2">,</span> CSize<span class="sy2">,</span> Category<span class="sy2">,</span> FName<span class="sy2">,</span> LName<span class="sy2">,</span> Orders.PNr<span class="sy2">,</span> MobileNr<span class="sy2">,</span> EMail<span class="sy2">,</span>Gender<span class="sy2">,</span> HomeAdress<span class="sy2">,</span> PostAdress<span class="sy2">,</span> TotalSum<span class="sy2">,</span> TotalWeight<span class="sy2">,</span> OrderDate<span class="sy2">,</span> OrderTime<span class="sy2">,</span> DiscountID <span class="kw1">FROM</span> Clothes <span class="kw1">INNER</span> <span class="kw1">JOIN</span> <span class="br0">&#40;</span>Orders<span class="sy2">,</span>Customer<span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">CREATE</span> <span class="kw1">VIEW</span> CSV <span class="kw1">AS</span> <span class="kw1">SELECT</span> <span class="kw1">DISTINCT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> Clothes <span class="kw1">INNER</span> <span class="kw1">JOIN</span> <span class="br0">&#40;</span>Customer<span class="br0">&#41;</span> <span class="kw1">WHERE</span> FName <span class="kw10">LIKE</span> <span class="st0">'John'</span><span class="sy2">;;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="kw1">DISTINCT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> CustomerView<span class="sy2">;</span></div></li>
+<li class="li2"><div class="de2"><span class="kw1">SELECT</span> <span class="kw1">DISTINCT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> CSV<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">DROP</span> <span class="kw1">VIEW</span> CustomerView<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">DROP</span> <span class="kw1">VIEW</span> CSV<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> Revenue<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="co2">#BuyerView</span></div></li>
+<li class="li2"><div class="de2"><span class="co2">#CorporateView ska göras</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">CREATE</span> <span class="kw1">VIEW</span> Corporateview <span class="kw1">AS</span></div></li>
+<li class="li1"><div class="de1">&nbsp; <span class="kw1">SELECT</span> <span class="kw1">DISTINCT</span> ClothingID<span class="sy2">,</span> AmmountSold<span class="sy2">,</span> SalesPrice<span class="sy2">,</span> Revenue.TotalSum <span class="kw1">FROM</span> Clothes<span class="sy2">,</span> Revenue<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> Corporateview<span class="sy2">;</span></div></li>
+<li class="li2"><div class="de2"><span class="kw1">DROP</span> <span class="kw1">VIEW</span> Corporateview<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> Clothes<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> <span class="sy1">*</span> <span class="kw1">FROM</span> Orders<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">DELIMITER <span class="sy1">//</span></div></li>
+<li class="li2"><div class="de2"><span class="kw1">CREATE</span> <span class="kw1">TRIGGER</span> Revenueadder <span class="kw1">AFTER</span> <span class="kw2">INSERT</span> <span class="kw1">ON</span> BoughtClothes <span class="kw1">FOR EACH ROW</span></div></li>
+<li class="li1"><div class="de1">&nbsp; <span class="kw1">BEGIN</span></div></li>
+<li class="li1"><div class="de1">&nbsp; &nbsp; <span class="kw1">UPDATE</span> Revenue <span class="kw1">SET</span> TotalSum <span class="sy1">=</span> </div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp; DELIMITER <span class="sy2">;</span></div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">DROP</span> <span class="kw1">TRIGGER</span> Revenueadder<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> ShoppedSum<span class="sy2">,</span> AmmountSold<span class="sy2">,</span> Revenue.TotalSum <span class="kw1">FROM</span> Customer <span class="kw1">INNER</span> <span class="kw1">JOIN</span> <span class="br0">&#40;</span>Clothes<span class="sy2">,</span>Revenue<span class="br0">&#41;</span><span class="sy2">;</span></div></li>
+<li class="li2"><div class="de2">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">SELECT</span> Revenue.TotalSum <span class="kw1">FROM</span> Revenue<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1">&nbsp;</div></li>
+<li class="li1"><div class="de1"><span class="kw1">DROP</span> <span class="kw1">TABLE</span> BoughtClothes<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">DROP</span> <span class="kw1">TABLE</span> Clothes<span class="sy2">;</span></div></li>
+<li class="li2"><div class="de2"><span class="kw1">DROP</span> <span class="kw1">TABLE</span> Orders<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">DROP</span> <span class="kw1">TABLE</span> Revenue<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">DROP</span> <span class="kw1">TABLE</span> Customer<span class="sy2">;</span></div></li>
+<li class="li1"><div class="de1"><span class="kw1">DROP</span> <span class="kw1">TABLE</span> Discount<span class="sy2">;</span></div></li>
+</ol>
+			</div>
+		</div>
+	</div>
+	<div class="content_title no_border">RAW Paste Data<div id="bsa-footer"></div></div>
+	<div class="textarea_border" style="margin-bottom:0">
+		<textarea id="paste_code" class="paste_code" name="paste_code" onkeydown="return catchTab(this,event)">CREATE TABLE Clothes (
+    ClothingID INT NOT NULL,
+    Brand VARCHAR(20) NOT NULL,
+    Model VARCHAR(20) NOT NULL,
+    Country VARCHAR(20) NOT NULL,
+    ArticleNr INT NOT NULL,
+    Weight INT NOT NULL, # Grams
+    CSize VARCHAR(20) NOT NULL,
+    SalesPrice INT NOT NULL,
+    SupplierPrice INT NOT NULL,
+    Color VARCHAR(20) NOT NULL,
+    AmmountLeft INT NOT NULL,
+    Category VARCHAR(20) NOT NULL,
+    AmmountSold INT NOT NULL,
+
+    PRIMARY KEY(ClothingID)
+);
+# Det &auml;r ju egentligen ingen skillnad p&aring; ClothingID och ArticleNr, beh&ouml;ver vi b&aring;da?
+INSERT INTO Clothes VALUES
+                            (0, 'Ralph Lauren', 'Oxford Shirt', 'United States', 0, 300, 'L', 900, 500, 'White', 10, 'Shirts Men', 3),
+                           (1,'Gant', 'Collage','United Kingdom',1, 600, 'L', 1100, 750, 'Red', 15, 'Shits Women', 0),
+                           (2, 'Gant', 'Oxford Shirt', 'United Kingdom', 2, 400, 'M', 999 , 600, 'Blue', 15, 'Shirts Men', 2),
+                           (3, 'Sail Racing', 'T-shirt', 'United Kingdom', 3, 500, 'S', 500, 250, 'Black', 10, 'Shirts Women', 0),
+                           (4, 'Ralph Lauren', 'T-Shirt', 'United States', 4, 600, 'XL', 800, 500, 'White', 10, 'Shirts Women', 5),
+                           (5, 'Sail Racing', 'Oxford Shirt', 'United Kingdom', 5, 900, 'M', 900, 500, 'White', 10, 'Shirts Men', 0),
+                           (6, 'Ralph Lauren', 'Sweater', 'United States', 6, 1010, 'L', 1200, 700, 'Blue', 5, 'Sweater Men', 6),
+                           (7,'Gant', 'Sweater','United Kingdom',7, 1200, 'XL', 1300, 700, 'Green', 5, 'Sweater Women', 0),
+                           (8, 'Gant', 'Jacket', 'United Kingdom', 8, 1400, 'M', 3700 , 2500, 'Black', 15, 'Jacket Men', 7),
+                           (9, 'Sail Racing', 'T-shirt', 'United States', 9, 500, 'S', 700, 300, 'Yellow', 15, 'Shirts Women', 1),
+                           (10, 'Ralph Lauren', 'Collage' , 'United States', 10, 1100, 'XL', 1500, 900, 'White', 10, 'Sweater Men', 10);
+
+SELECT * FROM Clothes;
+DROP TABLE Clothes;
+CREATE TABLE Orders (
+    OrderNr INT NOT NULL,
+    PNr VARCHAR(20) NOT NULL, # Social security number
+    TotalSum INT NOT NULL,
+    DeliveryHomeAdress VARCHAR(30) NOT NULL,
+    DeliveryPostAdress VARCHAR(20) NOT NULL,
+    Country VARCHAR(20) NOT NULL,
+    TotalWeight FLOAT NOT NULL,
+    OrderDate DATE NOT NULL,
+    OrderTime TIME NOT NULL,
+    DiscountID INT NOT NULL,
+    ClothingID INT NOT NULL,
+
+    PRIMARY KEY(OrderNr, PNr)#,
+    #FOREIGN KEY (OrderNr) REFERENCES Revenue(OrderNr),
+    #FOREIGN KEY (Pnr) REFERENCES Customer(PNr),
+    #FOREIGN KEY (DiscountID) REFERENCES Discount(DiscountID)
+);
+
+INSERT INTO Orders VALUES
+                          (0, '9603074833', 900, 'Gamla Infartsv&auml;gen 3b', '371 41 Karlskrona', 'Sweden', 300.0, NOW(), NOW(), 0, 0),
+                          (1, '9804208172', 2000, 'Valhallav&auml;gen 2', '371 40 Karlskrona', 'Sweden', 1500.0, NOW(),NOW(),800, 1),
+                          (2, '9402208182', 500, 'Infartsv&auml;gen 3b', '371 41 Karlskrona', 'Sweden', 400.0, NOW(), NOW(), 0, 2),
+                          (3, '9803074823', 5000, 'Lotsv&auml;gen 7', '541 55 Alingsas', 'Sweden', 2000.0, '2019-04-18','12:04:18', 0, 3),
+                          (4, '9209234823', 1100, 'Arklim&auml;staregatan 25b' , '371 42 Karlskrona', 'Sweden', 1100.0, NOW(), NOW(), 0, 4),
+                          (5, '9012075431', 900, 'Gamla Djuret 31b', '371 45 Karlskrona', 'Sweden', 500.0, NOW(), NOW(), 0, 5),
+                          (6, '0503071234',15000, 'Andralang 2b', '343 41 Stockholm', 'Sweden', 5000.0, NOW(), NOW(), 0, 6),
+                          (7, '0211278723', 2200, 'Seglaregatan 3', '441 51 Alingsas', 'Sweden', 1500.0, NOW(), NOW(), 0, 7);
+
+SELECT * FROM Orders;
+
+CREATE TABLE Revenue (
+    OrderNr INT NOT NULL,
+    TotalSum INT NOT NULL,
+    TransortationCost INT NOT NULL,
+    SupplierPrice INT NOT NULL,
+    LastReturnDate DATE NOT NULL,
+
+    PRIMARY KEY(OrderNr)
+);
+
+INSERT INTO Revenue VALUES(0, 900, 50, 550, DATE_ADD(NOW(), INTERVAL 14 DAY));
+
+SELECT * FROM Revenue;
+
+CREATE TABLE Customer (
+    PNr VARCHAR(20) NOT NULL,
+    FName VARCHAR(20) NOT NULL,
+    LName VARCHAR(20) NOT NULL,
+    MobileNr VARCHAR(20) NOT NULL,
+    EMail VARCHAR(30) NOT NULL,
+    Gender VARCHAR(20) NOT NULL,
+    HomeAdress VARCHAR(30) NOT NULL,
+    PostAdress VARCHAR(20) NOT NULL,
+    ShoppedSum FLOAT NOT NULL,
+
+    CONSTRAINT PK
+    PRIMARY KEY (PNr)
+);
+
+INSERT INTO Customer VALUES
+                            ('9603074833', 'Anton', 'Karlsson', '0723535592', 'antonamkarlsson@hotmail.com', 'Male', 'Gamla Infartsv&auml;gen 3b', '371 41 Karlskrona', 900),
+                            ('9804208172', 'Emil', 'Einerskog', '0707453881', 'emil@einerskog.se', 'Male', 'Valhallav&auml;gen 2', '371 40 Karlskrona', 1200),
+                            ('9402208182', 'Lars', 'Svensson', '0708233212', 'larssvensson@hotmail.com', 'Male', 'Infartsv&auml;gen 3b', '371 41 Karlskrona', 500),
+                            ('9803074823', 'Markus', 'Nilsson', '0707083421', 'markusnilsson@hotmail.com', 'Male', 'Lotsv&auml;gen 7', '541 55 Alingsas', 5000),
+                            ('9209234823', 'Sven', 'Svensson', '0745621212', 'svensvensson@hotmail.com', 'Male', 'Arklim&auml;staregatan 25b' , '371 42 Karlskrona', 1100),
+                            ('9012075431', 'John', 'Ren', '070732142122', 'johnren@hotmail.com', 'Male', 'Gamla Djuret 31b', '371 45 Karlskrona', 900),
+                            ('0503071234', 'Lisa', 'Axelsson', '07235421592', 'lisaaxelsson@hotmail.com', 'Female', 'Andralang 2b', '343 41 Stockholm', 15000),
+                            ('0211278723', 'Felicia', 'Abrahamsson', '0723532123', 'FeliciaAbrahamsson@hotmail.com', 'Female', 'Seglaregatan 3', '441 51 Alingsas', 900);
+
+SELECT * FROM Customer;
+
+CREATE TABLE Discount (
+    DiscountID INT NOT NULL,
+    CodeName VARCHAR(20) NOT NULL,
+    AmountDiscount FLOAT NOT NULL,
+    StartDate DATE NOT NULL,
+    EndDate DATE NOT NULL,
+
+    PRIMARY KEY (DiscountID)
+);
+
+INSERT INTO Discount VALUES
+                            (0, 'Easter Deal', 0.8, "2019-04-18", "2019-04-22"),
+                            (1, 'Summer Deal', 0.6, "2019-06-10", "2019-08-12"),
+                            (2, 'Spring Deal', 0.7, "2019-03-18", "2019-04-14"),
+                            (3, 'New Customer Deal', 0.9, NOW(),DATE_ADD(NOW(), INTERVAL 1 DAY ));
+
+SELECT * FROM Discount;
+
+CREATE TABLE BoughtClothes (
+    OrderNr INT NOT NULL,
+    ClothingID INT NOT NULL,
+
+    PRIMARY KEY (OrderNr,ClothingID)#,
+    #FOREIGN KEY (ClothingID) REFERENCES Clothes(ClothingID),
+    #FOREIGN KEY (OrderNr) REFERENCES Orders(OrderNr)
+);
+
+INSERT INTO BoughtClothes VALUES(0, 0);
+
+SELECT * FROM BoughtClothes;
+
+#VIEWS
+CREATE VIEW CheapClothes AS
+    SELECT * FROM Clothes WHERE SalesPrice &lt; 500;
+
+SELECT * FROM CheapClothes;
+
+CREATE VIEW BestSeller AS
+    SELECT * FROM Clothes GROUP BY AmmountSold DESC LIMIT 10;
+
+SELECT * FROM BestSeller;
+
+#CustomerView
+CREATE VIEW CustomerView AS
+  SELECT DISTINCT Brand, Model, ArticleNr, SalesPrice, Color, AmmountLeft, Weight, CSize, Category, FName, LName, Orders.PNr, MobileNr, EMail,Gender, HomeAdress, PostAdress, TotalSum, TotalWeight, OrderDate, OrderTime, DiscountID FROM Clothes INNER JOIN (Orders,Customer);
+
+
+CREATE VIEW CSV AS SELECT DISTINCT * FROM Clothes INNER JOIN (Customer) WHERE FName LIKE 'John';;
+SELECT DISTINCT * FROM CustomerView;
+SELECT DISTINCT * FROM CSV;
+DROP VIEW CustomerView;
+DROP VIEW CSV;
+SELECT * FROM Revenue;
+#BuyerView
+#CorporateView ska g&ouml;ras
+
+CREATE VIEW Corporateview AS
+  SELECT DISTINCT ClothingID, AmmountSold, SalesPrice, Revenue.TotalSum FROM Clothes, Revenue;
+SELECT * FROM Corporateview;
+DROP VIEW Corporateview;
+SELECT * FROM Clothes;
+SELECT * FROM Orders;
+
+DELIMITER //
+CREATE TRIGGER Revenueadder AFTER INSERT ON BoughtClothes FOR EACH ROW
+  BEGIN
+    UPDATE Revenue SET TotalSum = 
+
+  DELIMITER ;
+
+DROP TRIGGER Revenueadder;
+
+
+SELECT ShoppedSum, AmmountSold, Revenue.TotalSum FROM Customer INNER JOIN (Clothes,Revenue);
+
+SELECT Revenue.TotalSum FROM Revenue;
+
+DROP TABLE BoughtClothes;
+DROP TABLE Clothes;
+DROP TABLE Orders;
+DROP TABLE Revenue;
+DROP TABLE Customer;
+DROP TABLE Discount;</textarea>
+	</div><div id="abrpm3"></div>
+			<div style="padding: 10px 0 0 0;">
+				<script type="text/javascript"><!--
+					e9 = new Object();
+					e9.size = "300x600,300x250";
+				//--></script>
+				<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/PastebincomNew/Sure/tags.js"></script>
+			</div>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".close1").click(function(){return $("#float-box-1").hide(),createCookie("l2c_1",!0,90),!1});
+		$(".cookie_button").click(function(){return $("#float-box-1").hide(),createCookie("l2c_1",!0,90),!1});		
+		$(".close2").click(function(){return $("#float-box-2").hide(),createCookie("l2c_2",!0,14),!1});
+		$(".close3").click(function(){return $("#float-box-3").hide(),createCookie("l2c_2",!0,14),!1});
+		$(".close4").click(function(){return $("#float-box-4").hide(),createCookie("l2c_4",!0,7),!1});
+	});	
+	</script>
+	<div id="float-box-frame">		
+		<div id="float-box-1">
+			We use cookies for various purposes including analytics. By continuing to use Pastebin, you agree to our use of cookies as described in the <a href="https://pastebin.com/doc_cookies_policy">Cookies Policy</a>. <span class="cookie_button">OK, I Understand</span>
+		</div>
+		<div id="float-box-3">
+			<style>
+				#pro_promo_text{color:#333;float:right;display:block;font-size:14px;font-weight:400;width:270px}					
+				#pro_promo_img {background: #fff;width: 60px;height: 50px;float: left;}
+			</style>			
+			<div id="pro_promo_img"><a href="https://pastebin.com/signup"><img src="https://pastebin.com/i/hello.png" alt="" border="0" style="width:48px;height:48px;" /></a></div> 
+			<div id="pro_promo_text">Not a member of Pastebin yet?<br /><a href="https://pastebin.com/signup" style="text-decoration: underline dotted"><b>Sign Up</b></a>, it unlocks many cool features!</div>
+			<div class="close3" title="Close Me">&nbsp;</div>
+		</div></div>						</div>
+					</div>
+				</div>
+			</div>
+			<div id="mid_footer">
+				<a href="https://pastebin.com/tools#chrome" title="Google Chrome Extension"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 chrome" /></a>
+				<a href="https://pastebin.com/tools#firefox" title="Firefox Extension"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 firefox" /></a>
+				<a href="https://pastebin.com/tools#iphone" title="iPhone/iPad Application"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 iphone" /></a>
+				<a href="https://pastebin.com/tools#windows" title="Windows Desktop Application"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 windows" /></a>
+				<a href="https://pastebin.com/tools#android" title="Android Application"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 android" /></a>
+				<a href="https://pastebin.com/tools#macos" title="MacOS X Widget"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 macos" /></a>
+				<a href="https://pastebin.com/tools#opera" title="Opera Extension"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 opera" /></a>
+				<a href="https://pastebin.com/tools#pastebincl" title="Linux Application"><img src="https://pastebin.com/i/t.gif" alt="" class="icon24 unix" /></a>
+			</div> 
+		</div>
+		<div id="footer">
+			<div id="footer_links">
+				<a href="https://pastebin.com/">create new paste</a> &nbsp;/&nbsp; 
+				<a href="https://deals.pastebin.com/">deals</a><sup style="color:red">new!</sup> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/languages">syntax languages</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/archive">archive</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/faq">faq</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/tools">tools</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/night_mode">night mode</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/api">api</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/doc_scraping_api">scraping api</a> &nbsp;/&nbsp; 				
+				<a href="https://pastebin.com/pro">go <img src="https://pastebin.com/i/t.gif" alt="" title="Get a PRO account!" class="pro_btn_inv" /></a>
+				<br />
+				<a href="https://pastebin.com/doc_privacy_statement">privacy statement</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/doc_cookies_policy">cookies policy</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/doc_terms_of_service">terms of service</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/doc_security_disclosure">security disclosure</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/dmca">dmca</a> &nbsp;/&nbsp; 
+				<a href="https://pastebin.com/contact">contact</a>
+				<br /><br />
+				<span class="h_800">
+					By using Pastebin.com you agree to our <a href="https://pastebin.com/doc_cookies_policy">cookies policy</a> to enhance your experience.
+					<br />
+					Site design &amp; logo &copy; 2018 Pastebin; user contributions (pastes) licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="nofollow">cc by-sa 3.0</a> -- 
+				</span>
+				<a href="http://steadfast.net/services/dedicated-servers.php?utm_source=pastebin.com&amp;utm_medium=referral&amp;utm_content=footer_link_dedicated_server_hosting_by&amp;utm_campaign=referral_20140118_x_x_pastebin_partner&amp;source=referral_20140118_x_x_pastebin_partner" rel="nofollow" target="_blank">Dedicated Server Hosting</a> by <a href="http://steadfast.net/?utm_source=pastebin.com&amp;utm_medium=referral&amp;utm_content=footer_link_steadfast&amp;utm_campaign=referral_20140118_x_x_pastebin_partner&amp;source=referral_20140118_x_x_pastebin_partner" rel="nofollow" target="_blank">Steadfast</a>
+			</div>
+			<div id="footer_right" class="h_1024">
+			
+				<a href="https://facebook.com/pastebin" rel="nofollow" title="Like us on Facebook" target="_blank"><img src="https://pastebin.com/i/t.gif" alt="" class="icon40 facebook_circle" /></a>
+				<a href="https://twitter.com/pastebin" rel="nofollow" title="Follow us on Twitter" target="_blank"><img src="https://pastebin.com/i/t.gif" alt="" class="icon40 twitter_circle" /></a>
+							</div>
+		</div>
+
+			<script type="text/javascript"><!--
+			  e9 = new Object();
+			  e9.snackbar = true;
+			//--></script>
+			<script type="text/javascript" src="http://tags.expo9.exponential.com/tags/PastebincomNew/SnackbarSafe/tags.js"></script>
+			<script src="http://m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+			<script>
+			(function() {
+			  if (typeof _bsa !== 'undefined' && _bsa) {
+				_bsa.init('fancybar', 'CKYDL2JL', 'placement:pastebincom');
+			  }
+			})();
+			</script>
+		<script type="text/javascript">
+			function abdd() {$("#adb-enabled").show(), $("#adb-not-enabled").hide(), $("#abrpm3").html("<center><iframe src='/pba/cube_safe.php' id='monkey_3' marginwidth='0' align='center' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' allowtransparency='true' width='300' height='250' style='width: 300px; height: 250px; margin-top:10px;'></iframe></center>"), $("#abrpm2").html("<iframe src='/pba/sky_safe.php' id='monkey' marginwidth='0' align='center' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' allowtransparency='true' width='160' height='600' style='width: 160px; height: 600px;'></iframe>"), $("#abrpm").html("<iframe src='/pba/lead_safe.php' id='monkey_2' marginwidth='0' align='center' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no' allowtransparency='true' width='728' height='100' style='width: 728px; height: 100px;'></iframe>")}
+			function abnd(){$("#adb-enabled").hide(), $("#adb-not-enabled").show()}$(function(){}), "undefined" == typeof fuckAdBlock ? abdd() : (fuckAdBlock.setOption({debug: !1}), fuckAdBlock.onDetected(abdd).onNotDetected(abnd));
+			var $title=$("a,input,p,label,textarea[title],img,button,span");$.each($title,function(){$(this).tooltip({show:{delay:1},hide:{delay:1}})});
+		</script>		<script type="text/javascript">
+			function isIE(){var e=navigator.userAgent.toLowerCase();return-1!=e.indexOf("msie")?parseInt(e.split("msie")[1]):!1}if(isIE()&&isIE()<10){var div=document.getElementById("ie_msg");div.innerHTML=div.innerHTML+'<div id="old_browser">Your browser is outdated and insecure! Pastebin does not offer support for your browser. <a href="http://outdatedbrowser.com/" target="_blank" rel="nofollow">Click here to update your browser</a>!</div>'}
+		</script>
+		<div class="pub_300x250"></div><a href="#0" class="cd-top">Top</a>
+		
+	
+		
+	</body>
+
+<!-- Mirrored from pastebin.com/En4bvG58 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Apr 2019 12:10:56 GMT -->
+</html>
